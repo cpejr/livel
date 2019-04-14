@@ -4,6 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -6325,8 +6326,7 @@ a {
 .btn-primary {
   background-color: #ffff00;
   border-color: #ffff00;
-  color: #cc3399;
-  border-radius: 10px; }
+  color: #cc3399; }
 
 .btn-primary:hover {
   background-color: #e6e600;
@@ -6334,17 +6334,18 @@ a {
   color: #cc3399; }
 
 .btn {
-  margin: 50px 0;
+  margin: 80px 0;
   padding: 2rem 1rem;
   font-size: 50px;
-  font-weight: 500; }
+  font-weight: 600;
+  border-radius: 20px; }
 
 .text-box {
   width: 100%;
   overflow: hidden;
   font-size: 50px;
   padding: 8px 0;
-  margin: 40px 0;
+  margin: 70px 0;
   border-bottom: 2px solid #ffffff; }
 
 .text-box input {
@@ -6366,10 +6367,10 @@ a {
 
 .Livel {
   color: white;
-  font-size: 100px;
+  font-size: 150px;
   text-align: center;
   margin: 80px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Dancing Script;
   font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
