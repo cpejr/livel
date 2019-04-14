@@ -6325,7 +6325,8 @@ a {
 .btn-primary {
   background-color: #ffff00;
   border-color: #ffff00;
-  color: #cc3399; }
+  color: #cc3399;
+  border-radius: 10px; }
 
 .btn-primary:hover {
   background-color: #e6e600;
@@ -6333,7 +6334,42 @@ a {
   color: #cc3399; }
 
 .btn {
+  margin: 50px 0;
   padding: 2rem 1rem;
-  font-size: 2rem; }
+  font-size: 50px;
+  font-weight: 500; }
+
+.text-box {
+  width: 100%;
+  overflow: hidden;
+  font-size: 50px;
+  padding: 8px 0;
+  margin: 40px 0;
+  border-bottom: 2px solid #ffffff; }
+
+.text-box input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 30px;
+  color: white; }
+
+::placeholder {
+  color: #e6e6e6; }
+
+.mid-text {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; }
+
+.Livel {
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  margin: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
