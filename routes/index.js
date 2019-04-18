@@ -14,4 +14,8 @@ router.get('/requestNumber', function(req, res, next) {
   res.render('requestNumber', { title: 'Home' });
 });
 
+router.get('/login', function(req, res, next) {
+  res.render('login', { title: 'Home' });
+});
+
 module.exports = router;
