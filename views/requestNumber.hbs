@@ -13,15 +13,36 @@
     <input type= "text" placeholder="sobrenome">
     </div>
     <div class = "text-box">
-    <input type="email" placeholder="CPF">
+    <input type="email" placeholder="CPF" maxlength="14" name="cpf" onkeydown="javascript: fMasc( this, mCPF );">
     </div>
     <div class = "text-box">
     <input type="email" placeholder="e-mail">
     </div>
   </div>
-
 </form>
+
 <div>
  <button  id = "singupbutton" type="button" class="btn btn-primary btn-block">ENVIAR</button>
 </div>
+
+
+<title>Máscara CPF</title>
+	<script type="text/javascript">
+		function fMasc(objeto,mascara) {
+			obj=objeto
+			masc=mascara
+			setTimeout("fMascEx()",1)
+		}
+		function fMascEx() {
+			obj.value=masc(obj.value)
+		}
+		function mCPF(cpf){
+			cpf=cpf.replace(/\D/g,"")
+			cpf=cpf.replace(/(\d{3})(\d)/,"$1.$2")
+			cpf=cpf.replace(/(\d{3})(\d)/,"$1.$2")
+			cpf=cpf.replace(/(\d{3})(\d{1,2})$/,"$1-$2")
+			return cpf
+		}
+	</script>
+
 </body>
