@@ -6314,11 +6314,13 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  background-color: #cc3399;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00B7FF; }
+
+.home {
+  background-color: #cc3399; }
 
 .padding1 {
   padding: 100px; }
@@ -6333,8 +6335,10 @@ a {
   border-color: #e6e600;
   color: #cc3399; }
 
+.btnlogin {
+  margin: 80px 0; }
+
 .btn {
-  margin: 80px 0;
   padding: 2rem 1rem;
   font-size: 50px;
   font-weight: 600;
@@ -6399,5 +6403,39 @@ a {
   width: 25%;
   height: 100%;
   margin: 0 3% 0 3%; }
+
+.boxRightUpperRadius1 {
+  font-size: 100px;
+  text-align: center;
+  padding: 15px;
+  font-weight: 500;
+  background-color: #e6e600;
+  border-radius: 0 40% 0 0; }
+
+.boxRightUpperRadius2 {
+  font-size: 100px;
+  text-align: center;
+  padding: 15px;
+  font-weight: 500;
+  background-color: #b82e8a;
+  color: white;
+  border-radius: 0 40% 0 0; }
+
+.marginTraining {
+  margin: 6vh 0;
+  padding: 3vh 0;
+  background-color: #f2f2f2; }
+
+.buttonTraining1 {
+  margin: 1vh 32vw; }
+
+.buttonTraining2 {
+  margin: 1vh 33.5vw; }
+
+.buttonTraining3 {
+  margin: 1vh 36.5vw; }
+
+.inicial-margin {
+  margin: 4vh 0; }
 
 /*# sourceMappingURL=style.css.map */
