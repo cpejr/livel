@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/signup', function(req, res, next) {
-  res.render('signup', { title: 'SignUp' });
+  res.render('signup', { title: 'SignUp', layout: 'layoutMenuBars' });
 });
 
 router.get('/requestNumber', function(req, res, next) {
@@ -15,7 +15,7 @@ router.get('/requestNumber', function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'Login'});
+  res.render('login', { title: 'Login' });
 });
 
 router.get('/trainings', function(req, res, next){

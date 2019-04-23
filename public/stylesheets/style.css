@@ -6400,6 +6400,24 @@ a {
   height: 100%;
   margin: 0 3% 0 3%; }
 
+.row-menu2 {
+  height: 200px; }
+
+.userimg-menu2 {
+  border-radius: 50%;
+  margin: 5% 0 0 15%;
+  width: 80%;
+  height: 50%;
+  border-style: solid;
+  border-color: #ff8c1a;
+  border-width: 8px; }
+
+.growing-bars-menu2 {
+  padding: 0px;
+  width: 90%;
+  height: 50%;
+  margin: 5% 0 0 0; }
+
 .boxRightUpperRadius1 {
   font-size: 10vw;
   text-align: center;
