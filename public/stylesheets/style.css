@@ -6449,15 +6449,27 @@ a {
   border-color: #e6e600;
   color: #632467; }
 
-.btntrainingchange {
+.btntrainingchangeUP {
   background-color: #E7DB18;
   border-color: #E7DB18;
   color: #632467;
   padding: 2.5rem 2rem;
-  margin: 1vh 0;
+  margin: 1.1vh 0;
   font-size: 50px;
   font-weight: 600;
-  border-radius: 20px; }
+  border-radius: 20px;
+  width: 60%; }
+
+.btntrainingchangeDOWN {
+  background-color: #E7DB18;
+  border-color: #E7DB18;
+  color: #632467;
+  padding: 1.5rem 1rem;
+  margin: 1.1vh 0;
+  font-size: 40px;
+  font-weight: 600;
+  border-radius: 20px;
+  width: 40%; }
 
 .inicial-margin {
   margin: 4vh 0; }
