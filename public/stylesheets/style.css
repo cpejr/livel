@@ -6355,6 +6355,10 @@ a {
   font-size: 30px;
   color: white; }
 
+.form-sizing {
+  display: block;
+  width: 100%; }
+
 ::placeholder {
   color: #e6e6e6; }
 
