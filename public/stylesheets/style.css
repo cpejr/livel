@@ -6450,7 +6450,7 @@ a {
 
 .marginTraining {
   padding: 3vh 0;
-  background-color: #ededed; }
+  background-image: linear-gradient(#E6E6E6, #FAFAFA); }
 
 .btntrainingchange:hover {
   background-color: #d0c616;
@@ -6478,6 +6478,24 @@ a {
   font-weight: 600;
   border-radius: 20px;
   width: 40%; }
+
+#texto-trainingTypes-1 {
+  font-size: 50px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  margin-left: 56px;
+  color: #632467; }
+
+#texto-trainingTypes-2 {
+  font-size: 25px;
+  padding-top: 110px;
+  color: #A6A4A5; }
+
+#texto-trainingTypes-3 {
+  font-size: 32px;
+  padding-top: 80px;
+  margin-left: 10px;
+  color: #632467; }
 
 .time-title {
   text-align: center;
