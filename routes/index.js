@@ -11,7 +11,7 @@ router.get('/signup', function(req, res, next) {
 });
 
 router.get('/requestNumber', function(req, res, next) {
-  res.render('requestNumber', { title: 'RequestNumber' });
+  res.render('requestNumber', { title: 'Request Number' });
 });
 
 router.get('/login', function(req, res, next) {
@@ -19,7 +19,7 @@ router.get('/login', function(req, res, next) {
 });
 
 router.get('/trainings', function(req, res, next){
-  res.render('trainings', {title: 'Trainings', layout: 'layoutMenu'})
+  res.render('trainingTypes', {title: 'Training Types', layout: 'layoutMenu'})
 });
 
 router.get('/timeSchedule', function(req, res, next){
