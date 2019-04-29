@@ -6550,4 +6550,37 @@ a {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.training-mid-spot {
+  background-color: #f4f4f4;
+  padding: 4vh 0;
+  margin-right: -15px; }
+
+.training-mid-text {
+  color: #800040;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold; }
+
+.training-timing-finalizacao {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px; }
+
+.training-timing {
+  font-size: 55px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 15px;
+  color: #AC4B31; }
+
+.row-correction {
+  margin: 0px; }
+
+.box-texts {
+  font-size: 15px; }
+
+.backgroundcolor-boxes {
+  background-color: white; }
+
 /*# sourceMappingURL=style.css.map */
