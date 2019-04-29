@@ -18,8 +18,12 @@ router.get('/login', function(req, res, next) {
   res.render('login', { title: 'Login' });
 });
 
-router.get('/trainings', function(req, res, next){
+router.get('/trainingTypes', function(req, res, next){
   res.render('trainingTypes', {title: 'Training Types', layout: 'layoutMenu'})
+});
+
+router.get('/midTraining', function(req, res, next){
+  res.render('midTraining', {title: 'Mid Training', layout: 'layoutMenu'})
 });
 
 router.get('/timeSchedule', function(req, res, next){
