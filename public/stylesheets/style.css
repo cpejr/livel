@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
 :root {
   --blue: #007bff;
@@ -6626,5 +6627,63 @@ a {
   background-color: #632467;
   border-color: #632467;
   color: white; }
+
+.margin-animated-btn-pre-training {
+  margin: 10px; }
+
+.btn-mid-training-bottom {
+  background-color: #E7DB18;
+  border-color: #E7DB18;
+  color: #632467;
+  padding: 1rem 0.7rem;
+  margin: 0.8vh 0;
+  font-size: 45px;
+  font-weight: 600;
+  border-radius: 20px;
+  width: 50%; }
+
+.finish-parabens {
+  text-align: center;
+  font-size: 80px;
+  color: #0ECB8C;
+  font-weight: bold; }
+
+.finish-parabens-treino {
+  text-align: center;
+  font-size: 32px;
+  color: #0ECB8C;
+  font-weight: bold; }
+
+.padding-parabens {
+  padding: 50px 0; }
+
+.finish-avalie {
+  text-align: center;
+  font-size: 38px;
+  color: #632467;
+  font-weight: bold;
+  padding: 20px 0; }
+
+.starrating > input {
+  display: none; }
+
+.starrating > label:before {
+  content: "\f005";
+  margin: 2px;
+  font-size: 8em;
+  font-family: FontAwesome;
+  display: inline-block; }
+
+.starrating > label {
+  color: #E1E1E1; }
+
+.starrating > input:checked ~ label {
+  color: #E7DB18; }
+
+.starrating > input:hover ~ label {
+  color: #E7DB18; }
+
+.facebook-padding {
+  padding: 20px 0; }
 
 /*# sourceMappingURL=style.css.map */

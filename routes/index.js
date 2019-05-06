@@ -26,8 +26,13 @@ router.get('/midTraining', function(req, res, next){
   res.render('midTraining', {title: 'Mid Training', layout: 'layoutMenu'})
 });
 
+router.get('/trainingFinish', function(req, res, next){
+  res.render('trainingFinish', {title: 'Training Finished!', layout: 'layoutMenu'})
+});
+
 router.get('/timeSchedule', function(req, res, next){
   res.render('timeSchedule', {title: 'Time Schedule', layout: 'layoutMenu'})
 });
+
 
 module.exports = router;

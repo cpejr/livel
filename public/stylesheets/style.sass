@@ -1,6 +1,7 @@
 @import ../bootstrap/scss/bootstrap.scss
 
 @import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css)
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script')
 
 body
@@ -291,13 +292,13 @@ a
   padding-top: 60px
   font-weight: bold
   
-.minutes-left
+.minutes-left //minutos restantes pro final do treino
   font-size: 110px
   color: #0ECB8C
   font-weight: bold
   text-align: center
 
-.series-left
+.series-left //numeros de series que restam pro final do treino
   font-size: 110px
   color: #0ECB8C
   font-weight: bold
@@ -329,3 +330,49 @@ a
   font-weight: 600
   border-radius: 20px
   width: 50% //para bloquear o tamanho do btn
+
+.finish-parabens //escrito parabens grande no final do treino
+  text-align: center
+  font-size: 80px
+  color: #0ECB8C
+  font-weight: bold
+
+.finish-parabens-treino //escrito em baixo do parabens
+  text-align: center
+  font-size: 32px
+  color: #0ECB8C
+  font-weight: bold
+
+.padding-parabens //padding maior pro escrito parabens
+  padding: 50px 0
+
+.finish-avalie //texto avalie seu treino
+  text-align: center
+  font-size: 38px
+  color: #632467
+  font-weight: bold
+  padding: 20px 0
+
+
+.starrating > input 
+  display: none // Remove radio buttons
+
+.starrating > label:before 
+  content: "\f005" // Star 
+  margin: 2px
+  font-size: 8em
+  font-family: FontAwesome
+  display: inline-block
+
+
+.starrating > label
+  color: #E1E1E1 // Start color when not clicked
+
+.starrating > input:checked ~ label
+  color: #E7DB18  // Set yellow color when star checked
+
+.starrating > input:hover ~ label
+ color: #E7DB18 // Set yellow color when star hover
+
+.facebook-padding
+  padding: 20px 0

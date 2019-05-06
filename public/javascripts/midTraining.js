@@ -3,8 +3,8 @@ var state = "pause";
 function buttonPlayPress(){
     if (state == "pause"){
         state = "play";
-        var button2 = d3.select("#button_play").classed('btn-change-purple', true); //Tira o roxo do botao
-        var button = d3.select("#button_play").classed('btn-success', false); //atribui verde ao botao
+        var button2 = d3.select("#button_play").classed('btn-change-purple', true); //atribui o roxo do botao
+        var button = d3.select("#button_play").classed('btn-success', false); //tira verde ao botao
         button.select("i").attr('class', "fa fa-pause btn-size"); //muda o icone para pause
     }
     else if(state=='play' || state=='resume'){
