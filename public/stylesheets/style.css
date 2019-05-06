@@ -5,6 +5,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
 :root {
   --blue: #007bff;
@@ -6613,5 +6614,17 @@ a {
   font-weight: bold;
   text-align: center;
   padding-left: 240px; }
+
+.btn-size {
+  font-size: 100px;
+  margin: 20px; }
+
+.btn-training-border-radius {
+  border-radius: 50%; }
+
+.btn-change-purple {
+  background-color: #632467;
+  border-color: #632467;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
