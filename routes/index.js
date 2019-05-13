@@ -34,5 +34,9 @@ router.get('/timeSchedule', function(req, res, next){
   res.render('timeSchedule', {title: 'Time Schedule', layout: 'layoutMenu'})
 });
 
+router.get('/countdownTraining', function(req, res, next){
+  res.render('countdownTraining', {title: 'Countdown Training', layout: 'layoutMenu'})
+});
+
 
 module.exports = router;

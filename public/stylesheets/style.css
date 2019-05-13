@@ -6686,4 +6686,21 @@ a {
 .facebook-padding {
   padding: 20px 0; }
 
+.countdown-top-box {
+  height: 220px;
+  position: relative;
+  background-color: #F2F2F2;
+  margin-right: -15px; }
+
+.countdown-top-label {
+  color: #632467;
+  font-weight: bold;
+  font-size: 45px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
 /*# sourceMappingURL=style.css.map */
