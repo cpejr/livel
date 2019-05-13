@@ -6343,6 +6343,9 @@ a {
   font-weight: 600;
   border-radius: 20px; }
 
+.btnlogin {
+  margin: 0 0; }
+
 .text-box {
   width: 100%;
   overflow: hidden;
