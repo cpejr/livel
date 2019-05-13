@@ -18,6 +18,10 @@ router.get('/login', function(req, res, next) {
   res.render('login', { title: 'Login' });
 });
 
+router.get('/loginPassword', function(req, res, next) {
+  res.render('loginPassword', { title: 'Password' });
+});
+
 router.get('/trainingTypes', function(req, res, next){
   res.render('trainingTypes', {title: 'Training Types', layout: 'layoutMenu'})
 });
