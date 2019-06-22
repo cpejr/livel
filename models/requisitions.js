@@ -18,6 +18,21 @@ class requisitions{
             });
           });
     }
+    treinoSemana(){
+      return new Promise((resolve) =>{
+          request({
+            method: 'GET',
+            url: `http://fitgroup.com.br/livel/livel_app.php?AuthToken=${AuthToken}&Metodo=treinoSemana`,
+            json: true,
+            resolveWithFullResponse: true
+          }).then((response) => {
+            resolve (response.body);
+          }).catch((err) => {
+            console.log(err);
+            resolve (1);
+          });
+        });
+  }
 }
 
 
