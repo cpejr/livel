@@ -3,6 +3,7 @@ var router = express.Router();
 const Requisition = require('../models/requisitions');
 
 var foto_perfil;
+var nome_perfil;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -29,11 +30,12 @@ router.post('/login', (req, res, next) => {
       res.render('login', { title: 'Login', logado: "Ocorreu um erro inespecífico" });
     }
     else{
-    if(result.LOGIN.ID_Aluno == 0 && result.LOGIN.Status == 0){ //Quando tivermos usuarios e senha pra testar, mudar p/ if(result.LOGIN.ID_Aluno > 0 && result.LOGIN.Status == 1){
+    if(result.LOGIN.ID_Aluno > 0 && result.LOGIN.Status == 1){ //Quando tivermos usuarios e senha pra testar, mudar p/ if(result.LOGIN.ID_Aluno > 0 && result.LOGIN.Status == 1){
       console.log("Usuário está logado");
       console.log(result);
       req.session.usuario = true;
-      foto_perfil = "http://fitgroup.com.br/livel/fotos/1349.jpg";
+      foto_perfil = `http://fitgroup.com.br/livel/fotos/${result.ALUNO_INFO.AlunoFoto}`;
+      nome_perfil = result.ALUNO_INFO.AlunoNome;
       res.redirect('/trainingTypes');
     }
     else{
@@ -52,10 +54,10 @@ router.get('/loginPassword', function(req, res, next) {
 
 router.get('/trainingTypes', function(req, res, next){
   if(!req.session.usuario){
-    res.redirect('/');
+    res.redirect('/login');
   }
   else{
-    res.render('trainingTypes', {title: 'Training Types', foto_perfil, layout: 'layoutMenu'})
+    res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, layout: 'layoutMenu'})
   }
 });
 
