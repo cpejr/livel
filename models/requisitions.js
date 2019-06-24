@@ -1,13 +1,12 @@
+require('dotenv').config();
 const request = require('request-promise');
-
-const AuthToken = 'FlnPoU230xGF'; //Colocar no .env depois
 
 class requisitions{
     login(AlunoID, AlunoPwd){
         return new Promise((resolve) =>{
             request({
               method: 'GET',
-              url: `http://fitgroup.com.br/livel/livel_app.php?AuthToken=${AuthToken}&Metodo=alunoLogin&AlunoID=${AlunoID}&AlunoPwd=${AlunoPwd}`,
+              url: `http://fitgroup.com.br/livel/livel_app.php?AuthToken=${process.env.AUTH_TOKEN}&Metodo=alunoLogin&AlunoID=${AlunoID}&AlunoPwd=${AlunoPwd}`,
               json: true,
               resolveWithFullResponse: true
             }).then((response) => {
@@ -22,7 +21,7 @@ class requisitions{
       return new Promise((resolve) =>{
           request({
             method: 'GET',
-            url: `http://fitgroup.com.br/livel/livel_app.php?AuthToken=${AuthToken}&Metodo=treinoSemana`,
+            url: `http://fitgroup.com.br/livel/livel_app.php?AuthToken=${process.env.AUTH_TOKEN}&Metodo=treinoSemana`,
             json: true,
             resolveWithFullResponse: true
           }).then((response) => {

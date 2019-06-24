@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const Requisition = require('../models/requisitions');
+const auth = require('./middleware/auth');
 
 var foto_perfil;
 var nome_perfil;
@@ -52,26 +53,20 @@ router.get('/loginPassword', function(req, res, next) {
   res.render('loginPassword', { title: 'Password' });
 });
 
-router.get('/trainingTypes', function(req, res, next){
-  if(!req.session.usuario){
-    res.redirect('/login');
-  }
-
-  else{
-    Requisicao.treinoSemana().then((result)=>{
-      if(result === 1){
-        res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, layout: 'layoutMenu'});
-      }
-      else{;
-        console.log(result);
-        var treinos = result.TREINO_SEMANA;
-        res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, treinos, layout: 'layoutMenu'});
-      }
-    }).catch((error)=>{
-      console.log(error);
+router.get('/trainingTypes', auth.isAuthenticated, function(req, res, next){
+  Requisicao.treinoSemana().then((result)=>{
+    if(result === 1){
       res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, layout: 'layoutMenu'});
-    });
-  }
+    }
+    else{
+      console.log(result);
+      var treinos = result.TREINO_SEMANA;
+      res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, treinos, layout: 'layoutMenu'});
+    }
+  }).catch((error)=>{
+    console.log(error);
+    res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, layout: 'layoutMenu'});
+  });
 });
 
 router.get('/midTraining', function(req, res, next){
