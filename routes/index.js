@@ -4,6 +4,7 @@ const Requisition = require('../models/requisitions');
 
 var foto_perfil;
 var nome_perfil;
+Requisicao = new Requisition();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -24,7 +25,6 @@ router.get('/login', function(req, res, next) {
 
 router.post('/login', (req, res, next) => {
   const credentials = req.body;
-  Requisicao = new Requisition();
   Requisicao.login(credentials.AlunoID, credentials.AlunoPwd).then((result)=>{
     if(result === 1){
       res.render('login', { title: 'Login', logado: "Ocorreu um erro inespecífico" });
@@ -56,8 +56,21 @@ router.get('/trainingTypes', function(req, res, next){
   if(!req.session.usuario){
     res.redirect('/login');
   }
+
   else{
-    res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, layout: 'layoutMenu'})
+    Requisicao.treinoSemana().then((result)=>{
+      if(result === 1){
+        res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, layout: 'layoutMenu'});
+      }
+      else{;
+        console.log(result);
+        var treinos = result.TREINO_SEMANA;
+        res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, treinos, layout: 'layoutMenu'});
+      }
+    }).catch((error)=>{
+      console.log(error);
+      res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, layout: 'layoutMenu'});
+    });
   }
 });
 
