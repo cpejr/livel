@@ -5,6 +5,7 @@ const auth = require('./middleware/auth');
 
 var foto_perfil;
 var nome_perfil;
+var aluno_treinos;
 Requisicao = new Requisition();
 
 /* GET home page. */
@@ -37,6 +38,8 @@ router.post('/login', (req, res, next) => {
       req.session.usuario = true;
       foto_perfil = `http://fitgroup.com.br/livel/fotos/${result.ALUNO_INFO.AlunoFoto}`;
       nome_perfil = result.ALUNO_INFO.AlunoNome;
+      aluno_treinos = result.ALUNO_TREINOS;
+
       res.redirect('/trainingTypes');
     }
     else{
@@ -56,16 +59,16 @@ router.get('/loginPassword', function(req, res, next) {
 router.get('/trainingTypes', auth.isAuthenticated, function(req, res, next){
   Requisicao.treinoSemana().then((result)=>{
     if(result === 1){
-      res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, layout: 'layoutMenu'});
+      res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, aluno_treinos, layout: 'layoutMenu'});
     }
     else{
       console.log(result);
       var treinos = result.TREINO_SEMANA;
-      res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, treinos, layout: 'layoutMenu'});
+      res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, treinos, aluno_treinos, layout: 'layoutMenu'});
     }
   }).catch((error)=>{
     console.log(error);
-    res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, layout: 'layoutMenu'});
+    res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, aluno_treinos, layout: 'layoutMenu'});
   });
 });
 
