@@ -28,10 +28,6 @@ router.get('/login', function(req, res, next) {
 router.post('/login', (req, res, next) => {
   const credentials = req.body;
   Requisicao.login(credentials.AlunoID, credentials.AlunoPwd).then((result)=>{
-    if(result === 1){
-      res.render('login', { title: 'Login', logado: "Ocorreu um erro inespecífico" });
-    }
-    else{
     if(result.LOGIN.ID_Aluno > 0 && result.LOGIN.Status == 1){ //Quando tivermos usuarios e senha pra testar, mudar p/ if(result.LOGIN.ID_Aluno > 0 && result.LOGIN.Status == 1){
       console.log("Usuário está logado");
       console.log(result);
@@ -45,7 +41,6 @@ router.post('/login', (req, res, next) => {
     else{
       res.render('login', { title: 'Login', logado: "Usuário ou senha inválidos" });
     }
-    }
   }).catch((error)=>{
     console.log(error);
     res.render('login', { title: 'Login', logado: "Ocorreu um erro inespecífico!" });
@@ -58,14 +53,9 @@ router.get('/loginPassword', function(req, res, next) {
 
 router.get('/trainingTypes', auth.isAuthenticated, function(req, res, next){
   Requisicao.treinoSemana().then((result)=>{
-    if(result === 1){
-      res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, aluno_treinos, layout: 'layoutMenu'});
-    }
-    else{
       console.log(result);
       var treinos = result.TREINO_SEMANA;
       res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, treinos, aluno_treinos, layout: 'layoutMenu'});
-    }
   }).catch((error)=>{
     console.log(error);
     res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, aluno_treinos, layout: 'layoutMenu'});
