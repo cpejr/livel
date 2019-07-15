@@ -6440,9 +6440,11 @@ a {
   height: 50%;
   margin: 5% 0 0 0; }
 
+.modal-body {
+  height: 105vw; }
+
 .modal-dialog {
-  max-width: 800px;
-  height: 14vw; }
+  max-width: 890px; }
 
 button.close {
   margin: 0;
@@ -6459,14 +6461,92 @@ button.close {
   font-weight: 200;
   z-index: 10; }
 
+.ModalImage {
+  width: 110px;
+  height: 52px;
+  margin-top: -50vw;
+  margin-left: 28vw; }
+
+.TitleModal {
+  font-size: 4.5vw;
+  font-weight: 700;
+  color: #717171;
+  top: -40px; }
+
+.Metabolico {
+  font-size: 4vw;
+  font-weight: bold;
+  color: #FFBA2F;
+  right: -18vw;
+  top: -3vw; }
+
+.Metabolicotexto {
+  font-size: 3vw;
+  color: #231F20;
+  right: -20vw;
+  top: -3vw; }
+
+hr {
+  color: #DEDEDE;
+  size: 100px;
+  border-width: 0.4em;
+  width: 80%; }
+
+#SegundaParte {
+  top: -30px; }
+
 .boxRightUpperRadius1 {
-  font-size: 10vw;
+  font-size: 13vw;
+  text-align: center;
+  padding: 15px 30px 10px 25px;
+  font-weight: 700;
+  background-color: #FFBA2F;
+  border-radius: 0 40% 0 0;
+  color: white;
+  top: 14vw;
+  right: 430px; }
+
+.TipodeTreino {
+  font-size: 4vw;
+  color: #632467;
+  font-weight: bold; }
+
+#Excentricabox {
+  top: 16vw;
+  right: 54vw; }
+
+#Concentricabox {
+  top: -20vw;
+  right: -5vw; }
+
+#Excentricatitle {
+  top: 19vw; }
+
+#Concentricatitle {
+  top: -17vw;
+  right: -44vw; }
+
+.TextoTreino {
+  font-size: 2.5vw;
+  color: #231F20; }
+
+#Excentricatext {
+  top: 19.5vw;
+  right: -1.5vw; }
+
+#Concentricatext {
+  top: -17vw;
+  right: -46vw; }
+
+.boxRightUpperRadius2 {
+  font-size: 11.5vw;
   text-align: center;
   width: 15vw;
   height: 15vw;
-  padding: 17px 12px;
+  padding: 20px;
   font-weight: 700;
-  background-color: #FFBA2F;
+  background-color: #632467;
+  color: white;
   border-radius: 0 40% 0 0; }
 
 .btnboxRightUpperRadius1 {
