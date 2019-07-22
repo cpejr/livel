@@ -1,0 +1,38 @@
+<body>
+
+  <script src="/jquery/jquery.js"></script>
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+  <div class="row caixa-ano" id="texto-ano-MesAtual">
+    2018
+  </div>
+  <nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active col" id="nav-MesAnterior-tab" data-toggle="tab" href="#nav-MesAnterior" role="tab" aria-controls="nav-MesAnterior" >Janeiro</a>
+    <a class="nav-item nav-link col" id="nav-MesAtual-tab" data-toggle="tab" href="#nav-MesAtual" role="tab" aria-controls="nav-MesAtual">Fevereiro</a>
+    <a class="nav-item nav-link col" id="nav-results-tab" data-toggle="tab" href="#nav-results" role="tab" aria-controls="nav-results">Resultados</a>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-MesAnterior" role="tabpanel" aria-labelledby="nav-MesAnterior-tab">
+    <div class="container col-5">
+      <img id ="image" src="/images/corpo.png">
+      <label id="texto">{{aluno_resultados.ResultadoMedidaPescoco}}</label>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="nav-MesAtual" role="tabpanel" aria-labelledby="nav-MesAtual-tab">...</div>
+  <div class="tab-pane fade" id="nav-results" role="tabpanel" aria-labelledby="nav-results-tab">
+    <div class="container">
+    <div class="row results">
+    <div class="col" id="Forca">FORÇA</div>
+    <div class="col" id="Cardio">CARDIO</div>
+    <div class="w-100"></div>
+    <div class="col" id="Peso">PESO</div>
+    <div class="col" id="Gordura">% GORDURA</div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+</body>

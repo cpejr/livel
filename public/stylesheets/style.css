@@ -6403,6 +6403,20 @@ a {
   padding: 13px 0px;
   margin-bottom: 20px; }
 
+.nav-tabs {
+  height: 10vw;
+  background-color: #EDEDED;
+  margin: none; }
+
+.nav-item {
+  font-size: 3vw;
+  font-weight: 400;
+  top: 2vw;
+  height: 8vw;
+  text-align: center;
+  color: black;
+  margin-right: none; }
+
 .userimg {
   border-radius: 50%;
   padding: 0px;
@@ -6656,6 +6670,14 @@ hr {
   font-weight: 600;
   border-radius: 20px;
   width: 40%; }
+
+#texto-ano-profile {
+  font-size: 50px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  margin-left: 56px;
+  color: #632467;
+  font-weight: bold; }
 
 #texto-trainingTypes-1 {
   font-size: 50px;
@@ -6930,5 +6952,47 @@ hr {
   font-size: 22px;
   padding-top: 50px;
   color: #632467; }
+
+.results {
+  font-size: 4vw;
+  font-weight: 700;
+  text-align: center;
+  color: #532166; }
+
+#Forca {
+  height: 59vw;
+  border-style: solid;
+  border-width: thick;
+  border-radius: 2vw;
+  top: 4vw;
+  right: 3vw;
+  background-color: #F2F2F2;
+  border-color: #C6BBCE; }
+
+#Cardio {
+  border-style: solid;
+  border-width: thick;
+  border-radius: 2vw;
+  top: 4vw;
+  background-color: #F2F2F2;
+  border-color: #C6BBCE; }
+
+#Peso {
+  height: 61vw;
+  right: 3vw;
+  border-style: solid;
+  border-width: thick;
+  border-radius: 2vw;
+  top: 8vw;
+  background-color: #F2F2F2;
+  border-color: #C6BBCE; }
+
+#Gordura {
+  border-style: solid;
+  border-width: thick;
+  border-radius: 2vw;
+  top: 8vw;
+  background-color: #F2F2F2;
+  border-color: #C6BBCE; }
 
 /*# sourceMappingURL=style.css.map */
