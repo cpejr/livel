@@ -78,4 +78,14 @@ router.get('/countdownTraining', function(req, res, next){
   res.render('countdownTraining', {title: 'Countdown Training', layout: 'layoutMenu'})
 });
 
+router.get('/test', auth.isAuthenticated, function(req, res, next){
+  Requisicao.treinoSemana().then((result)=>{
+      console.log(result);
+      var treinos = result.TREINO_SEMANA;
+      res.render('test', {title: 'test', foto_perfil, nome_perfil, treinos, aluno_treinos, layout: 'layoutMenu'});
+  }).catch((error)=>{
+    console.log(error);
+    res.render('test', {title: 'Training Types', foto_perfil, nome_perfil, aluno_treinos, layout: 'layoutMenu'});
+  });
+});
 module.exports = router;
