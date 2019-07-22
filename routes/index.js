@@ -78,5 +78,4 @@ router.get('/countdownTraining', function(req, res, next){
   res.render('countdownTraining', {title: 'Countdown Training', layout: 'layoutMenu'})
 });
 
-
 module.exports = router;
