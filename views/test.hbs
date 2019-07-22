@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<style>
+/* .btnboxRightUpperRadius1{
+  background-color: black;
+} */
+</style>
+<head>
+  <meta charset="utf-8">
+  <script src="/jquery/jquery.js"></script>
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="modal fade"  id="stimulus" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <div class="fundo"></div>
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          <span class="TitleModal ">ESTÍMULO DO MÊS</span>
+          <div class="PeriodizacaoTensional" id="PeriodizacaoTensional">
+            <span class="boxRightUpperRadius1" id="boxRightUpperRadius1">
+              {{treinos.Periodizacao}}
+            </span>
+            <div class="Tensional" id="Tensional">
+              TENSIONAL
+            </div>
+            <span class="Tensionaltexto" id="Tensionaltexto">
+              <p>Maiores cargas</br>Menos repetições(6 a 12)</br>Maiores pausas(1' a 2')</br>Cadência Excêntrica</p>
+            </span>
+          </div>
+          <div class="PeriodizacaoMetabolico" id="PeriodizacaoMetabolico">
+            <span class="boxRightUpperRadius3" id="boxRightUpperRadius3">
+              {{treinos.Periodizacao}}
+            </span>
+            <div class="Metabolico" id="Metabolico">
+              METABÓLICO
+            </div>
+            <span class="Metabolicotexto" id="Metabolicotexto">
+              <p>Menores cargas</br>Mais repetições (12 a 20)</br>Menores pausas (0 a 1’30’’)</br>Cadência Concêntrica</p>
+            </span>
+          </div>
+
+          <hr>
+          <span class="TitleModal col-1" id="SegundaParte">CADÊNCIA DA SEMANA</span>
+          <span class="boxRightUpperRadius2 col-1" id="Excentricabox">
+            {{treinos.CadeiaExcentrica}}
+          </span>
+          <span class="TipodeTreino col-1" id="Excentricatitle">EXCÊNTRICA</span>
+          <span class="TextoTreino col-1" id="Excentricatext">
+            <p>É a fase do movimento<br>em que freamos o<br>peso/resistência contra<br>a gravidade.<br>É o primeiro número<br>da cadência.</p>
+          </span>
+          <img src="images/Vector_Smart_Object.png" class="ModalImage">
+          <span class="boxRightUpperRadius2 col-1" id="Concentricabox">
+            {{treinos.CadeiaConcentrica}}
+          </span>
+          <span class="TipodeTreino col-1" id="Concentricatitle">CONCÊNTRICA</span>
+          <span class="TextoTreino col-1" id="Concentricatext">
+          <p>É a fase do movimento<br>em que fazemos força<br>para erguer/puxar/empurrar <br>o peso contra gravidade. <br>É o segundo número <br>da cadência.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class = "row boxRadiusSpot">
+      <div class = "col-3"></div>
+      <div class = "col-2">
+            <button type="button" onclick="myFunction()" class="btn btn-primary" data-toggle="modal" data-target="#stimulus" id="tipo">
+              {{treinos.Periodizacao}}
+            </button>
+      </div>
+      <div class = "col-2">
+          <button type="button" onclick="myFunction()" class="btn btn-primary btnboxRightUpperRadius2" data-toggle="modal" data-target="#stimulus">
+              {{treinos.CadeiaExcentrica}}
+          </button>
+      </div>
+      <div class = "col-2">
+          <button type="button" onclick="myFunction()" class="btn btn-primary btnboxRightUpperRadius2" data-toggle="modal" data-target="#stimulus">
+              {{treinos.CadeiaConcentrica}}
+          </button>
+      </div>
+      <p id="demo"></p>
+  </div>
+  <div class = "row marginTraining">
+          <div class="col-md-12 text-center">
+              <button class="btntrainingchangeUP btn btn-primary">TREINO SUPERIOR</button>
+          </div>
+          <div class="col-md-12 text-center">
+              <button class="btntrainingchangeDOWN btn btn-primary">TREINO INFERIOR</button>
+          </div>
+          <div class="col-md-12 text-center">
+              <button class="btntrainingchangeDOWN btn btn-primary">RESULTADO</button>
+          </div>
+  </div>
+  <div class = "row">
+      <div class = "col-2"></div>
+      <div class = "col-3" id = "texto-trainingTypes-1">Janeiro</div>
+  </div>
+  <div class = "row">
+      <div class = "col-1"></div>
+      <div class = "col-3">
+          <img width=450 height=450 src = "/images/TreinouVezes.png">
+      </div>
+      <div class = "col-2"></div>
+      <div class = "col-6">
+          <div class = "row">
+              <div class = "col-1"></div>
+              <div class = "col-4">
+                  <img height=200 src = "/images/Medalinha.png">
+              </div>
+              <div class = "col-7" id = "texto-trainingTypes-2">
+                  Faltam {{aluno_treinos.NumTreinosFaltam}} treinos para você ganhar {{aluno_treinos.PontosNext}} pontos
+              </div>
+          </div>
+          <div class = "row">
+              <div class = "col-1"></div>
+              <div class = "col-6" id = "texto-trainingTypes-3">
+                  {{aluno_treinos.FraseTreino}}
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+<script>
+var str1 = "{{treinos.Periodizacao}}";
+var str2 = "T";
+var n = str1.localeCompare(str2);
+if(n==0){
+$( "#tipo" ).last().addClass( "btnboxRightUpperRadius1" );
+}
+else{
+$( "#tipo" ).last().addClass( "btnboxRightUpperRadius3" );
+}
+function myFunction() {
+  var str1 = "{{treinos.Periodizacao}}";
+  var str2 = "T";
+  var n = str1.localeCompare(str2);
+  if(n==0){
+    document.getElementById("boxRightUpperRadius1").style.display = "block";
+    document.getElementById("Tensional").style.display = "block";
+    document.getElementById("Tensionaltexto").style.display = "block";
+    document.getElementById("boxRightUpperRadius3").style.display = "none";
+    document.getElementById("Metabolico").style.display = "none";
+    document.getElementById("Metabolicotexto").style.display = "none";
+    document.getElementById("Tensional").style.position = "relative";
+    document.getElementById("boxRightUpperRadius1").style.position = "relative";
+    document.getElementById("Tensionaltexto").style.position = "relative";
+  }
+  else{
+    document.getElementById("boxRightUpperRadius3").style.display = "block";
+    document.getElementById("Metabolico").style.display = "block";
+    document.getElementById("Metabolicotexto").style.display = "block";
+    document.getElementById("boxRightUpperRadius1").style.display = "none";
+    document.getElementById("Tensional").style.display = "none";
+    document.getElementById("Tensionaltexto").style.display = "none";
+    document.getElementById("Metabolico").style.position = "relative";
+    document.getElementById("boxRightUpperRadius3").style.position = "relative";
+    document.getElementById("Metabolicotexto").style.position = "relative";
+  }
+  document.getElementById("demo").innerHTML ;
+}
+</script>
+
+</body>
+</html>
