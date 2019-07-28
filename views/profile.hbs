@@ -1,18 +1,23 @@
+<html>
 <body>
-
+<head>
   <script src="/jquery/jquery.js"></script>
   <script src="/bootstrap/js/bootstrap.min.js"></script>
-
+  <script src="/javascripts/dist/Chart.js"></script>
+  <script src="/javascripts/excanvas.js"></script>
+  <script src="/javascripts/bar-graph.js"></script>
+  <script src="/javascripts/profile.js"></script> -->
+</head>
   <div class="row caixa-ano" id="texto-ano-MesAtual">
     2018
   </div>
   <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <a class="nav-item nav-link active col" id="nav-MesAnterior-tab" data-toggle="tab" href="#nav-MesAnterior" role="tab" aria-controls="nav-MesAnterior" >Janeiro</a>
-    <a class="nav-item nav-link col" id="nav-MesAtual-tab" data-toggle="tab" href="#nav-MesAtual" role="tab" aria-controls="nav-MesAtual">Fevereiro</a>
-    <a class="nav-item nav-link col" id="nav-results-tab" data-toggle="tab" href="#nav-results" role="tab" aria-controls="nav-results">Resultados</a>
+    <a class="nav-item nav-link active col" id="nav-MesAnterior-tab" data-toggle="tab" href="#nav-MesAnterior" role="tab" aria-controls="nav-MesAnterior"><p id="MesAnterior"></p></a>
+    <a class="nav-item nav-link col" id="nav-MesAtual-tab" data-toggle="tab" href="#nav-MesAtual" role="tab" aria-controls="nav-MesAtual"><p id="MesAtual"></p></a>
+    <a class="nav-item nav-link col" id="nav-results-tab" data-toggle="tab" href="#nav-results" role="tab" aria-controls="nav-results"><p  id="Resultados">Resultados</p></a>
   </div>
-</nav>
+  </nav>
 <div class="tab-content" id="nav-tabContent">
   <div class="tab-pane fade show active" id="nav-MesAnterior" role="tabpanel" aria-labelledby="nav-MesAnterior-tab">
     <div class="container col-5">
@@ -24,15 +29,109 @@
   <div class="tab-pane fade" id="nav-results" role="tabpanel" aria-labelledby="nav-results-tab">
     <div class="container">
     <div class="row results">
-    <div class="col" id="Forca">FORÇA</div>
+    <div class="col" id="Forca"><canvas id="myChart"width="400" height="400"></canvas>FORÇA</div>
     <div class="col" id="Cardio">CARDIO</div>
     <div class="w-100"></div>
     <div class="col" id="Peso">PESO</div>
     <div class="col" id="Gordura">% GORDURA</div>
+    </div>
   </div>
-</div>
   </div>
 </div>
 
+
+<script>
+document.getElementById("MesAtual").innerHTML = mes;
+document.getElementById("MesAnterior").innerHTML = mesanterior;
+
+var ctx = document.getElementById('myChart');
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["Jun","Jul"],
+    datasets: [{
+      data: [100, 305],
+      backgroundColor: [
+        '#C6BBCE',
+        '#532166'
+      ],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    legend: {
+        display: false
+    },
+    responsive: false,
+    scales: {
+      xAxes: [{
+        gridLines: {
+          display:false,
+          color: '#F2F2F2'
+        },
+        ticks: {
+          maxRotation: 90,
+          minRotation: 80
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          display:false,
+          color: '#F2F2F2'
+        },
+        ticks: {
+          fontColor: '#F2F2F2',
+          beginAtZero: true
+        }
+      }]
+    }
+  }
+});
+</script>
+<!-- // var myChart = new Chart(ctx, {
+//     type: 'bar',
+//     data: {
+//       labels: ['Mes 1', 'Mes 2'],
+//       datasets: [{
+//           fill: false,
+//           borderWidth: 1,
+//           backgroundColor: [
+//               '#C6BBCE',
+//               '#532166'
+//           ],
+//           data: [80, 79]
+//       }]
+//     },
+//     options: {
+//         legend: { display: false },
+//         scales: {
+//           xAxes: [{
+//             gridLines: {
+//                 display: false
+//             },
+//             display: false
+//           }],
+//           yAxes: [{
+//             gridLines: {
+//                 display: false
+//             },
+//             scaleShowLabels: false,
+//             display: false
+//           }],
+//         }
+//         // scales: {
+//         //     yAxes: [{
+//         //         ticks: {
+//         //             beginAtZero: true
+//         //             //display: false
+//         //         },
+//         //         scaleShowLabels: false,
+//         //
+//         //     }]
+//         // }
+//     }
+// }); -->
 
 </body>
+</html>
