@@ -8,9 +8,10 @@
   <script src="/javascripts/bar-graph.js"></script>
   <script src="/javascripts/profile.js"></script> -->
 </head>
-  <div class="row caixa-ano" id="texto-ano-MesAtual">
-    2018
-  </div>
+  <div class = "inicial-margin"></div>
+    <div id="texto-ano-profile">
+      <p class="caixa-ano text-center"> 2018</p>
+    </div>
   <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
     <a class="nav-item nav-link active col" id="nav-MesAnterior-tab" data-toggle="tab" href="#nav-MesAnterior" role="tab" aria-controls="nav-MesAnterior"><p id="MesAnterior"></p></a>
@@ -20,10 +21,16 @@
   </nav>
 <div class="tab-content" id="nav-tabContent">
   <div class="tab-pane fade show active" id="nav-MesAnterior" role="tabpanel" aria-labelledby="nav-MesAnterior-tab">
-    <div class="container col-5">
-      <img id ="image" src="/images/corpo.png">
-      <label id="texto">{{aluno_resultados.ResultadoMedidaPescoco}}</label>
+    <div class="container col mx-auto text-center">
+      <img  class="img-responsive" id ="image-corpo" src="/images/corpo1.jpg" height="580">
+      <label class="texto">{{aluno_resultados.ResultadoMedidaPescoco}}</label>
     </div>
+      <div class="row">
+        <div class="container col-8">
+          <img  class="img-responsive" id ="image-corpo" src="/images/score.jpg" height="600" width="750">
+        </div>
+        <div class="row col-12 justify-content-center" id="texto-sair">SAIR</div>
+      </div>
   </div>
   <div class="tab-pane fade" id="nav-MesAtual" role="tabpanel" aria-labelledby="nav-MesAtual-tab">...</div>
   <div class="tab-pane fade" id="nav-results" role="tabpanel" aria-labelledby="nav-results-tab">
@@ -38,6 +45,8 @@
   </div>
   </div>
 </div>
+
+
 
 
 <script>

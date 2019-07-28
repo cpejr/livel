@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
   <head>
     <title>{{ title }}</title>
     <link rel='stylesheet' href='/stylesheets/style.css'>
@@ -8,7 +9,6 @@
     {{{_sections.stylesheets}}}
   </head>
   <body>
-
     <div class="row nav-menu">
       </div>
 
@@ -19,8 +19,13 @@
       </div>
       <div class="col-1"></div>
       <div class="col-5">
-        <img class="growing-bars-menu2" src="https://www.pngrepo.com/download/78093/growing-bar-chart.png"></img>
+        <img class="growing-bars-menu2" id="img"></img>
       </div>
+      <script type="text/javascript">
+        if ({{aluno_treinos.Nivel}}=='2'){
+          document.getElementById("img").src = "/images/nivel2.png";
+        }
+      </script>
     </div>
     {{{ body }}}
   </body>

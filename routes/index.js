@@ -79,7 +79,7 @@ router.get('/countdownTraining', function(req, res, next){
 });
 
 router.get('/profile', function(req,res, next){
-  res.render('profile', {title: 'Profile', foto_perfil, layout: 'layoutMenuBars'} )
+  res.render('profile', {title: 'Profile', foto_perfil, aluno_treinos, layout: 'layoutMenuBars'})
 });
 
 module.exports = router;
