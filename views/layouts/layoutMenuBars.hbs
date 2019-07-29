@@ -22,9 +22,22 @@
         <img class="growing-bars-menu2" id="img"></img>
       </div>
       <script type="text/javascript">
-        if ({{aluno_treinos.Nivel}}=='2'){
+        if ({{aluno_treinos.Nivel}}=='0')
+          document.getElementById("img").src = "/images/nivel0.png";
+        else if({{aluno_treinos.Nivel}}=='1')
+          document.getElementById("img").src = "/images/nivel1.png";
+        else if({{aluno_treinos.Nivel}}=='2')
           document.getElementById("img").src = "/images/nivel2.png";
-        }
+        else if({{aluno_treinos.Nivel}}=='3')
+          document.getElementById("img").src = "/images/nivel3.png";
+        else if({{aluno_treinos.Nivel}}=='4')
+          document.getElementById("img").src = "/images/nivel4.png";
+        else if({{aluno_treinos.Nivel}}=='5')
+          document.getElementById("img").src = "/images/nivel5.png";
+        else if({{aluno_treinos.Nivel}}=='6')
+          document.getElementById("img").src = "/images/nivel6.png";
+        else if({{aluno_treinos.Nivel}}=='7')
+          document.getElementById("img").src = "/images/nivel7.png";
       </script>
     </div>
     {{{ body }}}
