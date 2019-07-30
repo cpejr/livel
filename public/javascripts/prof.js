@@ -1,112 +1,11 @@
 
-var mes,mesanterior,mesAbreviado,mesanteriorAbreviado;
-
-switch (new Date().getMonth()) {
-  case 0:
-    mesanterior="Dezembro";
-    mes = "Janeiro";
-    break;
-  case 1:
-    mesanterior="Janeiro";
-    mes = "Fevereiro";
-    break;
-  case 2:
-    mesanterior="Fevereiro";
-    mes = "Março";
-    break;
-  case 3:
-    mesanterior="Março";
-    mes = "Abril";
-    break;
-  case 4:
-    mesanterior="Abril";
-    mes = "Maio";
-    break;
-  case 5:
-    mesanterior="Maio";
-    mes = "Junho";
-    break;
-  case  6:
-    mesanterior="Junho";
-    mes = "Julho";
-    break;
-  case  7:
-    mesanterior="Julho";
-    mes = "Agosto";
-    break;
-  case  8:
-    mesanterior="Agosto";
-    mes = "Setembro";
-    break;
-  case  9:
-    mesanterior="Setembro";
-    mes = "Outubro";
-    break;
-  case  10:
-    mesanterior="Outubro";
-    mes = "Novembro";
-    break;
-  case  11:
-    mesanterior="Novembro";
-    mes = "Dezembro";
-    break;
-}
-
-function abreviacoes(mes){
-  var mesAbreviacao;
-  if(mes=="Janeiro"){
-    mesAbreviacao= "JAN";
-  }
-  if(mes=="Fevereiro"){
-    mesAbreviacao= "FEV";
-  }
-  if(mes=="Março"){
-    mesAbreviacao= "MAR";
-  }
-  if(mes=="Abril"){
-    mesAbreviacao= "ABR";
-  }
-  if(mes=="Maio"){
-    mesAbreviacao= "MAI";
-  }
-  if(mes=="Junho"){
-    mesAbreviacao= "JUN";
-  }
-  if(mes=="Julho"){
-    mesAbreviacao= "JUL";
-  }
-  if(mes=="Agosto"){
-    mesAbreviacao= "AGO";
-  }
-  if(mes=="Setembro"){
-    mesAbreviacao= "SET";
-  }
-  if(mes=="Outubro"){
-    mesAbreviacao= "OUT";
-  }
-  if(mes=="Novembro"){
-    mesAbreviacao= "NOV";
-  }
-  if(mes=="Dezembro"){
-    mesAbreviacao= "DEZ";
-  }
-  return mesAbreviacao;
-}
-
-mesAbreviado = abreviacoes(mes);
-mesanteriorAbreviado = abreviacoes(mesanterior);
-
-//Para fazer o gráfico
 var ctx = document.getElementById('myChart').getContext("2d");
-var data1,data2,porcentagem;
-data1=100;
-data2=105;
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: [mesanteriorAbreviado, mesAbreviado],
+        labels: ['Red', 'Blue'],
         datasets: [{
-            data: [data1, data2],
+            data: [100, 105],
             backgroundColor: [
               '#C6BBCE',
               '#532166'
@@ -144,13 +43,14 @@ var myChart = new Chart(ctx, {
           color: '#F2F2F2'
         },
         ticks: {
-          fontSize: 25,
-          fontStyle: 700,
+          maxRotation: 90,
+          minRotation: 80,
+          fontSize: 30,
           fontColor:['rgba(44,44,44,0.8)','rgba(44,44,44,0.8)']
 
         },
         categoryPercentage: 0.95,
-        barPercentage: 0.9,
+        barPercentage: 1.0,
         fontColor: [
           '#06BFB8',
           '#532166'
@@ -173,18 +73,6 @@ var myChart = new Chart(ctx, {
     }
 });
 
-function porcentagem(data1,data2){
-  var result,z;
-  z=(data2/data1);
-  if(z>1){
-    
-    result= z-1;
-  }
-  else{
-    result= 1-z;
-  }
-  return result.toFixed(2)*100 ;
-}
 //Para deixar as bordas arredondadas
 Chart.elements.Rectangle.prototype.draw = function() {
 

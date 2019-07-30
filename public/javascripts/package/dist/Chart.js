@@ -14559,7 +14559,6 @@ core_controller.helpers.each(scales, function(scale, type) {
 
 // Load to register built-in adapters (as side effects)
 
-
 // Loading built-in plugins
 
 for (var k in plugins) {

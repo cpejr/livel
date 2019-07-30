@@ -3999,7 +3999,7 @@ button.close {
   .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before {
     bottom: 0;
     border-top-color: rgba(0, 0, 0, 0.25); }
-
+  
   .bs-popover-top .arrow::after,
   .bs-popover-auto[x-placement^="top"] .arrow::after {
     bottom: 1px;
@@ -4019,7 +4019,7 @@ button.close {
   .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before {
     left: 0;
     border-right-color: rgba(0, 0, 0, 0.25); }
-
+  
   .bs-popover-right .arrow::after,
   .bs-popover-auto[x-placement^="right"] .arrow::after {
     left: 1px;
@@ -4036,7 +4036,7 @@ button.close {
   .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
     top: 0;
     border-bottom-color: rgba(0, 0, 0, 0.25); }
-
+  
   .bs-popover-bottom .arrow::after,
   .bs-popover-auto[x-placement^="bottom"] .arrow::after {
     top: 1px;
@@ -4065,7 +4065,7 @@ button.close {
   .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
     right: 0;
     border-left-color: rgba(0, 0, 0, 0.25); }
-
+  
   .bs-popover-left .arrow::after,
   .bs-popover-auto[x-placement^="left"] .arrow::after {
     right: 1px;
@@ -6431,9 +6431,9 @@ a {
 
 .icon-menu {
   padding: 0px;
-  width: 23%;
-  height: 95%;
-  margin: 0 9% 0 9%; }
+  width: 25%;
+  height: 100%;
+  margin: 0 3% 0 3%; }
 
 .background-menuBar {
   background-color: #ffffff;
@@ -7032,5 +7032,41 @@ hr {
   margin-left: 56px;
   color: #632467;
   font-weight: bold; }
+
+#myChart {
+  margin-top: 4vw; }
+
+#TextoForca {
+  font-size: 2.2vw;
+  color: #676767; }
+
+.posicaoCirculos {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 30px;
+  margin-right: -150px; }
+
+.circuloForcaNegativo {
+  cx: 50;
+  cy: 50;
+  r: 50;
+  stroke: #FF818B;
+  stroke-width: 4;
+  fill: none; }
+
+#circuloForcaPositivo {
+  cx: 80;
+  cy: 80;
+  r: 55;
+  stroke: #06BFB8;
+  stroke-width: 4;
+  fill: none; }
+
+#porcentagemForcaPositivo {
+  font-size: .5;
+  font-weight: 300;
+  color: #06BFB8;
+  margin-top: -125px;
+  margin-left: 170px; }
 
 /*# sourceMappingURL=style.css.map */
