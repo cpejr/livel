@@ -6398,9 +6398,6 @@ a {
   font-family: Dancing Script;
   font-weight: bold; }
 
-#MesAtual, #MesAnterior, #Resultados {
-  font-size: 3.5vw; }
-
 .nav-menu {
   background-color: #EF7D00;
   padding: 13px 0px;
@@ -6410,6 +6407,10 @@ a {
   height: 10vw;
   background-color: #EDEDED;
   margin: none; }
+
+.nav-item.nav-link.active {
+  color: #532166;
+  font-weight: bold; }
 
 .nav-item {
   font-size: 3vw;
@@ -6857,6 +6858,18 @@ hr {
   font-weight: bold;
   padding: 20px 0; }
 
+#MesAnterior {
+  font-size: 32px;
+  margin-top: 8px; }
+
+#MesAtual {
+  font-size: 32px;
+  margin-top: 8px; }
+
+#Resultados {
+  font-size: 32px;
+  margin-top: 8px; }
+
 .starrating > input {
   display: none; }
 
@@ -7122,6 +7135,10 @@ hr {
 #grafPeso {
   margin-top: 4vw; }
 
+#TextoPeso {
+  font-size: 2.2vw;
+  color: #676767; }
+
 #circuloPesoNegativo {
   cx: 80;
   cy: 80;
@@ -7155,6 +7172,10 @@ hr {
 #grafGordura {
   margin-top: 4vw; }
 
+#TextoGordura {
+  font-size: 2.2vw;
+  color: #676767; }
+
 #circuloGorduraNegativo {
   cx: 80;
   cy: 80;
@@ -7184,21 +7205,5 @@ hr {
   color: #FF818B;
   margin-top: -120px;
   margin-left: 160px; }
-
-.nav-item.nav-link.active {
-  color: #532166;
-  font-weight: bold; }
-
-#MesAnterior {
-  font-size: 32px;
-  margin-top: 8px; }
-
-#MesAtual {
-  font-size: 32px;
-  margin-top: 8px; }
-
-#Resultados {
-  font-size: 32px;
-  margin-top: 8px; }
 
 /*# sourceMappingURL=style.css.map */
