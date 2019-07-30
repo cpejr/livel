@@ -1,4 +1,3 @@
-
 var mes,mesanterior,mesAbreviado,mesanteriorAbreviado;
 
 switch (new Date().getMonth()) {
@@ -97,16 +96,16 @@ mesAbreviado = abreviacoes(mes);
 mesanteriorAbreviado = abreviacoes(mesanterior);
 
 //Para fazer o gráfico
-var ctx = document.getElementById('myChart').getContext("2d");
-var data1,data2,porcentagem;
-data1=100;
-data2=105;
-var myChart = new Chart(ctx, {
+var ctxForca = document.getElementById('grafForca').getContext("2d");
+var data1Forca,data2Forca;
+data1Forca=100;
+data2Forca=105;
+var grafForca = new Chart(ctxForca, {
     type: 'bar',
     data: {
         labels: [mesanteriorAbreviado, mesAbreviado],
         datasets: [{
-            data: [data1, data2],
+            data: [data1Forca, data2Forca],
             backgroundColor: [
               '#C6BBCE',
               '#532166'
@@ -173,18 +172,243 @@ var myChart = new Chart(ctx, {
     }
 });
 
-function porcentagem(data1,data2){
-  var result,z;
-  z=(data2/data1);
-  if(z>1){
-    
-    result= z-1;
-  }
-  else{
-    result= 1-z;
-  }
-  return result.toFixed(2)*100 ;
-}
+var ctxCardio = document.getElementById('grafCardio').getContext("2d");
+var data1Cardio,data2Cardio;
+data1Cardio=1500;
+data2Cardio=2000;
+var grafCardio = new Chart(ctxCardio, {
+    type: 'bar',
+    data: {
+        labels: [mesanteriorAbreviado, mesAbreviado],
+        datasets: [{
+            data: [data1Cardio, data2Cardio],
+            backgroundColor: [
+              '#C6BBCE',
+              '#532166'
+            ],
+            fontColor: [
+              '#C6BBCE',
+              '#532166'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+      tooltips: {
+         enabled: false
+      },
+      plugins: {
+      datalabels: {
+        color: '#FFFFFF',
+        font: {
+          weight: 800,
+          size: 26,
+        },
+        align:'end',
+        formatter: function(value) {
+        	return value +'m'
+        },
+        anchor: 'start'
+        }
+      },
+      legend: {
+        display: false
+      },
+      responsive: false,
+      scales: {
+        xAxes: [{
+        gridLines: {
+          display:false,
+          color: '#F2F2F2'
+        },
+        ticks: {
+          fontSize: 25,
+          fontStyle: 700,
+          fontColor:['rgba(44,44,44,0.8)','rgba(44,44,44,0.8)']
+
+        },
+        categoryPercentage: 0.95,
+        barPercentage: 0.9,
+        fontColor: [
+          '#06BFB8',
+          '#532166'
+        ]
+      }],
+        yAxes: [{
+        gridLines: {
+          display:false,
+          color: '#F2F2F2'
+        },
+        ticks: {
+          fontColor: '#F2F2F2',
+          beginAtZero: true
+        }
+      }],
+        pointLabels: {
+          fontSize: 30
+        }
+      }
+    }
+});
+
+var ctxPeso = document.getElementById('grafPeso').getContext("2d");
+var data1Peso,data2Peso;
+data1Peso=80;
+data2Peso=76;
+var grafPeso = new Chart(ctxPeso, {
+    type: 'bar',
+    data: {
+        labels: [mesanteriorAbreviado, mesAbreviado],
+        datasets: [{
+            data: [data1Peso, data2Peso],
+            backgroundColor: [
+              '#C6BBCE',
+              '#532166'
+            ],
+            fontColor: [
+              '#C6BBCE',
+              '#532166'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+      tooltips: {
+         enabled: false
+      },
+      plugins: {
+      datalabels: {
+        color: '#FFFFFF',
+        font: {
+          weight: 800,
+          size: 26,
+        },
+        formatter: function(value) {
+        	return value +'kg'
+        },
+        align:'end',
+        anchor: 'start'
+        }
+      },
+      legend: {
+        display: false
+      },
+      responsive: false,
+      scales: {
+        xAxes: [{
+        gridLines: {
+          display:false,
+          color: '#F2F2F2'
+        },
+        ticks: {
+          fontSize: 25,
+          fontStyle: 700,
+          fontColor:['rgba(44,44,44,0.8)','rgba(44,44,44,0.8)']
+
+        },
+        categoryPercentage: 0.95,
+        barPercentage: 0.9,
+        fontColor: [
+          '#06BFB8',
+          '#532166'
+        ]
+      }],
+        yAxes: [{
+        gridLines: {
+          display:false,
+          color: '#F2F2F2'
+        },
+        ticks: {
+          fontColor: '#F2F2F2',
+          beginAtZero: true
+        }
+      }],
+        pointLabels: {
+          fontSize: 30
+        }
+      }
+    }
+});
+
+var ctxGordura = document.getElementById('grafGordura').getContext("2d");
+var data1Gordura,data2Gordura;
+data1Gordura=13;
+data2Gordura=13.5;
+var grafGordura = new Chart(ctxGordura, {
+    type: 'bar',
+    data: {
+        labels: [mesanteriorAbreviado, mesAbreviado],
+        datasets: [{
+            data: [data1Gordura, data2Gordura],
+            backgroundColor: [
+              '#C6BBCE',
+              '#532166'
+            ],
+            fontColor: [
+              '#C6BBCE',
+              '#532166'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+      tooltips: {
+         enabled: false
+      },
+      plugins: {
+      datalabels: {
+        color: '#FFFFFF',
+        font: {
+          weight: 800,
+          size: 26,
+        },
+        formatter: function(value) {
+        	return value +'%'
+        },
+        align:'end',
+        anchor: 'start'
+        }
+      },
+      legend: {
+        display: false
+      },
+      responsive: false,
+      scales: {
+        xAxes: [{
+        gridLines: {
+          display:false,
+          color: '#F2F2F2'
+        },
+        ticks: {
+          fontSize: 25,
+          fontStyle: 700,
+          fontColor:['rgba(44,44,44,0.8)','rgba(44,44,44,0.8)']
+
+        },
+        categoryPercentage: 0.95,
+        barPercentage: 0.9,
+        fontColor: [
+          '#06BFB8',
+          '#532166'
+        ]
+      }],
+        yAxes: [{
+        gridLines: {
+          display:false,
+          color: '#F2F2F2'
+        },
+        ticks: {
+          fontColor: '#F2F2F2',
+          beginAtZero: true
+        }
+      }],
+        pointLabels: {
+          fontSize: 30
+        }
+      }
+    }
+});
+
 //Para deixar as bordas arredondadas
 Chart.elements.Rectangle.prototype.draw = function() {
 
