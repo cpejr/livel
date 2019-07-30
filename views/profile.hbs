@@ -7,16 +7,18 @@
 	<script src="/javascripts/data-label/chartjs-plugin-datalabels.js"></script>
 
 
+
+
 </head>
   <div class = "inicial-margin"></div>
     <div id="texto-ano-profile">
       <p class="caixa-ano text-center"> 2018</p>
     </div>
   <nav>
-  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+  <div class="row nav nav-tabs" id="nav-tab" role="tablist">
     <a class="nav-item nav-link active col" id="nav-MesAnterior-tab" data-toggle="tab" href="#nav-MesAnterior" role="tab" aria-controls="nav-MesAnterior"><p id="MesAnterior"></p></a>
     <a class="nav-item nav-link col" id="nav-MesAtual-tab" data-toggle="tab" href="#nav-MesAtual" role="tab" aria-controls="nav-MesAtual"><p id="MesAtual"></p></a>
-    <a class="nav-item nav-link col" id="nav-results-tab" data-toggle="tab" href="#nav-results" role="tab" aria-controls="nav-results"><p  id="Resultados">Resultados</p></a>
+    <a class="nav-item nav-link col" id="nav-results-tab" data-toggle="tab" href="#nav-results" role="tab" aria-controls="nav-results"><p  id="Resultados">RESULTADOS</p></a>
   </div>
   </nav>
 <div class="tab-content" id="nav-tabContent">
@@ -69,8 +71,8 @@
 
 <script src="/javascripts/profile.js"></script>
 <script>
-document.getElementById("MesAtual").innerHTML = mes;
-document.getElementById("MesAnterior").innerHTML = mesanterior;
+document.getElementById("MesAtual").innerHTML = mes.toUpperCase();
+document.getElementById("MesAnterior").innerHTML = mesanterior.toUpperCase();
 porcentagem= porcentagem(data1,data2);
 document.getElementById("porcentagemForcaPositivo").innerHTML = '+' + porcentagem + '%';
 </script>
