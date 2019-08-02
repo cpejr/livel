@@ -46,60 +46,60 @@
         <div class="row col-12 justify-content-center" id="texto-sair">SAIR</div>
       </div>
   </div>
-  <div class="tab-pane fade" id="nav-results" role="tabpanel" aria-labelledby="nav-results-tab">
-    <div class="container">
-    <div class="row results">
-    <div class="col" id="Forca">
-      <svg class="posicaoCirculos">
-        <circle id="circuloForcaNegativo" />
-        <circle id="circuloForcaPositivo" />
-        <div id="porcentagemForcaPositivo"></div>
-        <div id="porcentagemForcaNegativo"></div>
-      </svg>
-      <canvas id="grafForca" height="330"></canvas>
-      FORÇA
-      <div id="TextoForca">
-        = Abdominal + Flexão + Barra
+    <div class="tab-pane fade row gradback" id="nav-results" role="tabpanel" aria-labelledby="nav-results-tab">
+      <div class="container">
+      <div class="row results">
+      <div class="col" id="Forca">
+        <svg class="posicaoCirculos">
+          <circle id="circuloForcaNegativo" />
+          <circle id="circuloForcaPositivo" />
+          <div id="porcentagemForcaPositivo"></div>
+          <div id="porcentagemForcaNegativo"></div>
+        </svg>
+        <canvas id="grafForca" height="330"></canvas>
+        FORÇA
+        <div id="TextoForca">
+          = Abdominal + Flexão + Barra
+        </div>
+      </div>
+      <div class="col" id="Cardio">
+        <svg class="posicaoCirculos">
+          <circle id="circuloCardioNegativo" />
+          <circle id="circuloCardioPositivo" />
+          <div id="porcentagemCardioPositivo"></div>
+          <div id="porcentagemCardioNegativo"></div>
+        </svg>
+        <canvas id="grafCardio" height="330"></canvas>
+        CARDIO
+        <div id="TextoCardio">
+          Corrida / Caminhada
+        </div>
+      </div>
+      <div class="w-100"></div>
+      <div class="col" id="Peso">
+        <svg class="posicaoCirculos">
+          <circle id="circuloPesoNegativo" />
+          <circle id="circuloPesoPositivo" />
+          <div id="porcentagemPesoPositivo"></div>
+          <div id="porcentagemPesoNegativo"></div>
+        </svg>
+        <canvas id="grafPeso" height="330"></canvas>
+        PESO
+      </div>
+      <div class="col" id="Gordura">
+        <svg class="posicaoCirculos">
+          <circle id="circuloGorduraNegativo" />
+          <circle id="circuloGorduraPositivo" />
+          <div id="porcentagemGorduraPositivo"></div>
+          <div id="porcentagemGorduraNegativo"></div>
+        </svg>
+        <canvas id="grafGordura" height="330"></canvas>
+        % Gordura
+      </div>
       </div>
     </div>
-    <div class="col" id="Cardio">
-      <svg class="posicaoCirculos">
-        <circle id="circuloCardioNegativo" />
-        <circle id="circuloCardioPositivo" />
-        <div id="porcentagemCardioPositivo"></div>
-        <div id="porcentagemCardioNegativo"></div>
-      </svg>
-      <canvas id="grafCardio" height="330"></canvas>
-      CARDIO
-      <div id="TextoCardio">
-        Corrida / Caminhada
-      </div>
+    <div class="row col justify-content-center" id="texto-sair-result">SAIR</div>
     </div>
-    <div class="w-100"></div>
-    <div class="col" id="Peso">
-      <svg class="posicaoCirculos">
-        <circle id="circuloPesoNegativo" />
-        <circle id="circuloPesoPositivo" />
-        <div id="porcentagemPesoPositivo"></div>
-        <div id="porcentagemPesoNegativo"></div>
-      </svg>
-      <canvas id="grafPeso" height="330"></canvas>
-      PESO
-    </div>
-    <div class="col" id="Gordura">
-      <svg class="posicaoCirculos">
-        <circle id="circuloGorduraNegativo" />
-        <circle id="circuloGorduraPositivo" />
-        <div id="porcentagemGorduraPositivo"></div>
-        <div id="porcentagemGorduraNegativo"></div>
-      </svg>
-      <canvas id="grafGordura" height="330"></canvas>
-      % Gordura
-    </div>
-    </div>
-  </div>
-  <div class="row col justify-content-center" id="texto-sair-result">SAIR</div>
-  </div>
 </div>
 
 <script src="/javascripts/profile.js"></script>

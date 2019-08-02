@@ -83,7 +83,7 @@ router.get('/profile', function(req,res, next){
   res.render('profile', {title: 'Profile', foto_perfil, aluno_treinos, layout: 'layoutMenuBars'})
 });
 
-router.get('/testgraf', function(req,res, next){
-  res.render('testgraf', {title: 'testgraf', foto_perfil, aluno_treinos, layout: 'layoutMenuBars'})
+router.get('/body', function(req,res, next){
+  res.render('body', {title: 'body', foto_perfil, aluno_treinos, layout: 'layoutMenuBars'})
 });
 module.exports = router;

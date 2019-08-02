@@ -6325,7 +6325,7 @@ a {
 .home {
   background-color: #632467; }
 
-.padding1 {
+.padding1punho_direito {
   padding: 100px; }
 
 .btnchangelogin:hover {
@@ -6987,6 +6987,7 @@ hr {
   border-color: #C6BBCE; }
 
 #Cardio {
+  height: 59vw;
   border-style: solid;
   border-width: thick;
   border-radius: 2vw;
@@ -7000,15 +7001,14 @@ hr {
   border-style: solid;
   border-width: thick;
   border-radius: 2vw;
-  top: 8vw;
   background-color: #F2F2F2;
   border-color: #C6BBCE; }
 
 #Gordura {
+  height: 59vw;
   border-style: solid;
   border-width: thick;
   border-radius: 2vw;
-  top: 8vw;
   background-color: #F2F2F2;
   border-color: #C6BBCE; }
 
@@ -7043,7 +7043,7 @@ hr {
   font-size: 35px;
   color: #632467;
   font-weight: bold;
-  margin-top: 110px; }
+  top: -20px; }
 
 #texto-ano-profile {
   font-size: 50px;
@@ -7173,10 +7173,6 @@ hr {
 #grafGordura {
   margin-top: 4vw; }
 
-#TextoGordura {
-  font-size: 2.2vw;
-  color: #676767; }
-
 #circuloGorduraNegativo {
   cx: 80;
   cy: 80;
@@ -7206,5 +7202,130 @@ hr {
   color: #FF818B;
   margin-top: -120px;
   margin-left: 160px; }
+
+.gradback {
+  background-image: linear-gradient(#ffffff, #E6E6E6); }
+
+#size_body {
+  height: 1592px; }
+
+.results {
+  height: 1300px; }
+
+.texto-body {
+  margin-top: 2vw;
+  margin-left: 5vw;
+  color: #532166;
+  font-size: 4.4vw; }
+
+.corpo {
+  position: relative;
+  top: -15vw;
+  left: 30%; }
+
+#image-body {
+  height: 100vw; }
+
+#image-pescoco {
+  position: absolute;
+  top: 11vw;
+  left: 14vw;
+  height: 2.5vw; }
+
+#image-cabeca {
+  position: absolute;
+  top: 1.5vw;
+  left: 15.3vw;
+  height: 4.5vw; }
+
+#image-coluna {
+  position: absolute;
+  top: 15vw;
+  left: 17vw;
+  height: 28vw; }
+
+#image-quadril {
+  position: absolute;
+  top: 44vw;
+  left: 10.4vw;
+  height: 6.3vw; }
+
+#image-ombro_esquerdo {
+  position: absolute;
+  top: 16.5vw;
+  left: 6.5vw;
+  height: 5.5vw; }
+
+#image-ombro_direito {
+  position: absolute;
+  top: 16.5vw;
+  left: 24vw;
+  height: 5.5vw; }
+
+#image-coracao {
+  position: absolute;
+  top: 21vw;
+  left: 20vw;
+  height: 3.8vw; }
+
+#image-cotovelo_esquerdo {
+  position: absolute;
+  top: 33vw;
+  left: 2vw;
+  height: 4.2vw; }
+
+#image-cotovelo_direito {
+  position: absolute;
+  top: 33vw;
+  left: 29vw;
+  height: 4.2vw; }
+
+#image-punho_esquerdo {
+  position: absolute;
+  top: 48vw;
+  left: 0.7vw;
+  height: 2.7vw; }
+
+#image-punho_direito {
+  position: absolute;
+  top: 48vw;
+  left: 33vw;
+  height: 2.7vw; }
+
+#image-mao_esquerda {
+  position: absolute;
+  top: 54vw;
+  left: 0.9vw;
+  height: 2.7vw; }
+
+#image-mao_direita {
+  position: absolute;
+  top: 53.8vw;
+  left: 32.8vw;
+  height: 2.7vw; }
+
+#image-joelho_esquerdo {
+  position: absolute;
+  top: 73vw;
+  left: 9vw;
+  height: 4.5vw; }
+
+#image-joelho_direito {
+  position: absolute;
+  top: 73vw;
+  left: 21.5vw;
+  height: 4.5vw; }
+
+#image-tornozelo_esquerdo {
+  position: absolute;
+  top: 90vw;
+  left: 11vw;
+  height: 3vw; }
+
+#image-tornozelo_direito {
+  position: absolute;
+  top: 90vw;
+  left: 22vw;
+  height: 3vw; }
 
 /*# sourceMappingURL=style.css.map */
