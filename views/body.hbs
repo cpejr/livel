@@ -1,10 +1,20 @@
+<html>
+<head>
+	<script src="/jquery/jquery.js"></script>
+	<script src="/jquery/toggleAttr.js"></script>
+</head>
+<body>
 <div class="gradback row" id="size_body">
 <div class="texto-body">
 	<p>Caso você tenha alguma restrição e/ou dor de</br> movimentos, marque na figura abaixo os locais</br> para que possamos orientar melhor o seu treino:</p>
 </div>
 	<div class="corpo">
 	    <img src="/images/body.png" id ="image-body"/>
-	    <img src="/images/pescoco.png" id ="image-pescoco"/>
+	    <div id="addPescoco">
+				<img src="/images/pescoco.png" id ="image-pescoco" onclick="addPicPescoco()"/>
+				<img src="/images/pescoco-dor.png" id ="image-pescoco-dor" onclick="addPicPescocoDor()"/>
+				<p id="textoPescoco">Pescoço</p>
+			</div>
 			<img src="/images/cabeca.png" id ="image-cabeca"/>
 			<img src="/images/coluna.png" id ="image-coluna"/>
 			<img src="/images/quadril.png" id ="image-quadril"/>
@@ -22,5 +32,24 @@
 			<img src="/images/tornozelo_esquerdo.png" id ="image-tornozelo_esquerdo"/>
 			<img src="/images/tornozelo_direito.png" id ="image-tornozelo_direito"/>
 	</div>
-<img     height="600">
+<img>
 </div>
+</body>
+<script>
+var count=0;
+
+function addPicPescoco(){
+		document.getElementById("image-pescoco-dor").style.display = "block";
+		document.getElementById("textoPescoco").style.display = "block";
+		document.getElementById("image-pescoco").style.display = "none";
+}
+function addPicPescocoDor(){
+		document.getElementById("image-pescoco").style.display = "block";
+		document.getElementById("image-pescoco-dor").style.display = "none";
+		document.getElementById("textoPescoco").style.display = "none";
+}
+document.getElementById("image-pescoco-dor").style.display = "none";
+document.getElementById("textoPescoco").style.display = "none";
+document.getElementById("textoPescoco").style.position = "absolute";
+</script>
+</html>

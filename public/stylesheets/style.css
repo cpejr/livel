@@ -6325,7 +6325,7 @@ a {
 .home {
   background-color: #632467; }
 
-.padding1punho_direito {
+.padding1 {
   padding: 100px; }
 
 .btnchangelogin:hover {
@@ -7226,7 +7226,7 @@ hr {
 #image-body {
   height: 100vw; }
 
-#image-pescoco {
+#image-pescoco, #image-pescoco-dor {
   position: absolute;
   top: 11vw;
   left: 14vw;
@@ -7327,5 +7327,10 @@ hr {
   top: 90vw;
   left: 22vw;
   height: 3vw; }
+
+#textoPescoco {
+  top: 0vw;
+  right: 45vw;
+  font-size: 4vw; }
 
 /*# sourceMappingURL=style.css.map */
