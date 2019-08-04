@@ -1,0 +1,327 @@
+<html>
+<head>
+	<script src="/jquery/jquery.js"></script>
+	<script src="/jquery/toggleAttr.js"></script>
+</head>
+<body>
+<div class="gradback row" id="size_body">
+<div class="texto-body">
+	<p>Caso você tenha alguma restrição e/ou dor de</br> movimentos, marque na figura abaixo os locais</br> para que possamos orientar melhor o seu treino:</p>
+</div>
+	<div class="corpo">
+	    <img src="/images/body.png" id ="image-body"/>
+	    <div>
+				<img src="/images/pescoco.png" id ="image-pescoco" onclick="addPicPescoco()"/>
+				<img src="/images/pescoco-dor.png" id ="image-pescoco-dor" onclick="addPicPescocoDor()"/>
+				<p id="textoPescoco">Pescoço</p>
+			</div>
+			<div>
+				<img src="/images/cabeca.png" id ="image-cabeca" onclick="addPicCabeca()"/>
+				<img src="/images/cabeca-dor.png" id ="image-cabeca-dor" onclick="addPicCabecaDor()"/>
+				<p id="textoCabeca">Cabeça</p>
+			</div>
+			<div>
+				<img src="/images/coluna.png" id ="image-coluna" onclick="addPicColuna()"/>
+				<img src="/images/coluna-dor.png" id ="image-coluna-dor" onclick="addPicColunaDor()"/>
+				<p id="textoColuna">Coluna</p>
+			</div>
+			<div>
+				<img src="/images/quadril.png" id ="image-quadril" onclick="addPicQuadril()"/>
+				<img src="/images/quadril-dor.png" id ="image-quadril-dor" onclick="addPicQuadrilDor()"/>
+				<p id="textoQuadril">Quadril</p>
+			</div>
+			<div>
+				<img src="/images/ombro_esquerdo.png" id ="image-ombro_esquerdo" onclick="addPicOmbro_esquerdo()"/>
+				<img src="/images/ombro_esquerdo-dor.png" id ="image-ombro_esquerdo-dor" onclick="addPicOmbro_esquerdoDor()"/>
+				<span id="textoOmbro_esquerdo">Ombro esquerdo</span>
+			</div>
+			<div>
+				<img src="/images/ombro_direito.png" id ="image-ombro_direito" onclick="addPicOmbro_direito()"/>
+				<img src="/images/ombro_direito-dor.png" id ="image-ombro_direito-dor" onclick="addPicOmbro_direitoDor()"/>
+				<span id="textoOmbro_direito">Ombro direito</span>
+			</div>
+			<div>
+				<img src="/images/coracao.png" id ="image-coracao" onclick="addPicCoracao()"/>
+				<img src="/images/coracao-dor.png" id ="image-coracao-dor" onclick="addPicCoracaoDor()"/>
+				<span id="textoCoracao">Coração</span>
+			</div>
+			<div>
+				<img src="/images/cotovelo_esquerdo.png" id ="image-cotovelo_esquerdo" onclick="addPicCotovelo_esquerdo()"/>
+				<img src="/images/cotovelo_esquerdo-dor.png" id ="image-cotovelo_esquerdo-dor" onclick="addPicCotovelo_esquerdoDor()"/>
+				<span id="textoCotovelo_esquerdo">Cotovelo esquerdo</span>
+			</div>
+			<div>
+				<img src="/images/cotovelo_direito.png" id ="image-cotovelo_direito" onclick="addPicCotovelo_direito()"/>
+				<img src="/images/cotovelo_direito-dor.png" id ="image-cotovelo_direito-dor" onclick="addPicCotovelo_direitoDor()"/>
+				<span id="textoCotovelo_direito">Cotovelo direito</span>
+			</div>
+			<div>
+				<img src="/images/punho_esquerdo.png" id ="image-punho_esquerdo" onclick="addPicPunho_esquerdo()"/>
+				<img src="/images/punho_esquerdo-dor.png" id ="image-punho_esquerdo-dor" onclick="addPicPunho_esquerdoDor()"/>
+				<span id="textoPunho_esquerdo">Punho esquerdo</span>
+			</div>
+			<div>
+				<img src="/images/punho_direito.png" id ="image-punho_direito" onclick="addPicPunho_direito()"/>
+				<img src="/images/punho_direito-dor.png" id ="image-punho_direito-dor" onclick="addPicPunho_direitoDor()"/>
+				<span id="textoPunho_direito">Punho direito</span>
+			</div>
+			<div>
+				<img src="/images/mao_esquerda.png" id ="image-mao_esquerda" onclick="addPicMao_esquerda()"/>
+				<img src="/images/mao_esquerda-dor.png" id ="image-mao_esquerda-dor" onclick="addPicMao_esquerdaDor()"/>
+				<span id="textoMao_esquerda">Mão esquerda</span>
+			</div>
+			<div>
+				<img src="/images/mao_direita.png" id ="image-mao_direita" onclick="addPicMao_direita()"/>
+				<img src="/images/mao_direita-dor.png" id ="image-mao_direita-dor" onclick="addPicMao_direitaDor()"/>
+				<span id="textoMao_direita">Mão direita</span>
+			</div>
+			<div>
+				<img src="/images/joelho_esquerdo.png" id ="image-joelho_esquerdo" onclick="addPicJoelho_esquerdo()"/>
+				<img src="/images/joelho_esquerdo-dor.png" id ="image-joelho_esquerdo-dor" onclick="addPicJoelho_esquerdoDor()"/>
+				<span id="textoJoelho_esquerdo">Joelho esquerdo</span>
+			</div>
+			<div>
+				<img src="/images/joelho_direito.png" id ="image-joelho_direito" onclick="addPicJoelho_direito()"/>
+				<img src="/images/joelho_direito-dor.png" id ="image-joelho_direito-dor" onclick="addPicJoelho_direitoDor()"/>
+				<span id="textoJoelho_direito">Joelho direito</span>
+			</div>
+			<div>
+				<img src="/images/tornozelo_esquerdo.png" id ="image-tornozelo_esquerdo" onclick="addPicTornozelo_esquerdo()"/>
+				<img src="/images/tornozelo_esquerdo-dor.png" id ="image-tornozelo_esquerdo-dor" onclick="addPicTornozelo_esquerdoDor()"/>
+				<span id="textoTornozelo_esquerdo">Tornozelo esquerdo</span>
+			</div>
+			<div>
+				<img src="/images/tornozelo_direito.png" id ="image-tornozelo_direito" onclick="addPicTornozelo_direito()"/>
+				<img src="/images/tornozelo_direito-dor.png" id ="image-tornozelo_direito-dor" onclick="addPicTornozelo_direitoDor()"/>
+				<span id="textoTornozelo_direito">Tornozelo direito</span>
+			</div>
+	</div>
+<img>
+</div>
+</body>
+<script>
+function addPicPescoco(){
+		document.getElementById("image-pescoco-dor").style.display = "block";
+		document.getElementById("textoPescoco").style.display = "block";
+		document.getElementById("image-pescoco").style.display = "none";
+}
+function addPicPescocoDor(){
+		document.getElementById("image-pescoco").style.display = "block";
+		document.getElementById("image-pescoco-dor").style.display = "none";
+		document.getElementById("textoPescoco").style.display = "none";
+}
+function addPicCabeca(){
+		document.getElementById("image-cabeca-dor").style.display = "block";
+		document.getElementById("textoCabeca").style.display = "block";
+		document.getElementById("image-cabeca").style.display = "none";
+}
+function addPicCabecaDor(){
+		document.getElementById("image-cabeca").style.display = "block";
+		document.getElementById("image-cabeca-dor").style.display = "none";
+		document.getElementById("textoCabeca").style.display = "none";
+}
+function addPicColuna(){
+		document.getElementById("image-coluna-dor").style.display = "block";
+		document.getElementById("textoColuna").style.display = "block";
+		document.getElementById("image-coluna").style.display = "none";
+}
+function addPicColunaDor(){
+		document.getElementById("image-coluna").style.display = "block";
+		document.getElementById("image-coluna-dor").style.display = "none";
+		document.getElementById("textoColuna").style.display = "none";
+}
+function addPicQuadril(){
+		document.getElementById("image-quadril-dor").style.display = "block";
+		document.getElementById("textoQuadril").style.display = "block";
+		document.getElementById("image-quadril").style.display = "none";
+}
+function addPicQuadrilDor(){
+		document.getElementById("image-quadril").style.display = "block";
+		document.getElementById("image-quadril-dor").style.display = "none";
+		document.getElementById("textoQuadril").style.display = "none";
+}
+function addPicOmbro_esquerdo(){
+		document.getElementById("image-ombro_esquerdo-dor").style.display = "block";
+		document.getElementById("textoOmbro_esquerdo").style.display = "block";
+		document.getElementById("image-ombro_esquerdo").style.display = "none";
+}
+function addPicOmbro_esquerdoDor(){
+		document.getElementById("image-ombro_esquerdo").style.display = "block";
+		document.getElementById("image-ombro_esquerdo-dor").style.display = "none";
+		document.getElementById("textoOmbro_esquerdo").style.display = "none";
+}
+function addPicOmbro_direito(){
+		document.getElementById("image-ombro_direito-dor").style.display = "block";
+		document.getElementById("textoOmbro_direito").style.display = "block";
+		document.getElementById("image-ombro_direito").style.display = "none";
+}
+function addPicOmbro_direitoDor(){
+		document.getElementById("image-ombro_direito").style.display = "block";
+		document.getElementById("image-ombro_direito-dor").style.display = "none";
+		document.getElementById("textoOmbro_direito").style.display = "none";
+}
+function addPicCoracao(){
+		document.getElementById("image-coracao-dor").style.display = "block";
+		document.getElementById("textoCoracao").style.display = "block";
+		document.getElementById("image-coracao").style.display = "none";
+}
+function addPicCoracaoDor(){
+		document.getElementById("image-coracao").style.display = "block";
+		document.getElementById("image-coracao-dor").style.display = "none";
+		document.getElementById("textoCoracao").style.display = "none";
+}
+function addPicCotovelo_esquerdo(){
+		document.getElementById("image-cotovelo_esquerdo-dor").style.display = "block";
+		document.getElementById("textoCotovelo_esquerdo").style.display = "block";
+		document.getElementById("image-cotovelo_esquerdo").style.display = "none";
+}
+function addPicCotovelo_esquerdoDor(){
+		document.getElementById("image-cotovelo_esquerdo").style.display = "block";
+		document.getElementById("image-cotovelo_esquerdo-dor").style.display = "none";
+		document.getElementById("textoCotovelo_esquerdo").style.display = "none";
+}
+function addPicCotovelo_direito(){
+		document.getElementById("image-cotovelo_direito-dor").style.display = "block";
+		document.getElementById("textoCotovelo_direito").style.display = "block";
+		document.getElementById("image-cotovelo_direito").style.display = "none";
+}
+function addPicCotovelo_direitoDor(){
+		document.getElementById("image-cotovelo_direito").style.display = "block";
+		document.getElementById("image-cotovelo_direito-dor").style.display = "none";
+		document.getElementById("textoCotovelo_direito").style.display = "none";
+}
+function addPicPunho_esquerdo(){
+		document.getElementById("image-punho_esquerdo-dor").style.display = "block";
+		document.getElementById("textoPunho_esquerdo").style.display = "block";
+		document.getElementById("image-punho_esquerdo").style.display = "none";
+}
+function addPicPunho_esquerdoDor(){
+		document.getElementById("image-punho_esquerdo").style.display = "block";
+		document.getElementById("image-punho_esquerdo-dor").style.display = "none";
+		document.getElementById("textoPunho_esquerdo").style.display = "none";
+}
+function addPicPunho_direito(){
+		document.getElementById("image-punho_direito-dor").style.display = "block";
+		document.getElementById("textoPunho_direito").style.display = "block";
+		document.getElementById("image-punho_direito").style.display = "none";
+}
+function addPicPunho_direitoDor(){
+		document.getElementById("image-punho_direito").style.display = "block";
+		document.getElementById("image-punho_direito-dor").style.display = "none";
+		document.getElementById("textoPunho_direito").style.display = "none";
+}
+function addPicMao_esquerda(){
+		document.getElementById("image-mao_esquerda-dor").style.display = "block";
+		document.getElementById("textoMao_esquerda").style.display = "block";
+		document.getElementById("image-mao_esquerda").style.display = "none";
+}
+function addPicMao_esquerdaDor(){
+		document.getElementById("image-mao_esquerda").style.display = "block";
+		document.getElementById("image-mao_esquerda-dor").style.display = "none";
+		document.getElementById("textoMao_esquerda").style.display = "none";
+}
+function addPicMao_direita(){
+		document.getElementById("image-mao_direita-dor").style.display = "block";
+		document.getElementById("textoMao_direita").style.display = "block";
+		document.getElementById("image-mao_direita").style.display = "none";
+}
+function addPicMao_direitaDor(){
+		document.getElementById("image-mao_direita").style.display = "block";
+		document.getElementById("image-mao_direita-dor").style.display = "none";
+		document.getElementById("textoMao_direita").style.display = "none";
+}
+function addPicJoelho_esquerdo(){
+		document.getElementById("image-joelho_esquerdo-dor").style.display = "block";
+		document.getElementById("textoJoelho_esquerdo").style.display = "block";
+		document.getElementById("image-joelho_esquerdo").style.display = "none";
+}
+function addPicJoelho_esquerdoDor(){
+		document.getElementById("image-joelho_esquerdo").style.display = "block";
+		document.getElementById("image-joelho_esquerdo-dor").style.display = "none";
+		document.getElementById("textoJoelho_esquerdo").style.display = "none";
+}
+function addPicJoelho_direito(){
+		document.getElementById("image-joelho_direito-dor").style.display = "block";
+		document.getElementById("textoJoelho_direito").style.display = "block";
+		document.getElementById("image-joelho_direito").style.display = "none";
+}
+function addPicJoelho_direitoDor(){
+		document.getElementById("image-joelho_direito").style.display = "block";
+		document.getElementById("image-joelho_direito-dor").style.display = "none";
+		document.getElementById("textoJoelho_direito").style.display = "none";
+}
+function addPicTornozelo_esquerdo(){
+		document.getElementById("image-tornozelo_esquerdo-dor").style.display = "block";
+		document.getElementById("textoTornozelo_esquerdo").style.display = "block";
+		document.getElementById("image-tornozelo_esquerdo").style.display = "none";
+}
+function addPicTornozelo_esquerdoDor(){
+		document.getElementById("image-tornozelo_esquerdo").style.display = "block";
+		document.getElementById("image-tornozelo_esquerdo-dor").style.display = "none";
+		document.getElementById("textoTornozelo_esquerdo").style.display = "none";
+}
+function addPicTornozelo_direito(){
+		document.getElementById("image-tornozelo_direito-dor").style.display = "block";
+		document.getElementById("textoTornozelo_direito").style.display = "block";
+		document.getElementById("image-tornozelo_direito").style.display = "none";
+}
+function addPicTornozelo_direitoDor(){
+		document.getElementById("image-tornozelo_direito").style.display = "block";
+		document.getElementById("image-tornozelo_direito-dor").style.display = "none";
+		document.getElementById("textoTornozelo_direito").style.display = "none";
+}
+
+
+document.getElementById("image-pescoco-dor").style.display = "none";
+document.getElementById("textoPescoco").style.display = "none";
+document.getElementById("textoPescoco").style.position = "absolute";
+document.getElementById("image-cabeca-dor").style.display = "none";
+document.getElementById("textoCabeca").style.display = "none";
+document.getElementById("textoCabeca").style.position = "absolute";
+document.getElementById("image-coluna-dor").style.display = "none";
+document.getElementById("textoColuna").style.display = "none";
+document.getElementById("textoColuna").style.position = "absolute";
+document.getElementById("image-quadril-dor").style.display = "none";
+document.getElementById("textoQuadril").style.display = "none";
+document.getElementById("textoQuadril").style.position = "absolute";
+document.getElementById("image-ombro_esquerdo-dor").style.display = "none";
+document.getElementById("textoOmbro_esquerdo").style.display = "none";
+document.getElementById("textoOmbro_esquerdo").style.position = "absolute";
+document.getElementById("image-ombro_direito-dor").style.display = "none";
+document.getElementById("textoOmbro_direito").style.display = "none";
+document.getElementById("textoOmbro_direito").style.position = "absolute";
+document.getElementById("image-coracao-dor").style.display = "none";
+document.getElementById("textoCoracao").style.display = "none";
+document.getElementById("textoCoracao").style.position = "absolute";
+document.getElementById("image-cotovelo_esquerdo-dor").style.display = "none";
+document.getElementById("textoCotovelo_esquerdo").style.display = "none";
+document.getElementById("textoCotovelo_esquerdo").style.position = "absolute";
+document.getElementById("image-cotovelo_direito-dor").style.display = "none";
+document.getElementById("textoCotovelo_direito").style.display = "none";
+document.getElementById("textoCotovelo_direito").style.position = "absolute";
+document.getElementById("image-punho_esquerdo-dor").style.display = "none";
+document.getElementById("textoPunho_esquerdo").style.display = "none";
+document.getElementById("textoPunho_esquerdo").style.position = "absolute";
+document.getElementById("image-punho_direito-dor").style.display = "none";
+document.getElementById("textoPunho_direito").style.display = "none";
+document.getElementById("textoPunho_direito").style.position = "absolute";
+document.getElementById("image-mao_esquerda-dor").style.display = "none";
+document.getElementById("textoMao_esquerda").style.display = "none";
+document.getElementById("textoMao_esquerda").style.position = "absolute";
+document.getElementById("image-mao_direita-dor").style.display = "none";
+document.getElementById("textoMao_direita").style.display = "none";
+document.getElementById("textoMao_direita").style.position = "absolute";
+document.getElementById("image-joelho_esquerdo-dor").style.display = "none";
+document.getElementById("textoJoelho_esquerdo").style.display = "none";
+document.getElementById("textoJoelho_esquerdo").style.position = "absolute";
+document.getElementById("image-joelho_direito-dor").style.display = "none";
+document.getElementById("textoJoelho_direito").style.display = "none";
+document.getElementById("textoJoelho_direito").style.position = "absolute";
+document.getElementById("image-tornozelo_esquerdo-dor").style.display = "none";
+document.getElementById("textoTornozelo_esquerdo").style.display = "none";
+document.getElementById("textoTornozelo_esquerdo").style.position = "absolute";
+document.getElementById("image-tornozelo_direito-dor").style.display = "none";
+document.getElementById("textoTornozelo_direito").style.display = "none";
+document.getElementById("textoTornozelo_direito").style.position = "absolute";
+</script>
+</html>
