@@ -7212,7 +7212,7 @@ hr {
   background-image: linear-gradient(#ffffff, #E6E6E6); }
 
 #size_body {
-  height: 1592px; }
+  height: 1522px; }
 
 .results {
   height: 1300px; }
@@ -7226,7 +7226,8 @@ hr {
 .corpo {
   position: relative;
   top: -15vw;
-  left: 30%; }
+  left: 30%;
+  margin-top: 150px; }
 
 .trofeu {
   text-align: center;
@@ -7462,5 +7463,27 @@ hr {
   top: 90vw;
   right: 28vw;
   font-size: 4vw; }
+
+#texto-body-baixo {
+  margin-left: 200px;
+  font-size: 30px;
+  color: #58276A;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.caixa-texto-body {
+  width: 100%;
+  overflow: hidden;
+  font-size: 50px;
+  padding: 8px 0;
+  margin: 30px 0;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #000000; }
+
+.caixa-texto-body input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 30px;
+  color: #58276A; }
 
 /*# sourceMappingURL=style.css.map */
