@@ -6403,6 +6403,25 @@ a {
   padding: 13px 0px;
   margin-bottom: 20px; }
 
+.nav-tabs {
+  height: 10vw;
+  background-color: #EDEDED;
+  margin: none; }
+
+.nav-item.nav-link.active {
+  color: #532166;
+  box-shadow: 10px 30px 0px -24px #532166;
+  font-weight: bold; }
+
+.nav-item {
+  font-size: 3vw;
+  font-weight: 400;
+  top: 2vw;
+  height: 8vw;
+  text-align: center;
+  color: black;
+  margin-right: none; }
+
 .userimg {
   border-radius: 50%;
   padding: 0px;
@@ -6429,15 +6448,15 @@ a {
   border-radius: 50%;
   margin: 5% 0 0 15%;
   width: 80%;
-  height: 50%;
+  height: 90%;
   border-style: solid;
   border-color: #ff8c1a;
   border-width: 8px; }
 
 .growing-bars-menu2 {
   padding: 0px;
-  width: 90%;
-  height: 50%;
+  width: 100%;
+  height: 75%;
   margin: 5% 0 0 0; }
 
 .modal-body {
@@ -6657,6 +6676,14 @@ hr {
   border-radius: 20px;
   width: 40%; }
 
+#texto-ano-profile {
+  font-size: 50px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  margin-left: 56px;
+  color: #632467;
+  font-weight: bold; }
+
 #texto-trainingTypes-1 {
   font-size: 50px;
   margin-top: 80px;
@@ -6832,6 +6859,18 @@ hr {
   font-weight: bold;
   padding: 20px 0; }
 
+#MesAnterior {
+  font-size: 32px;
+  margin-top: 8px; }
+
+#MesAtual {
+  font-size: 32px;
+  margin-top: 8px; }
+
+#Resultados {
+  font-size: 32px;
+  margin-top: 8px; }
+
 .starrating > input {
   display: none; }
 
@@ -6930,5 +6969,484 @@ hr {
   font-size: 22px;
   padding-top: 50px;
   color: #632467; }
+
+.results {
+  font-size: 4vw;
+  font-weight: 700;
+  text-align: center;
+  color: #532166; }
+
+#Forca {
+  height: 59vw;
+  border-style: solid;
+  border-width: thick;
+  border-radius: 2vw;
+  top: 4vw;
+  right: 3vw;
+  background-color: #F2F2F2;
+  border-color: #C6BBCE; }
+
+#Cardio {
+  height: 59vw;
+  border-style: solid;
+  border-width: thick;
+  border-radius: 2vw;
+  top: 4vw;
+  background-color: #F2F2F2;
+  border-color: #C6BBCE; }
+
+#Peso {
+  height: 59vw;
+  right: 3vw;
+  border-style: solid;
+  border-width: thick;
+  border-radius: 2vw;
+  background-color: #F2F2F2;
+  border-color: #C6BBCE; }
+
+#Gordura {
+  height: 59vw;
+  border-style: solid;
+  border-width: thick;
+  border-radius: 2vw;
+  background-color: #F2F2F2;
+  border-color: #C6BBCE; }
+
+.caixa-ano {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F2F2F2;
+  height: 57px;
+  width: 140px;
+  border-color: #A8A7A7; }
+
+.linha-mes {
+  font-size: 40px; }
+
+.container {
+  position: relative; }
+
+#image-corpo {
+  margin-top: 20px; }
+
+.image {
+  margin-top: 90px; }
+
+#texto-sair {
+  font-size: 35px;
+  color: #632467;
+  font-weight: bold;
+  margin-top: 35px; }
+
+#texto-sair-result {
+  font-size: 35px;
+  color: #632467;
+  font-weight: bold;
+  top: -20px; }
+
+#texto-ano-profile {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 56px;
+  color: #632467;
+  font-weight: bold; }
+
+.posicaoCirculos {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 30px;
+  margin-right: -150px; }
+
+#grafForca {
+  margin-top: 4vw; }
+
+#TextoForca {
+  font-size: 2.2vw;
+  color: #676767; }
+
+#circuloForcaNegativo {
+  cx: 80;
+  cy: 80;
+  r: 55;
+  stroke: #FF818B;
+  stroke-width: 4;
+  fill: none; }
+
+#circuloForcaPositivo {
+  cx: 80;
+  cy: 80;
+  r: 55;
+  stroke: #06BFB8;
+  stroke-width: 4;
+  fill: none; }
+
+#porcentagemForcaPositivo {
+  font-size: 3.3vw;
+  font-weight: 300;
+  color: #06BFB8;
+  margin-top: -120px;
+  margin-left: 160px; }
+
+#porcentagemForcaNegativo {
+  font-size: 3.3vw;
+  font-weight: 300;
+  color: #FF818B;
+  margin-top: -120px;
+  margin-left: 160px; }
+
+#grafCardio {
+  margin-top: 4vw; }
+
+#TextoCardio {
+  font-size: 2.2vw;
+  color: #676767; }
+
+#circuloCardioNegativo {
+  cx: 80;
+  cy: 80;
+  r: 55;
+  stroke: #FF818B;
+  stroke-width: 4;
+  fill: none; }
+
+#circuloCardioPositivo {
+  cx: 80;
+  cy: 80;
+  r: 55;
+  stroke: #06BFB8;
+  stroke-width: 4;
+  fill: none; }
+
+#porcentagemCardioPositivo {
+  font-size: 3.3vw;
+  font-weight: 300;
+  color: #06BFB8;
+  margin-top: -120px;
+  margin-left: 160px; }
+
+#porcentagemCardioNegativo {
+  font-size: 3.3vw;
+  font-weight: 300;
+  color: #FF818B;
+  margin-top: -120px;
+  margin-left: 160px; }
+
+#grafPeso {
+  margin-top: 4vw; }
+
+#TextoPeso {
+  font-size: 2.2vw;
+  color: #676767; }
+
+#circuloPesoNegativo {
+  cx: 80;
+  cy: 80;
+  r: 55;
+  stroke: #FF818B;
+  stroke-width: 4;
+  fill: none; }
+
+#circuloPesoPositivo {
+  cx: 80;
+  cy: 80;
+  r: 55;
+  stroke: #06BFB8;
+  stroke-width: 4;
+  fill: none; }
+
+#porcentagemPesoPositivo {
+  font-size: 3.3vw;
+  font-weight: 300;
+  color: #06BFB8;
+  margin-top: -120px;
+  margin-left: 160px; }
+
+#porcentagemPesoNegativo {
+  font-size: 3.3vw;
+  font-weight: 300;
+  color: #FF818B;
+  margin-top: -120px;
+  margin-left: 160px; }
+
+#grafGordura {
+  margin-top: 4vw; }
+
+#circuloGorduraNegativo {
+  cx: 80;
+  cy: 80;
+  r: 55;
+  stroke: #FF818B;
+  stroke-width: 4;
+  fill: none; }
+
+#circuloGorduraPositivo {
+  cx: 80;
+  cy: 80;
+  r: 55;
+  stroke: #06BFB8;
+  stroke-width: 4;
+  fill: none; }
+
+#porcentagemGorduraPositivo {
+  font-size: 3.3vw;
+  font-weight: 300;
+  color: #06BFB8;
+  margin-top: -120px;
+  margin-left: 160px; }
+
+#porcentagemGorduraNegativo {
+  font-size: 3.3vw;
+  font-weight: 300;
+  color: #FF818B;
+  margin-top: -120px;
+  margin-left: 160px; }
+
+.gradback {
+  background-image: linear-gradient(#ffffff, #E6E6E6); }
+
+#size_body {
+  height: 1522px; }
+
+.results {
+  height: 1300px; }
+
+.texto-body {
+  margin-top: 2vw;
+  margin-left: 5vw;
+  color: #532166;
+  font-size: 4.4vw; }
+
+.corpo {
+  position: relative;
+  top: -15vw;
+  left: 30%;
+  margin-top: 150px; }
+
+#image-body {
+  height: 100vw; }
+
+#image-pescoco, #image-pescoco-dor {
+  position: absolute;
+  top: 11vw;
+  left: 14vw;
+  height: 2.5vw; }
+
+#image-cabeca, #image-cabeca-dor {
+  position: absolute;
+  top: 1.5vw;
+  left: 15.3vw;
+  height: 4.5vw; }
+
+#image-coluna, #image-coluna-dor {
+  position: absolute;
+  top: 15vw;
+  left: 17vw;
+  height: 28vw; }
+
+#image-quadril, #image-quadril-dor {
+  position: absolute;
+  top: 44vw;
+  left: 10.4vw;
+  height: 6.3vw; }
+
+#image-ombro_direito, #image-ombro_direito-dor {
+  position: absolute;
+  top: 16.5vw;
+  left: 6.5vw;
+  height: 5.5vw; }
+
+#image-ombro_esquerdo, #image-ombro_esquerdo-dor {
+  position: absolute;
+  top: 16.5vw;
+  left: 24vw;
+  height: 5.5vw; }
+
+#image-coracao, #image-coracao-dor {
+  position: absolute;
+  top: 21vw;
+  left: 20vw;
+  height: 3.8vw; }
+
+#image-cotovelo_direito, #image-cotovelo_direito-dor {
+  position: absolute;
+  top: 33vw;
+  left: 2vw;
+  height: 4.2vw; }
+
+#image-cotovelo_esquerdo, #image-cotovelo_esquerdo-dor {
+  position: absolute;
+  top: 33vw;
+  left: 29vw;
+  height: 4.2vw; }
+
+#image-punho_direito, #image-punho_direito-dor {
+  position: absolute;
+  top: 48vw;
+  left: 0.7vw;
+  height: 2.7vw; }
+
+#image-punho_esquerdo, #image-punho_esquerdo-dor {
+  position: absolute;
+  top: 48vw;
+  left: 33vw;
+  height: 2.7vw; }
+
+#image-mao_direita, #image-mao_direita-dor {
+  position: absolute;
+  top: 54vw;
+  left: 0.9vw;
+  height: 2.7vw; }
+
+#image-mao_esquerda, #image-mao_esquerda-dor {
+  position: absolute;
+  top: 53.8vw;
+  left: 32.8vw;
+  height: 2.7vw; }
+
+#image-joelho_direito, #image-joelho_direito-dor {
+  position: absolute;
+  top: 73vw;
+  left: 9vw;
+  height: 4.5vw; }
+
+#image-joelho_esquerdo, #image-joelho_esquerdo-dor {
+  position: absolute;
+  top: 73vw;
+  left: 21.5vw;
+  height: 4.5vw; }
+
+#image-tornozelo_direito, #image-tornozelo_direito-dor {
+  position: absolute;
+  top: 90vw;
+  left: 11vw;
+  height: 3vw; }
+
+#image-tornozelo_esquerdo, #image-tornozelo_esquerdo-dor {
+  position: absolute;
+  top: 90vw;
+  left: 22vw;
+  height: 3vw; }
+
+#textoPescoco {
+  top: 9vw;
+  right: 35vw;
+  font-size: 4vw; }
+
+#textoCabeca {
+  top: 1vw;
+  right: 35vw;
+  font-size: 4vw; }
+
+#textoColuna {
+  top: 25vw;
+  right: 35vw;
+  font-size: 4vw; }
+
+#textoQuadril {
+  top: 42vw;
+  right: 37vw;
+  font-size: 4vw; }
+
+#textoOmbro_esquerdo {
+  white-space: nowrap;
+  top: 18vw;
+  right: -27vw;
+  font-size: 4vw; }
+
+#textoOmbro_direito {
+  white-space: nowrap;
+  top: 18vw;
+  right: 35vw;
+  font-size: 4vw; }
+
+#textoCoracao {
+  white-space: nowrap;
+  top: 22vw;
+  right: -15vw;
+  font-size: 4vw; }
+
+#textoCotovelo_esquerdo {
+  white-space: nowrap;
+  top: 33vw;
+  right: -34vw;
+  font-size: 4vw; }
+
+#textoCotovelo_direito {
+  white-space: nowrap;
+  top: 33vw;
+  right: 35vw;
+  font-size: 4vw; }
+
+#textoPunho_esquerdo {
+  white-space: nowrap;
+  top: 47vw;
+  right: -32vw;
+  font-size: 4vw; }
+
+#textoPunho_direito {
+  white-space: nowrap;
+  top: 47vw;
+  right: 38vw;
+  font-size: 4vw; }
+
+#textoMao_esquerda {
+  white-space: nowrap;
+  top: 53vw;
+  right: -26vw;
+  font-size: 4vw; }
+
+#textoMao_direita {
+  white-space: nowrap;
+  top: 53vw;
+  right: 37vw;
+  font-size: 4vw; }
+
+#textoJoelho_esquerdo {
+  white-space: nowrap;
+  top: 74vw;
+  right: -22vw;
+  font-size: 4vw; }
+
+#textoJoelho_direito {
+  white-space: nowrap;
+  top: 74vw;
+  right: 30vw;
+  font-size: 4vw; }
+
+#textoTornozelo_esquerdo {
+  white-space: nowrap;
+  top: 90vw;
+  right: -25vw;
+  font-size: 4vw; }
+
+#textoTornozelo_direito {
+  white-space: nowrap;
+  top: 90vw;
+  right: 28vw;
+  font-size: 4vw; }
+
+#texto-body-baixo {
+  margin-left: 200px;
+  font-size: 30px;
+  color: #58276A;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.caixa-texto-body {
+  width: 100%;
+  overflow: hidden;
+  font-size: 50px;
+  padding: 8px 0;
+  margin: 30px 0;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #000000; }
+
+.caixa-texto-body input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 30px;
+  color: #58276A; }
 
 /*# sourceMappingURL=style.css.map */
