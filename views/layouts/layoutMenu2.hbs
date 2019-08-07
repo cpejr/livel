@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    {{{_sections.stylesheets}}}
+  </head>
+  <body>
+
+    <div class="background-menuBar">
+      <div class="row nav-menu">
+      </div>
+
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-3">
+          <img class="userimg" src={{foto_perfil}}></img>
+        </div>
+        <div>
+          <div class = "nomePerfil2">
+            <b>{{nome_perfil}}</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{{ body }}}
+  </body>
+</html>

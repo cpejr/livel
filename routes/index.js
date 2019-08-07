@@ -86,4 +86,9 @@ router.get('/profile', function(req,res, next){
 router.get('/body', function(req,res, next){
   res.render('body', {title: 'body', foto_perfil, aluno_treinos, layout: 'layoutMenuBars'})
 });
+
+router.get('/rewards', auth.isAuthenticated, function(req, res, next) {
+  res.render('rewards', { title: 'Rewards', foto_perfil, nome_perfil, layout: 'layoutMenu2' });
+});
+
 module.exports = router;
