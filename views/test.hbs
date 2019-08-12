@@ -4,8 +4,9 @@
 <script src="/jquery/jquery.js"></script>
 </meta>
 <h1><time>00:00</time></h1>
-<button id="start">start</button>
-<button id="stop">stop</button>
+
+<button id="atividade">start</button>
+<button id="stoppp">stop</button>
 
 </html>
 <script>
@@ -32,10 +33,11 @@ timer();
 
 
 /* Start button */
-start.onclick = timer;
+atividade.onclick = timer;
 
 /* Stop button */
-stop.onclick = function() {
+stoppp.onclick = function() {
+
     clearTimeout(t);
 }
 // display = document.querySelector('#countdown');
