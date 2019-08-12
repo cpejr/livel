@@ -6425,7 +6425,7 @@ a {
 .userimg {
   border-radius: 50%;
   padding: 0px;
-  width: 60%;
+  width: 70%;
   height: 100%;
   border-style: solid;
   border-color: #EF7D00;
@@ -6460,7 +6460,7 @@ a {
   margin: 5% 0 0 0; }
 
 .modal-body {
-  height: 105vw; }
+  height: auto; }
 
 .modal-dialog {
   max-width: 890px; }
@@ -6557,7 +6557,7 @@ hr {
   font-weight: bold; }
 
 #Excentricabox {
-  top: 16vw;
+  top: 22vw;
   right: 54vw; }
 
 #Concentricabox {
@@ -6565,18 +6565,18 @@ hr {
   right: -5vw; }
 
 #Excentricatitle {
-  top: 19vw; }
+  top: 25vw; }
 
 #Concentricatitle {
   top: -17vw;
   right: -44vw; }
 
 .TextoTreino {
-  font-size: 2.5vw;
+  font-size: 3.3vw;
   color: #231F20; }
 
 #Excentricatext {
-  top: 19.5vw;
+  top: 25vw;
   right: -1.5vw; }
 
 #Concentricatext {
@@ -6966,9 +6966,14 @@ hr {
   height: 150px; }
 
 .nomePerfil {
-  font-size: 22px;
-  padding-top: 50px;
+  font-size: 29px;
+  padding-top: 55px;
   color: #632467; }
+
+.nomePerfil2 {
+  font-size: 35px;
+  padding-top: 60px;
+  color: #e69500; }
 
 .results {
   font-size: 4vw;
@@ -7223,6 +7228,38 @@ hr {
   top: -15vw;
   left: 30%;
   margin-top: 150px; }
+
+.trofeu {
+  text-align: center;
+  position: absolute;
+  top: 300px;
+  left: 150px;
+  width: 300px;
+  height: 300px; }
+
+.medalha10 {
+  text-align: center;
+  position: absolute;
+  top: 300px;
+  left: 550px;
+  width: 300px;
+  height: 300px; }
+
+.medalha8 {
+  text-align: center;
+  position: absolute;
+  top: 740px;
+  left: 150px;
+  width: 300px;
+  height: 300px; }
+
+.medalha6 {
+  text-align: center;
+  position: absolute;
+  top: 740px;
+  left: 550px;
+  width: 300px;
+  height: 300px; }
 
 #image-body {
   height: 100vw; }
