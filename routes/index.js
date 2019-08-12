@@ -67,10 +67,6 @@ router.get('/midTraining', function(req, res, next){
   res.render('midTraining', {title: 'Mid Training', layout: 'layoutMenu'})
 });
 
-router.get('/trainingFinish', function(req, res, next){
-  res.render('trainingFinish', {title: 'Training Finished!', layout: 'layoutMenu'})
-});
-
 router.get('/timeSchedule', function(req, res, next){
   res.render('timeSchedule', {title: 'Time Schedule', layout: 'layoutMenu'})
 });
@@ -89,6 +85,10 @@ router.get('/body', function(req,res, next){
 
 router.get('/rewards', auth.isAuthenticated, function(req, res, next) {
   res.render('rewards', { title: 'Rewards', foto_perfil, nome_perfil, layout: 'layoutMenu2' });
+});
+
+router.get('/test', auth.isAuthenticated, function(req, res, next) {
+  res.render('test', { title: 'test', foto_perfil, nome_perfil, layout: 'layoutMenu2' });
 });
 
 module.exports = router;
