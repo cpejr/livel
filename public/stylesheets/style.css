@@ -7486,4 +7486,10 @@ hr {
   font-size: 30px;
   color: #58276A; }
 
+#comeca, #para {
+  opacity: 1.0;
+  right: 70vw;
+  height: 10vw;
+  width: 10vw; }
+
 /*# sourceMappingURL=style.css.map */
