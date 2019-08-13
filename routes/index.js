@@ -80,7 +80,7 @@ router.get('/profile', function(req,res, next){
 });
 
 router.get('/body', function(req,res, next){
-  res.render('body', {title: 'body', foto_perfil, aluno_treinos, layout: 'layoutMenuBars'})
+  res.render('body', {title: 'body', foto_perfil, aluno_treinos, layout: 'layoutBody'})
 });
 
 router.get('/rewards', auth.isAuthenticated, function(req, res, next) {
