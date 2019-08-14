@@ -1,0 +1,89 @@
+<html>
+<div id="countdown"></div>
+<meta>
+<script src="/jquery/jquery.js"></script>
+</meta>
+<h1><time>00:00</time></h1>
+
+<button id="atividade">start</button>
+<button id="stoppp">stop</button>
+
+</html>
+<script>
+var h1 = document.getElementsByTagName('h1')[0],
+    start = document.getElementById('start'),
+    stop = document.getElementById('stop'),
+    clear = document.getElementById('clear'),
+    t,time=60*5;
+
+function add() {
+    time--;
+    minutes = parseInt(time / 60, 10);
+    seconds = parseInt(time % 60, 10);
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    h1.textContent = (minutes > 9 ? "0" + minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
+
+    timer();
+}
+function timer() {
+    t = setTimeout(add, 1000);
+}
+timer();
+
+
+/* Start button */
+atividade.onclick = timer;
+
+/* Stop button */
+stoppp.onclick = function() {
+
+    clearTimeout(t);
+}
+// display = document.querySelector('#countdown');
+//   var result,timet;
+//   var timeleft = 5*60;
+//   var downloadTimer = setInterval(function(){displaytimer()}, 1000);
+//   function displaytimer(){
+//     var rest,minutes,seconds;
+//     minutes = parseInt(timeleft / 60, 10);
+//     seconds = parseInt(timeleft % 60, 10);
+//     minutes = minutes < 10 ? "0" + minutes : minutes;
+//     seconds = seconds < 10 ? "0" + seconds : seconds;
+//
+//     display.textContent = minutes + ":" + seconds;
+//     timeleft -= 1;
+//     if(timeleft <= 0){
+//     clearInterval(downloadTimer);
+//       document.getElementById("countdown").innerHTML = "Finished"
+//     }
+//     return timeleft;
+//   };
+//
+// function pare(){
+//   clearInterval(downloadTimer);
+// };
+//
+// function resume(){
+//   var downloadTimert;
+//   timet=displaytimer();
+//   console.log(timet);
+//    downloadTimert = setTimeout(function(){resumetimer(timet)}, 1000);
+// };
+//
+// function resumetimer(time){
+//   var minutes1,seconds1;
+//   console.log(time);
+//   minutes1 = parseInt(time / 60, 10);
+//   seconds1 = parseInt(time % 60, 10);
+//   minutes1 = minutes1 < 10 ? "0" + minutes1 : minutes1;
+//   seconds1 = seconds1 < 10 ? "0" + seconds1 : seconds1;
+//   display.textContent = minutes1 + ":" + seconds1;
+//   time -= 1;
+//   if(time <= 0){
+//     clearInterval(downloadTimer);
+//     document.getElementById("countdown").innerHTML = "Finished"
+//   }
+// };
+
+</script>
