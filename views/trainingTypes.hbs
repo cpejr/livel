@@ -104,7 +104,17 @@
           <div class = "row">
               <div class = "col-1"></div>
               <div class = "col-4">
-                  <img height=200 src = "/images/Medalinha.png">
+                <img id="medalha" height=200></img>
+                <script type="text/javascript">
+                  if({{aluno_treinos.NumTreinosFaltam}}=='6')
+                    document.getElementById("medalha").src = "/images/Medalinha.png";
+                  else if({{aluno_treinos.NumTreinosFaltam}}=='8')
+                    document.getElementById("medalha").src = "/images/medalha8.png";
+                  else if({{aluno_treinos.NumTreinosFaltam}}=='10')
+                    document.getElementById("medalha").src = "/images/medalha10.png";
+                  else if({{aluno_treinos.NumTreinosFaltam}}=='12')
+                    document.getElementById("medalha").src = "/images/trofeu12.png";
+                </script>
               </div>
               <div class = "col-7" id = "texto-trainingTypes-2">
                   Faltam {{aluno_treinos.NumTreinosFaltam}} treinos para você ganhar {{aluno_treinos.PontosNext}} pontos
