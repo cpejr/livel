@@ -6685,11 +6685,12 @@ hr {
   font-weight: bold; }
 
 #texto-trainingTypes-1 {
-  font-size: 50px;
+  font-size: 35px;
   margin-top: 80px;
   margin-bottom: 20px;
   margin-left: 56px;
-  color: #632467; }
+  color: #632467;
+  font-weight: bold; }
 
 #texto-trainingTypes-2 {
   font-size: 25px;
