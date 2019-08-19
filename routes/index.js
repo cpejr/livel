@@ -88,7 +88,7 @@ router.get('/rewards', auth.isAuthenticated, function(req, res, next) {
 });
 
 router.get('/test', auth.isAuthenticated, function(req, res, next) {
-  res.render('test', { title: 'test', foto_perfil, nome_perfil, layout: 'layoutMenu2' });
+  res.render('test2', { title: 'test', foto_perfil, nome_perfil, layout: 'layoutMenu2' });
 });
 
 module.exports = router;

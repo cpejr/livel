@@ -1,0 +1,30 @@
+<head>
+<body>
+  <h1 id="title">???</h1>
+  <p><button id="my-button">Test</button></p>
+  <script>
+    var button = document.getElementById("my-button");
+    var title= document.getElementById('title');
+    var time =60*5;
+    var myInterval = -1,minutes,seconds;
+
+    button.addEventListener("click",function(event){
+      if (myInterval == -1){
+        myInterval = setInterval(function(){
+          time--;
+          minutes = parseInt(time / 60, 10);
+          seconds = parseInt(time % 60, 10);
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+          title.innerHTML = minutes + ":" + seconds;
+        },1000);
+      }
+      else{
+        clearInterval(myInterval);
+        myInterval = -1;
+      }
+    });
+
+  </script>
+</body>
+</head>
