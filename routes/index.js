@@ -63,8 +63,12 @@ router.get('/trainingTypes', auth.isAuthenticated, function(req, res, next){
   });
 });
 
-router.get('/midTraining', function(req, res, next){
-  res.render('midTraining', {title: 'Mid Training', layout: 'layoutMenu'})
+router.get('/midTrainingInferior', function(req, res, next){
+  res.render('midTrainingInferior', {title: 'Mid Training Inferior', foto_perfil, layout: 'layoutMenu'})
+});
+
+router.get('/midTrainingSuperior', function(req, res, next){
+  res.render('midTrainingSuperior', {title: 'Mid Training Superior', foto_perfil, layout: 'layoutMenu'})
 });
 
 router.get('/timeSchedule', function(req, res, next){
@@ -80,7 +84,7 @@ router.get('/profile', function(req,res, next){
 });
 
 router.get('/body', function(req,res, next){
-  res.render('body', {title: 'body', foto_perfil, aluno_treinos, layout: 'layoutMenuBars'})
+  res.render('body', {title: 'body', foto_perfil, aluno_treinos, layout: 'layoutBody'})
 });
 
 router.get('/rewards', auth.isAuthenticated, function(req, res, next) {
