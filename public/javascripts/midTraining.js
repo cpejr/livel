@@ -1,11 +1,11 @@
-var button = document.getElementById("my-button");
+var button = document.getElementById("button_play");
 var title= document.getElementById('atividade');
 var contseries= document.getElementById('series');
 var cronopausa= document.getElementById('pausa');
 var series= 1;
 var time =60*5,timepause=10;
-var myInterval = -1,minutes,seconds,my;
-
+var myInterval = -1,minutes,seconds;
+$( ".pause" ).css( "display","none" );
 
 button.addEventListener("click",function(event){
   if (myInterval == -1){
@@ -16,6 +16,8 @@ button.addEventListener("click",function(event){
       minutes = minutes < 10 ? "0" + minutes : minutes;
       seconds = seconds < 10 ? "0" + seconds : seconds;
       title.innerHTML = minutes + ":" + seconds;
+      $( ".pause" ).css( "display","block" );
+      $( ".play" ).css( "display","none" );
       if(time<=0){
         if(time==0){
           series++;
@@ -38,5 +40,7 @@ button.addEventListener("click",function(event){
   else{
     clearInterval(myInterval);
     myInterval = -1;
+    $( ".pause" ).css( "display","none" );
+    $( ".play" ).css( "display","block" );
   }
 });
