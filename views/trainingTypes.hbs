@@ -81,7 +81,6 @@
               {{treinos.CadeiaConcentrica}}
           </button>
       </div>
-      <p id="demo"></p>
   </div>
   <div class = "row marginTraining">
           <div class="col-md-12 text-center">
@@ -105,22 +104,11 @@
   <div class = "row">
       <div class = "col-1"></div>
       <div class = "col-5 treinoXvezes" id="teste">
-        <!-- <img id="0x"  src="/images/0-12.png" height=400 width=400/>
-        <img id="1x"  src="/images/1-12.png" height=400 width=400/>
-        <img id="2x"  src="/images/2-12.png" height=400 width=400/>
-        <img id="3x"  src="/images/3-12.png" height=400 width=400/>
-        <img id="4x"  src="/images/4-12.png" height=400 width=400/>
-        <img id="5x"  src="/images/5-12.png" height=400 width=400/>
-        <img id="6x"  src="/images/6-12.png" height=400 width=400/>
-        <img id="7x"  src="/images/7-12.png" height=400 width=400/>
-        <img id="8x"  src="/images/8-12.png" height=400 width=400/>
-        <img id="9x"  src="/images/9-12.png" height=400 width=400/>
-        <img id="10x"  src="/images/10-12.png" height=400 width=400/>
-        <img id="11x"  src="/images/11-12.png" height=400 width=400/>
-        <img id="12x"  src="/images/12-12.png" height=400 width=400/> -->
-
+        <div id="textodocirculo">você treinou </div>
+        <div id="numerotreino"></div>
+        <div id="numerotreinomaior10"></div>
+        <div id="numerotreinox">x</div>
       </div>
-      <!-- <div class = "col-2"></div> -->
       <div class = "col-4">
           <div class = "row">
               <div class = "col-1"></div>
@@ -154,7 +142,6 @@
 <script>
 var str1 = "{{treinos.Periodizacao}}";
 var treinofeitos="{{aluno_treinos.NumTreinosMes}}";
-console.log(treinofeitos);
 var str2 = "T";
 var n = str1.localeCompare(str2);
 if(n==0){
@@ -165,16 +152,58 @@ $( "#tipo" ).last().addClass( "btnboxRightUpperRadius3" );
 }
 switch(treinofeitos) {
   case '0':
-    console.log("entrOU");
     $( ".treinoXvezes" ).last().addClass( "zero" );
-    // document.getElementById("0x").style.display = "block";
-    // document.getElementById("1x").style.display = "none";
-    // document.getElementById("2x").style.display = "none";
-    // document.getElementById("3x").style.display = "none";
-    // $( "#treinoXvezes" ).prepend($('<img>',{id:'0x',src:"/images/0-12.png"}))
+    document.getElementById("numerotreino").innerHTML = "{{aluno_treinos.NumTreinosMes}}";
+    break;
+  case '1':
+    $( ".treinoXvezes" ).last().addClass( "um" );
+    document.getElementById("numerotreino").innerHTML = "{{aluno_treinos.NumTreinosMes}}";
+    break;
+  case '2':
+    $( ".treinoXvezes" ).last().addClass( "dois" );
+    document.getElementById("numerotreino").innerHTML = "{{aluno_treinos.NumTreinosMes}}";
+    break;
+  case '3':
+    $( ".treinoXvezes" ).last().addClass( "tres" );
+    document.getElementById("numerotreino").innerHTML = "{{aluno_treinos.NumTreinosMes}}";
+    break;
+  case '4':
+    $( ".treinoXvezes" ).last().addClass( "quatro" );
+    document.getElementById("numerotreino").innerHTML = "{{aluno_treinos.NumTreinosMes}}";
+    break;
+  case '5':
+    $( ".treinoXvezes" ).last().addClass( "cinco" );
+    document.getElementById("numerotreino").innerHTML = "{{aluno_treinos.NumTreinosMes}}";
+    break;
+  case '6':
+    $( ".treinoXvezes" ).last().addClass( "seis" );
+    document.getElementById("numerotreino").innerHTML = "{{aluno_treinos.NumTreinosMes}}";
+    break;
+  case '7':
+    $( ".treinoXvezes" ).last().addClass( "sete" );
+    document.getElementById("numerotreino").innerHTML = "{{aluno_treinos.NumTreinosMes}}";
+    break;
+  case '8':
+    $( ".treinoXvezes" ).last().addClass( "oito" );
+    document.getElementById("numerotreino").innerHTML = "{{aluno_treinos.NumTreinosMes}}";
+    break;
+  case '9':
+    $( ".treinoXvezes" ).last().addClass( "nove" );
+    document.getElementById("numerotreino").innerHTML = "{{aluno_treinos.NumTreinosMes}}";
+    break;
+  case '10':
+    $( ".treinoXvezes" ).last().addClass( "dez" );
+    document.getElementById("numerotreinomaior10").innerHTML = "{{aluno_treinos.NumTreinosMes}}";
+    break;
+  case '11':
+    $( ".treinoXvezes" ).last().addClass( "onze" );
+     document.getElementById("numerotreinomaior10").innerHTML = "{{aluno_treinos.NumTreinosMes}}";
+    break;
+  case '12':
+    $( ".treinoXvezes" ).last().addClass( "doze" );
+    document.getElementById("numerotreinomaior10").innerHTML = "{{aluno_treinos.NumTreinosMes}}";
     break;
   default:
-    console.log("entrEEEE");
 }
 </script>
 
