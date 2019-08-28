@@ -104,7 +104,7 @@
   </div>
   <div class = "row">
       <div class = "col-1"></div>
-      <div class = "col-3 treinoXvezes">
+      <div class = "col-5 treinoXvezes" id="teste">
         <!-- <img id="0x"  src="/images/0-12.png" height=400 width=400/>
         <img id="1x"  src="/images/1-12.png" height=400 width=400/>
         <img id="2x"  src="/images/2-12.png" height=400 width=400/>
@@ -120,8 +120,8 @@
         <img id="12x"  src="/images/12-12.png" height=400 width=400/> -->
 
       </div>
-      <div class = "col-2"></div>
-      <div class = "col-6">
+      <!-- <div class = "col-2"></div> -->
+      <div class = "col-4">
           <div class = "row">
               <div class = "col-1"></div>
               <div class = "col-4">
@@ -137,13 +137,14 @@
                     document.getElementById("medalha").src = "/images/trofeu12.png";
                 </script>
               </div>
-              <div class = "col-7" id = "texto-trainingTypes-2">
+              <!-- class = "col-12" -->
+              <div class="col-12" id = "texto-trainingTypes-2">
                   Faltam {{aluno_treinos.NumTreinosFaltam}} treinos para você ganhar {{aluno_treinos.PontosNext}} pontos
               </div>
           </div>
           <div class = "row">
               <div class = "col-1"></div>
-              <div class = "col-6" id = "texto-trainingTypes-3">
+              <div class = "col-15" id = "texto-trainingTypes-3">
                   {{aluno_treinos.FraseTreino}}
               </div>
           </div>
@@ -165,7 +166,7 @@ $( "#tipo" ).last().addClass( "btnboxRightUpperRadius3" );
 switch(treinofeitos) {
   case '0':
     console.log("entrOU");
-    $( ".treinoXvezes" ).addClass( "0x" );
+    $( ".treinoXvezes" ).last().addClass( "zero" );
     // document.getElementById("0x").style.display = "block";
     // document.getElementById("1x").style.display = "none";
     // document.getElementById("2x").style.display = "none";

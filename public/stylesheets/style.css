@@ -6687,13 +6687,14 @@ hr {
 
 #texto-trainingTypes-2 {
   font-size: 25px;
-  padding-top: 110px;
-  color: #A6A4A5; }
+  top: -70px;
+  left: 180px;
+  color: #A6A4A5;
+  padding-bottom: 30px; }
 
 #texto-trainingTypes-3 {
-  font-size: 32px;
-  padding-top: 80px;
-  margin-left: 10px;
+  font-size: 35px;
+  margin-left: 50px;
   color: #632467; }
 
 .time-title {
@@ -7516,9 +7517,10 @@ hr {
   margin-top: 50px;
   margin-left: 50px; }
 
-.0x {
-  height: 400px;
-  width: 400px;
+.zero {
+  margin: none;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
   background-image: url("/images/0-12.png"); }
 
 /*# sourceMappingURL=style.css.map */
