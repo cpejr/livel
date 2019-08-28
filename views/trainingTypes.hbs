@@ -104,8 +104,21 @@
   </div>
   <div class = "row">
       <div class = "col-1"></div>
-      <div class = "col-3">
-          <img width=450 height=450 src = "/images/TreinouVezes.png">
+      <div class = "col-3 treinoXvezes">
+        <!-- <img id="0x"  src="/images/0-12.png" height=400 width=400/>
+        <img id="1x"  src="/images/1-12.png" height=400 width=400/>
+        <img id="2x"  src="/images/2-12.png" height=400 width=400/>
+        <img id="3x"  src="/images/3-12.png" height=400 width=400/>
+        <img id="4x"  src="/images/4-12.png" height=400 width=400/>
+        <img id="5x"  src="/images/5-12.png" height=400 width=400/>
+        <img id="6x"  src="/images/6-12.png" height=400 width=400/>
+        <img id="7x"  src="/images/7-12.png" height=400 width=400/>
+        <img id="8x"  src="/images/8-12.png" height=400 width=400/>
+        <img id="9x"  src="/images/9-12.png" height=400 width=400/>
+        <img id="10x"  src="/images/10-12.png" height=400 width=400/>
+        <img id="11x"  src="/images/11-12.png" height=400 width=400/>
+        <img id="12x"  src="/images/12-12.png" height=400 width=400/> -->
+
       </div>
       <div class = "col-2"></div>
       <div class = "col-6">
@@ -139,6 +152,8 @@
 
 <script>
 var str1 = "{{treinos.Periodizacao}}";
+var treinofeitos="{{aluno_treinos.NumTreinosMes}}";
+console.log(treinofeitos);
 var str2 = "T";
 var n = str1.localeCompare(str2);
 if(n==0){
@@ -146,6 +161,19 @@ $( "#tipo" ).last().addClass( "btnboxRightUpperRadius1" );
 }
 else{
 $( "#tipo" ).last().addClass( "btnboxRightUpperRadius3" );
+}
+switch(treinofeitos) {
+  case '0':
+    console.log("entrOU");
+    $( ".treinoXvezes" ).addClass( "0x" );
+    // document.getElementById("0x").style.display = "block";
+    // document.getElementById("1x").style.display = "none";
+    // document.getElementById("2x").style.display = "none";
+    // document.getElementById("3x").style.display = "none";
+    // $( "#treinoXvezes" ).prepend($('<img>',{id:'0x',src:"/images/0-12.png"}))
+    break;
+  default:
+    console.log("entrEEEE");
 }
 </script>
 
