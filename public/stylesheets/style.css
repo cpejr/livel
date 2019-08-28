@@ -6431,6 +6431,15 @@ a {
   border-color: #EF7D00;
   border-width: 5px; }
 
+.userimg2 {
+  border-radius: 50%;
+  padding: 0px;
+  width: 70%;
+  height: 126%;
+  border-style: solid;
+  border-color: #EF7D00;
+  border-width: 5px; }
+
 .icon-menu {
   padding: 0px;
   width: 25%;
@@ -7275,8 +7284,8 @@ hr {
 
 .textoreward {
   float: right;
-  margin-top: 160px;
-  margin-left: 410px;
+  margin-top: 230px;
+  margin-right: 100px;
   color: #532166;
   font-size: 30px; }
 

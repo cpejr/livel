@@ -88,7 +88,14 @@ router.get('/body', function(req,res, next){
 });
 
 router.get('/rewards', auth.isAuthenticated, function(req, res, next) {
-  res.render('rewards', { title: 'Rewards', foto_perfil, nome_perfil, layout: 'layoutMenu2' });
+  Requisicao.treinoSemana().then((result)=>{
+      console.log(result);
+      var treinos = result.TREINO_SEMANA;
+        res.render('rewards', { title: 'Rewards', foto_perfil, nome_perfil, treinos, aluno_treinos, layout: 'layoutMenu2' });
+  }).catch((error)=>{
+    console.log(error);
+      res.render('rewards', { title: 'Rewards', foto_perfil, nome_perfil, treinos, aluno_treinos, layout: 'layoutMenu2' });
+  });
 });
 
 
