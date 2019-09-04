@@ -7749,4 +7749,22 @@ hr {
   width: 900px;
   height: 110px; }
 
+.userimg-coach {
+  border-radius: 50%;
+  margin: 5% 0 0 15%;
+  width: 80%;
+  height: 80%;
+  border-style: solid;
+  border-color: #632467;
+  border-width: 8px; }
+
+.nav-coach {
+  background-color: #632467;
+  padding: 13px 0px;
+  margin-bottom: 20px; }
+
+#menu-coach {
+  margin-top: 50px;
+  height: 20%; }
+
 /*# sourceMappingURL=style.css.map */
