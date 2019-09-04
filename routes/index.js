@@ -95,5 +95,8 @@ router.get('/rewards', auth.isAuthenticated, function(req, res, next) {
   });
 });
 
+router.get('/coach', function(req, res, next) {
+  res.render('coach', { title: 'coach' });
+});
 
 module.exports = router;
