@@ -84,10 +84,17 @@
   </div>
   <div class = "row marginTraining">
           <div class="col-md-12 text-center">
-              <button class="btntrainingchangeUP btn " onclick="location.href='/midTrainingSuperior'">TREINO SUPERIOR</button>
+            <!-- onclick="location.href='/timeSchedule'" -->
+              <button class="btntrainingchangeUP btn " >
+                TREINO SUPERIOR
+                <script>
+                  var value=1;
+                  window.location.pathname = "/timeSchedule";
+                </script>
+              </button>
           </div>
           <div class="col-md-12 text-center">
-              <button class="btntrainingchangeDOWN btn" onclick="location.href='/midTrainingInferior'">TREINO INFERIOR</button>
+              <button class="btntrainingchangeDOWN btn" onclick="location.href='/timeSchedule'">TREINO INFERIOR</button>
           </div>
           <div class="col-md-12 text-center">
               <button class="btntrainingchangeDOWN btn" onclick="location.href='/profile'">RESULTADO</button>

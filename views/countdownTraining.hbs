@@ -10,7 +10,6 @@
         SEU TREINO COMEÇA EM:
       </div>
       <div class="time-to-t" id="time-mid-box">
-        00:04:20
       </div>
     </div>
     <div class="countdown-bot-label">
@@ -22,14 +21,11 @@
   </div>
 </body>
 <script>
-var horario = new Date("Aug 19, 2019 20:47:20");
+var horario= new Date;
 // horario.setHours( horario.getHours() + 3 ); //acrescenta horas para fazer o countdown
-horario.setMonth( 8 );
-horario.setDate( 19 );
-horario.setFullYear(2019);
-horario.setHours( 15 ); //muda o hora
-horario.setMinutes( 30 );   //muda o minuto
-horario.setSeconds( 00 );
+horario.setHours( 10 ); //muda o hora
+horario.setMinutes( 20 );   //muda o minuto
+horario.setSeconds( 35 );
 
 
 var deadline = horario.getTime();
@@ -37,7 +33,6 @@ var deadline = horario.getTime();
   var acabou=0;
   var now = new Date().getTime();
   var t = deadline - now;
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
   var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
   var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((t % (1000 * 60)) / 1000);
@@ -48,6 +43,7 @@ var deadline = horario.getTime();
   if (t < 0) {
           clearInterval(x);
           acabou=1;
+          window.location.pathname = "/midTrainingSuperior";
           document.getElementById("demo").innerHTML = "";
           document.getElementById("time-mid-box").innerHTML =hours + ":" + minutes + ":" + seconds;
   }
