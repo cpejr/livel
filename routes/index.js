@@ -72,11 +72,11 @@ router.get('/timeScheduleSuperior', function(req, res, next){
 
 router.get('/timeScheduleInferior', function(req, res, next){
   req.session.tipoTreino= "Inferior";
-  res.render('timeSchedule', {title: 'Time Schedule', layout: 'layoutMenu'})
+  res.render('timeSchedule', {title: 'Time Schedule', foto_perfil, layout: 'layoutMenu'})
 });
 
 router.get('/countdownTraining', function(req, res, next){
-  res.render('countdownTraining', {title: 'Countdown Training', layout: 'layoutMenu'})
+  res.render('countdownTraining', {title: 'Countdown Training', foto_perfil, layout: 'layoutMenu'})
 });
 
 router.get('/profile', function(req,res, next){
