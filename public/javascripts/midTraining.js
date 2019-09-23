@@ -8,7 +8,7 @@ var myInterval = -1,minutes,seconds;
 $( ".pause" ).css( "display","none" );
 
 button.addEventListener("click",function(event){
-  if (myInterval == -1){
+  if ((myInterval == -1)){
     myInterval = setInterval(function(){
       time--;
       minutes = parseInt(time / 60, 10);
@@ -22,6 +22,10 @@ button.addEventListener("click",function(event){
         if(time==0){
           series++;
           timepause=10;
+          if(series==5){
+            clearInterval(myInterval);
+            cronopausa.innerHTML = "00:00";
+          }
         }
         contseries.innerHTML = series;
         title.innerHTML = "00:00";
