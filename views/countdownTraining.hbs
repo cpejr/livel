@@ -1,7 +1,7 @@
 <body>
   <div class="countdown-top-box">
     <div class="countdown-top-label">
-      TREINO INFERIOR
+      {{treinoTipo}}
     </div>
   </div>
   <div class="countdown-background">
@@ -23,8 +23,8 @@
 <script>
 var horario= new Date;
 // horario.setHours( horario.getHours() + 3 ); //acrescenta horas para fazer o countdown
-horario.setHours( 10 ); //muda o hora
-horario.setMinutes( 20 );   //muda o minuto
+horario.setHours( 8 ); //muda o hora
+horario.setMinutes( 35 );   //muda o minuto
 horario.setSeconds( 35 );
 
 
@@ -43,7 +43,7 @@ var deadline = horario.getTime();
   if (t < 0) {
           clearInterval(x);
           acabou=1;
-          window.location.pathname = "/midTrainingSuperior";
+          window.location.pathname = "/midTraining";
           document.getElementById("demo").innerHTML = "";
           document.getElementById("time-mid-box").innerHTML =hours + ":" + minutes + ":" + seconds;
   }
