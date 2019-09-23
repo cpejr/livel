@@ -84,10 +84,12 @@
   </div>
   <div class = "row marginTraining">
           <div class="col-md-12 text-center">
-              <button class="btntrainingchangeUP btn " onclick="location.href='/midTrainingSuperior'">TREINO SUPERIOR</button>
+              <button class="btntrainingchangeUP btn " onclick="location.href='/timeScheduleSuperior'">
+                TREINO SUPERIOR
+              </button>
           </div>
           <div class="col-md-12 text-center">
-              <button class="btntrainingchangeDOWN btn" onclick="location.href='/midTrainingInferior'">TREINO INFERIOR</button>
+              <button class="btntrainingchangeDOWN btn" onclick="location.href='/timeScheduleInferior'">TREINO INFERIOR</button>
           </div>
           <div class="col-md-12 text-center">
               <button class="btntrainingchangeDOWN btn" onclick="location.href='/profile'">RESULTADO</button>
@@ -141,8 +143,9 @@
 
 <script>
 var str1 = "{{treinos.Periodizacao}}";
-var treinofeitos="{{aluno_treinos.NumTreinosMes}}";
 var str2 = "T";
+// {{aluno_treinos.NumTreinosMes}}
+var treinofeitos="0";
 var n = str1.localeCompare(str2);
 if(n==0){
 $( "#tipo" ).last().addClass( "btnboxRightUpperRadius1" );
@@ -152,7 +155,7 @@ $( "#tipo" ).last().addClass( "btnboxRightUpperRadius3" );
 }
 switch(treinofeitos) {
   case '0':
-    $( ".treinoXvezes" ).last().addClass( "zero" );
+    $( ".treinoXvezes" ).last().addClass( "zeroo" );
     document.getElementById("numerotreino").innerHTML = "{{aluno_treinos.NumTreinosMes}}";
     break;
   case '1':
