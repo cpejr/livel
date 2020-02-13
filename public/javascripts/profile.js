@@ -1,6 +1,7 @@
-var mes,mesanterior,mesAbreviado,mesanteriorAbreviado;
+var mes,mesanterior,mesAbreviado,mesanteriorAbreviado,anomesatual,anomesanterior;
+data = new Date();
 
-switch (new Date().getMonth()) {
+switch (data.getMonth()) {
   case 0:
     mesanterior="Dezembro";
     mes = "Janeiro";
@@ -534,3 +535,21 @@ Chart.elements.Rectangle.prototype.draw = function() {
         ctx.stroke();
     }
 };
+
+
+
+anomesatual = data.getFullYear();
+anomesanterior =data.getFullYear();
+textanomesatual = anomesatual;
+textanomesanterior = anomesanterior;
+var anomesresult =data.getFullYear();
+textanomesresult = anomesresult;
+
+if (data.getMonth()=='0'){
+  anomesanterior =(data.getFullYear()-1);
+  textanomesanterior = anomesanterior;
+}
+else{
+anomesanterior =(data.getFullYear());
+textanomesanterior = anomesanterior;
+}
