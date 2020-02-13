@@ -6893,6 +6893,7 @@ hr {
   color: #E6E6E6;
   padding: 1rem 0.7rem;
   margin: 0.8vh 0;
+  font-size: 20px;
   font-weight: 600;
   border-radius: 10px;
   position: absolute;
@@ -6901,9 +6902,6 @@ hr {
   width: 40%;
   margin-left: -100px;
   margin-top: 15%; }
-
-#texts {
-  font-size: 20px; }
 
 .btn-mid-training-exit {
   background-color: #AC4B31;
