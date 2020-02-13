@@ -1,5 +1,18 @@
+<body>
+
+<meta>
+    <script src="/jquery/jquery.js"></script>
+    <script src="/javascripts/rewards.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+</meta>
+
 <div class="trofeu">
-  <img src="/images/trofeu12.png" style="width:230px">
+  <script>
+    if (count>=12){
+      document.write("<img src='/images/trof12full.png' style='width:230px' alt='image'>")
+    } else {
+      document.write("<img src='/images/trof12trans.png' style='width:230px' alt='image'>")}
+  </script>
   <br>
   <br>
   <font size="5">
@@ -10,7 +23,12 @@
 </div>
 
 <div class="medalha10">
-  <img src="/images/medalha10.png" style="width:200px">
+  <script>
+    if (count>=10){
+      document.write("<img src='/images/trof10full.png' style='width:230px' alt='image'>")
+    } else {
+      document.write("<img src='/images/trof10trans.png' style='width:230px' alt='image'>")}
+  </script>
   <br>
   <br>
   <font size="5">
@@ -21,7 +39,12 @@
 </div>
 
 <div class="medalha8">
-  <img src="/images/medalha8.png" style="width:200px">
+  <script>
+    if (count>=8){
+      document.write("<img src='/images/trof8full.png' style='width:230px' alt='image'>")
+    } else {
+      document.write("<img src='/images/trof8trans.png' style='width:230px' alt='image'>")}
+  </script>
   <br>
   <br>
   <font size="5">
@@ -32,7 +55,12 @@
   </div>
 
 <div class="medalha6">
-  <img src="/images/medalha6.png" style="width:200px">
+  <script>
+    if (count>=6){
+      document.write("<img src='/images/trof6full.png' style='width:230px' alt='image'>")
+    } else {
+      document.write("<img src='/images/trof6trans.png' style='width:230px' alt='image'>")}
+  </script>
   <br>
   <br>
   <font size="5">
@@ -41,6 +69,10 @@
   <b>Ganhe 20 Livel Pontos</b>
   </font>
 </div>
+
+<script>
+
+</script>
 
 <div class="rodape">
 <div class="gradback2">
@@ -59,3 +91,4 @@ Você possui um total de <b>{{aluno_treinos.PontosLivel}}</b> pontos
 
 </div>
 </div>
+</body>
