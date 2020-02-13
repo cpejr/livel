@@ -1,210 +1,253 @@
 <html>
+
 <body>
-<head>
-  <script src="/jquery/jquery.js"></script>
-  <script src="/bootstrap/js/bootstrap.min.js"></script>
-  <script src="/javascripts/package/dist/Chart.js"></script>
-	<script src="/javascripts/data-label/chartjs-plugin-datalabels.js"></script>
-</head>
-  <div class = "inicial-margin"></div>
-    <div id="texto-ano-profile">
-      <p class="caixa-ano text-center"> 2018</p>
-    </div>
-  <nav>
-  <div class="row nav nav-tabs" id="nav-tab" role="tablist">
-    <a class="nav-item nav-link col" id="nav-MesAnterior-tab" data-toggle="tab" href="#nav-MesAnterior" role="tab" aria-controls="nav-MesAnterior"><p id="MesAnterior"></p></a>
-    <a class="nav-item nav-link col" id="nav-MesAtual-tab" data-toggle="tab" href="#nav-MesAtual" role="tab" aria-controls="nav-MesAtual"><p id="MesAtual"></p></a>
-    <a class="nav-item nav-link active col" id="nav-results-tab" data-toggle="tab" href="#nav-results" role="tab" aria-controls="nav-results"><p  id="Resultados">RESULTADOS</p></a>
-  </div>
-  </nav>
+
+  <head>
+    <script src="/jquery/jquery.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/javascripts/package/dist/Chart.js"></script>
+    <script src="/javascripts/data-label/chartjs-plugin-datalabels.js"></script>
+  </head>
+ {{!-- ano --}}
 <div class="tab-content" id="nav-tabContent">
-  <div class="tab-pane fade show active" id="nav-MesAnterior" role="tabpanel" aria-labelledby="nav-MesAnterior-tab">
-    <div class="container col mx-auto text-center">
-      <img  class="img-responsive" id ="image-corpo" src="/images/corpo1.jpg" height="580">
-      <label class="texto">{{aluno_resultados.ResultadoMedidaPescoco}}</label>
-    </div>
-      <div class="row">
-        <div class="container col-8">
-          <img  class="img-responsive" id ="image-corpo" src="/images/score.jpg" height="600" width="750">
-        </div>
-        <div class="row col-12 justify-content-center" id="texto-sair">SAIR</div>
+    <div class="tab-pane fade" id="nav-MesAnterior" role="tabpanel" aria-labelledby="nav-MesAnterior-tab">
+      <div class="inicial-margin"></div>
+      <div id="texto-ano-profile">
+        <p class="caixa-ano text-center" id="AnoMesAnterior"> </p>
       </div>
-  </div>
-  <div class="tab-pane fade" id="nav-MesAtual" role="tabpanel" aria-labelledby="nav-MesAtual-tab">
-    <div class="container col mx-auto text-center">
-      <img  class="img-responsive" id ="image-corpo" src="/images/corpo1.jpg" height="580">
-      <label class="texto">{{aluno_resultados.ResultadoMedidaPescoco}}</label>
     </div>
-      <div class="row">
-        <div class="container col-8">
-          <img  class="img-responsive" id ="image-corpo" src="/images/score.jpg" height="600" width="750">
-        </div>
-        <div class="row col-12 justify-content-center" id="texto-sair">SAIR</div>
+
+    <div class="tab-pane fade" id="nav-MesAtual" role="tabpanel" aria-labelledby="nav-MesAtual-tab">
+      <div class="inicial-margin"></div>
+      <div id="texto-ano-profile">
+        <p class="caixa-ano text-center" id="AnoMesAtual"> </p>
       </div>
-  </div>
+    </div>
+
+
     <div class="tab-pane fade row gradback" id="nav-results" role="tabpanel" aria-labelledby="nav-results-tab">
-      <div class="container">
-      <div class="row results">
-      <div class="col" id="Forca">
-        <svg class="posicaoCirculos">
-          <circle id="circuloForcaNegativo" />
-          <circle id="circuloForcaPositivo" />
-          <div id="porcentagemForcaPositivo"></div>
-          <div id="porcentagemForcaNegativo"></div>
-        </svg>
-        <canvas id="grafForca" height="330"></canvas>
-        FORÇA
-        <div id="TextoForca">
-          = Abdominal + Flexão + Barra
-        </div>
-      </div>
-      <div class="col" id="Cardio">
-        <svg class="posicaoCirculos">
-          <circle id="circuloCardioNegativo" />
-          <circle id="circuloCardioPositivo" />
-          <div id="porcentagemCardioPositivo"></div>
-          <div id="porcentagemCardioNegativo"></div>
-        </svg>
-        <canvas id="grafCardio" height="330"></canvas>
-        CARDIO
-        <div id="TextoCardio">
-          Corrida / Caminhada
-        </div>
-      </div>
-      <div class="w-100"></div>
-      <div class="col" id="Peso">
-        <svg class="posicaoCirculos">
-          <circle id="circuloPesoNegativo" />
-          <circle id="circuloPesoPositivo" />
-          <div id="porcentagemPesoPositivo"></div>
-          <div id="porcentagemPesoNegativo"></div>
-        </svg>
-        <canvas id="grafPeso" height="330"></canvas>
-        PESO
-      </div>
-      <div class="col" id="Gordura">
-        <svg class="posicaoCirculos">
-          <circle id="circuloGorduraNegativo" />
-          <circle id="circuloGorduraPositivo" />
-          <div id="porcentagemGorduraPositivo"></div>
-          <div id="porcentagemGorduraNegativo"></div>
-        </svg>
-        <canvas id="grafGordura" height="330"></canvas>
-        % Gordura
-      </div>
+      <div class="inicial-margin"></div>
+      <div id="texto-ano-profile">
+
       </div>
     </div>
-    <div class="row col justify-content-center" id="texto-sair-result">SAIR</div>
+  </div>
+ {{!-- final ano --}}
+ {{!-- navbar --}}
+  <nav>
+    <div class="row nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link col" id="nav-MesAnterior-tab" data-toggle="tab" href="#nav-MesAnterior" role="tab"
+        aria-controls="nav-MesAnterior" >
+        <p id="MesAnterior"></p>
+      
+      </a>
+      <a class="nav-item nav-link col" id="nav-MesAtual-tab" data-toggle="tab" href="#nav-MesAtual" role="tab"
+        aria-controls="nav-MesAtual">
+        <p id="MesAtual"></p>
+        
+      </a>
+      <a class="nav-item nav-link active col" id="nav-results-tab" data-toggle="tab" href="#nav-results" role="tab"
+        aria-controls="nav-results">
+        <p id="Resultados">RESULTADOS</p>
+      </a>
+    </div>
+  </nav>
+  {{!-- fim navbar --}}
+  {{!--  corpo 1--}}
+    <div class="tab-content" id="nav-tabContent">
+     <div class="tab-pane fade show active" id="nav-results" role="tabpanel" aria-labelledby="nav-results-tab">
+      <div class="container">
+        <div class="row results">
+          <div class="col" id="Forca">
+            <svg class="posicaoCirculos">
+              <circle id="circuloForcaNegativo" />
+              <circle id="circuloForcaPositivo" />
+              <div id="porcentagemForcaPositivo"></div>
+              <div id="porcentagemForcaNegativo"></div>
+            </svg>
+            <canvas id="grafForca" height="330"></canvas>
+            FORÇA
+            <div id="TextoForca">
+              = Abdominal + Flexão + Barra
+            </div>
+          </div>
+          <div class="col" id="Cardio">
+            <svg class="posicaoCirculos">
+              <circle id="circuloCardioNegativo" />
+              <circle id="circuloCardioPositivo" />
+              <div id="porcentagemCardioPositivo"></div>
+              <div id="porcentagemCardioNegativo"></div>
+            </svg>
+            <canvas id="grafCardio" height="330"></canvas>
+            CARDIO
+            <div id="TextoCardio">
+              Corrida / Caminhada
+            </div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col" id="Peso">
+            <svg class="posicaoCirculos">
+              <circle id="circuloPesoNegativo" />
+              <circle id="circuloPesoPositivo" />
+              <div id="porcentagemPesoPositivo"></div>
+              <div id="porcentagemPesoNegativo"></div>
+            </svg>
+            <canvas id="grafPeso" height="330"></canvas>
+            PESO
+          </div>
+          <div class="col" id="Gordura">
+            <svg class="posicaoCirculos">
+              <circle id="circuloGorduraNegativo" />
+              <circle id="circuloGorduraPositivo" />
+              <div id="porcentagemGorduraPositivo"></div>
+              <div id="porcentagemGorduraNegativo"></div>
+            </svg>
+            <canvas id="grafGordura" height="330"></canvas>
+            % Gordura
+          </div>
+        </div>
+      </div>
+      <div class="row col justify-content-center" id="texto-sair-result">SAIR</div>
+    </div>
+    {{!-- corpo1 final --}}
+    {{!-- corpo2 --}}
+    <div class="tab-pane fade row gradback" id="nav-MesAnterior" role="tabpanel" aria-labelledby="nav-MesAnterior-tab">
+      <div class="container col mx-auto text-center">
+        <img class="img-responsive" id="image-corpo" src="/images/corpo1.jpg" height="580">
+        <label class="texto">{{aluno_resultados.ResultadoMedidaPescoco}}</label>
+      </div>
+      <div class="row">
+        <div class="container col-8">
+          <img class="img-responsive" id="image-corpo" src="/images/score.jpg" height="600" width="750">
+        </div>
+        <div class="row col-12 justify-content-center" id="texto-sair">SAIR</div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-MesAtual" role="tabpanel" aria-labelledby="nav-MesAtual-tab">
+      <div class="container col mx-auto text-center">
+        <img class="img-responsive" id="image-corpo" src="/images/corpo1.jpg" height="580">
+        <label class="texto">{{aluno_resultados.ResultadoMedidaPescoco}}</label>
+      </div>
+      <div class="row">
+        <div class="container col-8">
+          <img class="img-responsive" id="image-corpo" src="/images/score.jpg" height="600" width="750">
+        </div>
+        <div class="row col-12 justify-content-center" id="texto-sair">SAIR</div>
+      </div>
     </div>
 </div>
 
-<script src="/javascripts/profile.js"></script>
-<script>
-document.getElementById("MesAtual").innerHTML = mes.toUpperCase();
-document.getElementById("MesAnterior").innerHTML = mesanterior.toUpperCase();
-var porcentagemForca,porcentagemCardio,porcentagemPeso,porcentagemPeso;
-data1Forca=100;
-data2Forca=105;
-data1Cardio=1500;
-data2Cardio=2000;
-data1Peso=80;
-data2Peso=76;
-data1Gordura=13;
-data2Gordura=13.5;
-function porcentoForca(data1,data2){
-  var result,z;
-  z=(data2/data1);
-  if((z>1)||z==1){
-    result= z-1;
-    document.getElementById("porcentagemForcaPositivo").innerHTML = '+' + result.toFixed(2)*100+ '%';
-    document.getElementById("circuloForcaPositivo").style.display = "block";
-    document.getElementById("porcentagemForcaPositivo").style.display = "block";
-    document.getElementById("porcentagemForcaNegativo").style.display = "none";
-    document.getElementById("circuloForcaNegativo").style.display = "none";
-    document.getElementById("circuloForcaPositivo").style.position = "relative";
-  }
-  else{
-    result= 1-z;
-    document.getElementById("porcentagemForcaNegativo").innerHTML = '-' + result.toFixed(2)*100 + '%';
-    document.getElementById("porcentagemForcaNegativo").style.display = "block";
-    document.getElementById("circuloForcaNegativo").style.display = "block";
-    document.getElementById("porcentagemForcaPositivo").style.display = "none";
-    document.getElementById("circuloForcaPositivo").style.display = "none";
-    document.getElementById("circuloForcaNegativo").style.position = "relative";
-  }
-}
-function porcentoCardio(data1,data2){
-  var result,z;
-  z=(data2/data1);
-  if((z>1)||z==1){
-    result= z-1;
-    document.getElementById("porcentagemCardioPositivo").innerHTML = '+' + result.toFixed(2)*100+ '%';
-    document.getElementById("circuloCardioPositivo").style.display = "block";
-    document.getElementById("porcentagemCardioPositivo").style.display = "block";
-    document.getElementById("porcentagemCardioNegativo").style.display = "none";
-    document.getElementById("circuloCardioNegativo").style.display = "none";
-    document.getElementById("circuloCardioPositivo").style.position = "relative";
-  }
-  else{
-    result= 1-z;
-    document.getElementById("porcentagemCardioNegativo").innerHTML = '-' + result.toFixed(2)*100 + '%';
-    document.getElementById("porcentagemCardioNegativo").style.display = "block";
-    document.getElementById("circuloCardioNegativo").style.display = "block";
-    document.getElementById("porcentagemCardioPositivo").style.display = "none";
-    document.getElementById("circuloCardioPositivo").style.display = "none";
-    document.getElementById("circuloCardioNegativo").style.position = "relative";
-  }
-}
-function porcentoPeso(data1,data2){
-  var result,z;
-  z=(data2/data1);
-  if((z>1)||z==1){
-    result= z-1;
-    document.getElementById("porcentagemPesoPositivo").innerHTML = '+' + result.toFixed(2)*100+ '%';
-    document.getElementById("circuloPesoPositivo").style.display = "block";
-    document.getElementById("porcentagemPesoPositivo").style.display = "block";
-    document.getElementById("porcentagemPesoNegativo").style.display = "none";
-    document.getElementById("circuloPesoNegativo").style.display = "none";
-    document.getElementById("circuloPesoPositivo").style.position = "relative";
-  }
-  else{
-    result= 1-z;
-    document.getElementById("porcentagemPesoNegativo").innerHTML = '-' + result.toFixed(2)*100 + '%';
-    document.getElementById("porcentagemPesoNegativo").style.display = "block";
-    document.getElementById("circuloPesoNegativo").style.display = "block";
-    document.getElementById("porcentagemPesoPositivo").style.display = "none";
-    document.getElementById("circuloPesoPositivo").style.display = "none";
-    document.getElementById("circuloPesoNegativo").style.position = "relative";
-  }
-}
-function porcentoGordura(data1,data2){
-  var result,z;
-  z=(data2/data1);
-  if((z>1)||z==1){
-    result= z-1;
-    document.getElementById("porcentagemGorduraPositivo").innerHTML = '+' + result.toFixed(2)*100+ '%';
-    document.getElementById("circuloGorduraPositivo").style.display = "block";
-    document.getElementById("porcentagemGorduraPositivo").style.display = "block";
-    document.getElementById("porcentagemGorduraNegativo").style.display = "none";
-    document.getElementById("circuloGorduraNegativo").style.display = "none";
-    document.getElementById("circuloGorduraPositivo").style.position = "relative";
-  }
-  else{
-    result= 1-z;
-    document.getElementById("porcentagemGorduraNegativo").innerHTML = '-' + result.toFixed(2)*100 + '%';
-    document.getElementById("porcentagemGorduraNegativo").style.display = "block";
-    document.getElementById("circuloGorduraNegativo").style.display = "block";
-    document.getElementById("porcentagemGorduraPositivo").style.display = "none";
-    document.getElementById("circuloGorduraPositivo").style.display = "none";
-    document.getElementById("circuloGorduraNegativo").style.position = "relative";
-  }
-}
 
-porcentagemForca= porcentoForca(data1Forca,data2Forca);
-porcentagemCardio= porcentoCardio(data1Cardio,data2Cardio);
-porcentagemPeso= porcentoPeso(data1Peso,data2Peso);
-porcentagemGordura= porcentoGordura(data1Gordura,data2Gordura);
-</script>
+  <script src="/javascripts/profile.js"></script>
+  <script>
+    document.getElementById("MesAtual").innerHTML = mes.toUpperCase();
+    document.getElementById("MesAnterior").innerHTML = mesanterior.toUpperCase();
+    document.getElementById("AnoMesAtual").innerHTML = textanomesatual;
+    document.getElementById("AnoMesAnterior").innerHTML = textanomesanterior;
+    document.getElementById("AnoMesResult").innerHTML = textanomesresult;
+    var porcentagemForca, porcentagemCardio, porcentagemPeso, porcentagemPeso;
+    data1Forca = 100;
+    data2Forca = 105;
+    data1Cardio = 1500;
+    data2Cardio = 2000;
+    data1Peso = 80;
+    data2Peso = 76;
+    data1Gordura = 13;
+    data2Gordura = 13.5;
+    function porcentoForca(data1, data2) {
+      var result, z;
+      z = (data2 / data1);
+      if ((z > 1) || z == 1) {
+        result = z - 1;
+        document.getElementById("porcentagemForcaPositivo").innerHTML = '+' + result.toFixed(2) * 100 + '%';
+        document.getElementById("circuloForcaPositivo").style.display = "block";
+        document.getElementById("porcentagemForcaPositivo").style.display = "block";
+        document.getElementById("porcentagemForcaNegativo").style.display = "none";
+        document.getElementById("circuloForcaNegativo").style.display = "none";
+        document.getElementById("circuloForcaPositivo").style.position = "relative";
+      }
+      else {
+        result = 1 - z;
+        document.getElementById("porcentagemForcaNegativo").innerHTML = '-' + result.toFixed(2) * 100 + '%';
+        document.getElementById("porcentagemForcaNegativo").style.display = "block";
+        document.getElementById("circuloForcaNegativo").style.display = "block";
+        document.getElementById("porcentagemForcaPositivo").style.display = "none";
+        document.getElementById("circuloForcaPositivo").style.display = "none";
+        document.getElementById("circuloForcaNegativo").style.position = "relative";
+      }
+    }
+    function porcentoCardio(data1, data2) {
+      var result, z;
+      z = (data2 / data1);
+      if ((z > 1) || z == 1) {
+        result = z - 1;
+        document.getElementById("porcentagemCardioPositivo").innerHTML = '+' + result.toFixed(2) * 100 + '%';
+        document.getElementById("circuloCardioPositivo").style.display = "block";
+        document.getElementById("porcentagemCardioPositivo").style.display = "block";
+        document.getElementById("porcentagemCardioNegativo").style.display = "none";
+        document.getElementById("circuloCardioNegativo").style.display = "none";
+        document.getElementById("circuloCardioPositivo").style.position = "relative";
+      }
+      else {
+        result = 1 - z;
+        document.getElementById("porcentagemCardioNegativo").innerHTML = '-' + result.toFixed(2) * 100 + '%';
+        document.getElementById("porcentagemCardioNegativo").style.display = "block";
+        document.getElementById("circuloCardioNegativo").style.display = "block";
+        document.getElementById("porcentagemCardioPositivo").style.display = "none";
+        document.getElementById("circuloCardioPositivo").style.display = "none";
+        document.getElementById("circuloCardioNegativo").style.position = "relative";
+      }
+    }
+    function porcentoPeso(data1, data2) {
+      var result, z;
+      z = (data2 / data1);
+      if ((z > 1) || z == 1) {
+        result = z - 1;
+        document.getElementById("porcentagemPesoPositivo").innerHTML = '+' + result.toFixed(2) * 100 + '%';
+        document.getElementById("circuloPesoPositivo").style.display = "block";
+        document.getElementById("porcentagemPesoPositivo").style.display = "block";
+        document.getElementById("porcentagemPesoNegativo").style.display = "none";
+        document.getElementById("circuloPesoNegativo").style.display = "none";
+        document.getElementById("circuloPesoPositivo").style.position = "relative";
+      }
+      else {
+        result = 1 - z;
+        document.getElementById("porcentagemPesoNegativo").innerHTML = '-' + result.toFixed(2) * 100 + '%';
+        document.getElementById("porcentagemPesoNegativo").style.display = "block";
+        document.getElementById("circuloPesoNegativo").style.display = "block";
+        document.getElementById("porcentagemPesoPositivo").style.display = "none";
+        document.getElementById("circuloPesoPositivo").style.display = "none";
+        document.getElementById("circuloPesoNegativo").style.position = "relative";
+      }
+    }
+    function porcentoGordura(data1, data2) {
+      var result, z;
+      z = (data2 / data1);
+      if ((z > 1) || z == 1) {
+        result = z - 1;
+        document.getElementById("porcentagemGorduraPositivo").innerHTML = '+' + result.toFixed(2) * 100 + '%';
+        document.getElementById("circuloGorduraPositivo").style.display = "block";
+        document.getElementById("porcentagemGorduraPositivo").style.display = "block";
+        document.getElementById("porcentagemGorduraNegativo").style.display = "none";
+        document.getElementById("circuloGorduraNegativo").style.display = "none";
+        document.getElementById("circuloGorduraPositivo").style.position = "relative";
+      }
+      else {
+        result = 1 - z;
+        document.getElementById("porcentagemGorduraNegativo").innerHTML = '-' + result.toFixed(2) * 100 + '%';
+        document.getElementById("porcentagemGorduraNegativo").style.display = "block";
+        document.getElementById("circuloGorduraNegativo").style.display = "block";
+        document.getElementById("porcentagemGorduraPositivo").style.display = "none";
+        document.getElementById("circuloGorduraPositivo").style.display = "none";
+        document.getElementById("circuloGorduraNegativo").style.position = "relative";
+      }
+    }
+    porcentagemForca = porcentoForca(data1Forca, data2Forca);
+    porcentagemCardio = porcentoCardio(data1Cardio, data2Cardio);
+    porcentagemPeso = porcentoPeso(data1Peso, data2Peso);
+    porcentagemGordura = porcentoGordura(data1Gordura, data2Gordura);
+  </script>
 
 </body>
+
 </html>
