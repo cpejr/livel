@@ -175,23 +175,28 @@
 
         <div class = "training-mid-spot">
             <div class="col-md-12 text-center">
-                    <button class="btn-mid-training-exit btn btn-primary" data-toggle="modal" data-target="#exitBox">SAIR</button>
+                    <button class="btn-mid-training-exit btn btn-primary" data-toggle="modal" data-target="#exitBox" >SAIR</button>
             </div>
         </div>
         <div class="modal fade"  id="exitBox" tabindex="-1" role="dialog" aria-hidden="true">
            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class = "backgroundcolor-exitbox">               
                 <div class="modal-content">
-                     <h4 class="exit-box-title"> Tem certeza que deseja sair? </h4>
+                    
+                     <div class="exit-box-title"> 
+                         TEM CERTEZA QUE DESEJA SAIR? 
+                     </div>
                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <div class="fundo"></div>
                         <span aria-hidden="true">×</span>
                      </button>
                      <div class="exit-box-text">
-                        <h3>Seu treino não será contabilizado caso saia. Caso tenha terminado, clique em finalizar</h3>
+                        Seu treino não será contabilizado. Caso queira salvar suas informações, clique em finalizar.
                      </div>
                      <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" onclick="location.href='/trainingTypes'">Sair</button>
+                        <button type="button" class="btn-modal-sair btn btn-primary" onclick="location.href='/trainingTypes'" style="width:75px;height:45px;">Sair</button>
                      </div>
+                    </div>
                 </div>                
             </div>
         </div>
