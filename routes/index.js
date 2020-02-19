@@ -49,6 +49,10 @@ router.get('/loginPassword', function(req, res, next) {
   res.render('loginPassword', { title: 'Password' });
 });
 
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'LIVEL' });
+});
+
 router.get('/trainingTypes', auth.isAuthenticated, function(req, res, next){
   Requisicao.treinoSemana().then((result)=>{
       console.log(result);
