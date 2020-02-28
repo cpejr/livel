@@ -107,4 +107,8 @@ router.get('/coach', function(req, res, next) {
   res.render('coach', { title: 'coach', foto_perfil, nome_perfil, layout: 'layoutCoach' });
 });
 
+router.get('/coachAvaliation', function(req, res, next) {
+  res.render('coachAvaliation', { title: 'coachAvaliation', foto_perfil, nome_perfil, layout: 'layoutCoach' });
+});
+
 module.exports = router;
