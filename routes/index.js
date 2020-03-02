@@ -70,17 +70,17 @@ router.get('/midTraining', auth.isAuthenticated, function(req, res, next){
 
 router.get('/timeScheduleSuperior', auth.isAuthenticated, function(req, res, next){
   req.session.tipoTreino= "Superior";
-  res.render('timeSchedule', {title: 'Time Schedule', foto_perfil, layout: 'layoutMenu'})
+  res.render('timeSchedule', {title: 'Time Schedule', foto_perfil, nome_perfil, layout: 'layoutMenu'})
 });
 
 
 router.get('/timeScheduleInferior', auth.isAuthenticated, function(req, res, next){
   req.session.tipoTreino= "Inferior";
-  res.render('timeSchedule', {title: 'Time Schedule', foto_perfil, layout: 'layoutMenu'})
+  res.render('timeSchedule', {title: 'Time Schedule', foto_perfil, nome_perfil, layout: 'layoutMenu'})
 });
 
 router.get('/countdownTraining', auth.isAuthenticated, function(req, res, next){
-  res.render('countdownTraining', {title: 'Countdown Training', foto_perfil, layout: 'layoutMenu'})
+  res.render('countdownTraining', {title: 'Countdown Training', foto_perfil, nome_perfil, ayout: 'layoutMenu'})
 });
 
 router.get('/profile', auth.isAuthenticated, function(req,res, next){
@@ -88,7 +88,7 @@ router.get('/profile', auth.isAuthenticated, function(req,res, next){
 });
 
 router.get('/body', function(req,res, next){
-  res.render('body', {title: 'body', foto_perfil, aluno_treinos, layout: 'layoutBody'})
+  res.render('body', {title: 'body', foto_perfil, nome_perfil, aluno_treinos, layout: 'layoutBody'})
 });
 
 router.get('/rewards', auth.isAuthenticated, function(req, res, next) {
