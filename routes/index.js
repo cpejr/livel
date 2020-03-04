@@ -111,4 +111,8 @@ router.get('/coachAvaliation', function(req, res, next) {
   res.render('coachAvaliation', { title: 'coachAvaliation', foto_perfil, nome_perfil, layout: 'layoutCoach' });
 });
 
+router.get('/coachTransfer', function(req, res, next) {
+  res.render('coachTransfer', { title: 'coachTransfer ', foto_perfil, nome_perfil, layout: 'layoutCoach' });
+});
+
 module.exports = router;

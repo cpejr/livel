@@ -6507,22 +6507,22 @@ button.close {
   height: 52px;
   margin-top: -50vw;
   margin-left: 28vw; }
-  
-  .coachgrade {
-    font-family: Bebas Neue;
-    font-size: 500px;
-    font-weight: 700;
-    color:#632467;
-    top: -40px;
-    text-align: center; }
-  
-    .textcoachgrade {
-      font-family: Univers LT;
-      font-size: 80px;
-      font-weight: 700;
-      color:#632467;
-      top: -40px;
-      text-align: center; }
+
+.coachgrade {
+  font-family: Bebas Neue;
+  font-size: 500px;
+  font-weight: 700;
+  color: #632467;
+  top: -40px;
+  text-align: center; }
+
+.textcoachgrade {
+  font-family: Univers LT;
+  font-size: 80px;
+  font-weight: 700;
+  color: #632467;
+  top: -40px;
+  text-align: center; }
 
 .TitleModal {
   font-size: 4.5vw;
@@ -7849,5 +7849,9 @@ hr {
 #menu-coach {
   margin-top: 50px;
   height: 20%; }
+
+.coach-background {
+  margin-right: -15px;
+  background-image: linear-gradient(white, #E6E6E6); }
 
 /*# sourceMappingURL=style.css.map */
