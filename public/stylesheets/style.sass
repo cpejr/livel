@@ -759,9 +759,26 @@ hr
   height: 150px
 
 .nomePerfil
-  font-size: 30px
+  font-size: 45px
   padding-top: 40px
   color: #632467
+  font-family: sans-serif, Univers LT
+  font-weight: 700
+  text-transform: uppercase
+  font-stretch: condensed
+  margin: 42% 0 0 -35%
+
+
+.coachLayoutcoach
+  font-size: 35px
+  padding-top: 40px
+  color: #632467
+  font-family: sans-serif, Univers LT
+  font-style: italic
+  font-stretch: condensed
+  margin-top: 48px;
+  margin-left: -311px;
+
 
 .nomePerfil2
   font-size: 35px
@@ -1081,10 +1098,12 @@ hr
 
 .horatreino
   position: absolute
-  right: 680px
-  top: 23px
-  font-size: 62px
+  right: 573px
+  top: 12px
+  font-size: 78px
   color: #800080
+  font-family: Bebas Neue
+  font-weight: bold
 
 .nometreino
   position: absolute
@@ -1537,8 +1556,8 @@ hr
 
 .userimg-coach
   border-radius: 50%
-  margin: 5% 0 0 15%
-  width: 80%
+  margin: 23% 0 0 -7%
+  width: 70%
   height: 80%
   border-style: solid
   border-color: #632467
@@ -1550,8 +1569,9 @@ hr
   margin-bottom: 20px
 
 #menu-coach
-  margin-top: 50px
-  height: 20%
+  margin-top: 54px
+  height: 26%
+  margin-left: 218px
 
 .coach-background
   margin-right: -15px
@@ -1584,6 +1604,115 @@ hr
   top: 725px;
   right: 85px;
 
+//--------------------------begin of toggle-switch--------------------------
+.toggle-switch
+  position: relative
+  width: 75px
+  display: inline-block
+  vertical-align: middle
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  text-align: left
+  margin-top: -120px
+  margin-left: 70px
 
+.toggle-switch-checkbox
+  display: none
 
+.toggle-switch-label
+  display: block
+  overflow: hidden
+  cursor: pointer
+  border: 0 solid #ccc
+  border-radius: 20px
+  margin: 0
 
+.toggle-switch-inner
+  display: block
+  width: 200%
+  margin-left: -100%
+  transition: margin 0.3s ease-in 0s
+
+  &:before, &:after
+    display: block
+    float: left
+    width: 50%
+    height: 34px
+    padding: 0
+    line-height: 34px
+    font-size: 14px
+    color: white
+    font-weight: bold
+    box-sizing: border-box
+
+  &:before
+    content: attr(data-yes)
+    text-transform: uppercase
+    padding-left: 500px 500px
+    background-color: #632467
+    color: #fff
+
+.toggle-switch-disabled
+  background-color: #ccc
+  cursor: not-allowed
+
+  &:before
+    background-color: #ccc
+    cursor: not-allowed
+
+.toggle-switch-inner:after
+  content: attr(data-no)
+  text-transform: uppercase
+  padding-right: 10px
+  background-color: #B9A1BB
+  color: #fff
+  text-align: right
+
+.toggle-switch-switch
+  display: block
+  width: 24px
+  margin: 5px
+  background: #fff
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 40px
+  border: 0 solid #ccc
+  border-radius: 20px
+  transition: all 0.3s ease-in 0s
+
+.toggle-switch-checkbox:checked + .toggle-switch-label
+  .toggle-switch-inner
+    margin-left: 0
+
+  .toggle-switch-switch
+    right: 0px
+
+.toggle-switch.small-switch
+  width: 40px
+
+  .toggle-switch-inner
+    &:after, &:before
+      content: ""
+      height: 20px
+      line-height: 20px
+
+  .toggle-switch-switch
+    width: 16px
+    right: 20px
+    margin: 2px
+
+@media screen and (max-width: 991px)
+  .toggle-switch
+    transform: scale(0.9)
+
+@media screen and (max-width: 767px)
+  .toggle-switch
+    transform: scale(0.825)
+
+@media screen and (max-width: 575px)
+  .toggle-switch
+    transform: scale(0.75)
+ 
+//-------------------------------end of toggle switch---------------------------------------
