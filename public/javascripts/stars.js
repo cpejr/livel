@@ -1,2 +1,2 @@
 //criando um número fictício para estrelas
-var star = 0.7;
+var star = 3.5;
