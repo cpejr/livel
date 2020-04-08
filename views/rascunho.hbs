@@ -1,86 +1,208 @@
-<div class="barra2">
-  <div id="boxcoach">
-    <div class= "nomecoachee">
-    <b>Nome do Coachee</b>
-  </div>
-  <div class= "nometreino">
-    <b>Tipo de treino</b>
-  </div>
-    <img src="/images/Caminho170.png" style= "position: absolute; width:30px; height:30px; right: 100px; top: 40px" >
-    <img src="/images/Grupo211.png" style= "position: absolute; width:30px; height:30px; right: 50px; top: 40px" >
-  </div>
-  </div>
+.toggle-switch
+  position: relative
+  width: 75px
+  display: inline-block
+  vertical-align: middle
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  text-align: left
+  margin-top: -120px
+  margin-left: 70px
 
-  <div class="barra3">
-  <div id="boxcoach">
-    <div class= "nomecoachee">
-    <b>Nome do Coachee</b>
-  </div>
-  <div class= "nometreino">
-    <b>Tipo de treino</b>
-  </div>
-    <img src="/images/Caminho170.png" style= "position: absolute; width:30px; height:30px; right: 100px; top: 40px" >
-    <img src="/images/Grupo211.png" style= "position: absolute; width:30px; height:30px; right: 50px; top: 40px" >
-  </div>
-  </div>
+.toggle-switch-checkbox
+  display: none
 
-  <div class="barra4">
-  <div id="boxcoach">
-    <div class= "nomecoachee">
-    <b>Nome do Coachee</b>
-  </div>
-  <div class= "nometreino">
-    <b>Tipo de treino</b>
-  </div>
-    <img src="/images/Caminho170.png" style= "position: absolute; width:30px; height:30px; right: 100px; top: 40px" >
-    <img src="/images/Grupo211.png" style= "position: absolute; width:30px; height:30px; right: 50px; top: 40px" >
-  </div>
-  </div>
+.toggle-switch-label
+  display: block
+  overflow: hidden
+  cursor: pointer
+  border: 0 solid #ccc
+  border-radius: 20px
+  margin: 0
 
-  <div class="barra5">
-  <div id="boxcoach">
-    <img src="/images/Grupo201.png" style= "position: absolute; width:75px; height:30px; right: 50px; top: 40px" >
-  </div>
-  </div>
+.toggle-switch-inner
+  display: block
+  width: 200%
+  margin-left: -100%
+  transition: margin 0.3s ease-in 0s
 
-  <div class="barra6">
-  <div id="boxcoach">
-    <div class= "nomecoachee">
-    <b>Nome do Coachee</b>
-  </div>
-  <div class= "nometreino">
-    <b>Tipo de treino</b>
-  </div>
-    <img src="/images/Caminho170.png" style= "position: absolute; width:30px; height:30px; right: 100px; top: 40px" >
-    <img src="/images/Grupo211.png" style= "position: absolute; width:30px; height:30px; right: 50px; top: 40px" >
-  </div>
-  </div>
+  &:before, &:after
+    display: block
+    float: left
+    width: 50%
+    height: 34px
+    padding: 0
+    line-height: 34px
+    font-size: 14px
+    color: white
+    font-weight: bold
+    box-sizing: border-box
 
-  <div class="barra7">
-  <div id="boxcoach">
-    <div class= "nomecoachee">
-    <b>Nome do Coachee</b>
-  </div>
-  <div class= "nometreino">
-    <b>Tipo de treino</b>
-  </div>
-    <img src="/images/Caminho170.png" style= "position: absolute; width:30px; height:30px; right: 100px; top: 40px" >
-    <img src="/images/Grupo211.png" style= "position: absolute; width:30px; height:30px; right: 50px; top: 40px" >
-  </div>
-  </div>
+  &:before
+    content: attr(data-yes)
+    text-transform: uppercase
+    padding-left: 500px 500px
+    background-color: #632467
+    color: #fff
 
-  <div class="barra8">
-  <div id="boxcoach">
-    <div class= "nomecoachee">
-    <b>Nome do Coachee</b>
-  </div>
-  <div class= "nometreino">
-    <b>Tipo de treino</b>
-  </div>
-    <img src="/images/Caminho170.png" style= "position: absolute; width:30px; height:30px; right: 100px; top: 40px" >
-    <img src="/images/Grupo211.png" style= "position: absolute; width:30px; height:30px; right: 50px; top: 40px" >
-  </div>
-  </div>
+.toggle-switch-disabled
+  background-color: #ccc
+  cursor: not-allowed
+
+  &:before
+    background-color: #ccc
+    cursor: not-allowed
+
+.toggle-switch-inner:after
+  content: attr(data-no)
+  text-transform: uppercase
+  padding-right: 10px
+  background-color: #B9A1BB
+  color: #fff
+  text-align: right
+
+.toggle-switch-switch
+  display: block
+  width: 24px
+  margin: 5px
+  background: #fff
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 40px
+  border: 0 solid #ccc
+  border-radius: 20px
+  transition: all 0.3s ease-in 0s
+
+.toggle-switch-checkbox:checked + .toggle-switch-label
+  .toggle-switch-inner
+    margin-left: 0
+
+  .toggle-switch-switch
+    right: 0px
+
+.toggle-switch.small-switch
+  width: 40px
+
+  .toggle-switch-inner
+    &:after, &:before
+      content: ""
+      height: 20px
+      line-height: 20px
+
+  .toggle-switch-switch
+    width: 16px
+    right: 20px
+    margin: 2px
+
+@media screen and (max-width: 991px)
+  .toggle-switch
+    transform: scale(0.9)
+
+@media screen and (max-width: 767px)
+  .toggle-switch
+    transform: scale(0.825)
+
+@media screen and (max-width: 575px)
+  .toggle-switch
+    transform: scale(0.75)
 
 
 
+
+      &:hover 
+    color:#632467
+    font-size: 9em
+    background: #800000
+    color:#FFFF00
+  
+
+        .fa-check:hover {
+                  font-size: 5.8em;
+                  background-color: white;
+                  color:#632467;
+                }
+
+                .posclicked{
+                  color:orange;
+                }
+
+
+
+                <style> 
+                .fa-check {
+                  
+                  color:#632467;
+                  font-size: 5em;
+                  background-color: white;
+                  margin: -27px -283px 0px;
+                  border: white;
+                }
+
+                .fa-check-circle{
+                  
+                  color:#632467;
+                  font-size: 5em;
+                  background-color: white;
+                  margin: -27px -283px 0px;
+                  border: white;
+                }
+              </style>
+              <script>
+                  var count = 1;
+                  function SetBotao(button_confirm){
+                  var property = document.getElementById("button_confirm");
+                  var botao1 = document.getElementByClassName("checkcircle");
+                  var botao2 = document.getElementByClassName("checkcircle");
+                  if (count % 2 == 0) {
+                   document.write(botao1);       
+                  }
+                  else {
+                   document.write(botao2);
+                   count = count + 1;
+              }}
+          </script>
+<script>
+           function mudarCheck(x){
+            x.classList.toggle("fa-check-circle-2");   
+          }
+
+
+ <i class="far fa-check-circle-2" 
+             style="
+          color:white;
+          font-size: 5em;
+          background-color: #632467;
+          margin: -27px -283px 0px;
+          border: white;"></i>
+     
+      <script>
+           function mudarCheck(x){
+x.classList.toggle("fa-check-circle-2");
+
+          }
+      </script>
+
+           <span id="button_confirm" style="margin: 0px 27px">
+          <button type="button"><i onclick="mudarCheck(this)" class="far fa-check-circle"></i></button>
+      </span> 
+      <script>
+        function mudarCheck(x){
+          x.classList.toggle("fa-check-circle-2");   
+        }
+      </script>
+
+    </div>
+
+
+
+          </div>  
+      <i
+              id="button_confirm"   
+              type="button" 
+              value="button" 
+              class ="far fa-check-circle"
+              style="margin: -146px -249px" 
+      ></i>
+    </div>
