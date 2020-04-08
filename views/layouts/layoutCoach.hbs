@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-
+ <body>
 <html>
+  <meta>
+    <script src="/javascripts/coach.js"></script>
+  </meta>
 
   <head>
     <title>{{ title }}</title>
     <link rel='stylesheet' href='/stylesheets/style.css'>
     {{{_sections.stylesheets}}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
+  
+  
+ 
     <div class="row nav-coach">
-      </div>
+    </div>
 
     <div class="row row-menu2">
       <div class="col-1"></div>
@@ -28,9 +34,18 @@
       <div class="col-3"></div>
 
       <div class="col-2">
-        <img id="menu-coach" src="/images/Grupo 209@2x.png"></img>
+        <div id="sidemenu">
+          <div class="toggle-btn" onclick="toggleSidebar()">
+          <span class="fas fa-bars" style="font-size: 5em; color: #632467"></span>
+          </div>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>  
       </div>
-    </div>
     {{{ body }}}
   </body>
 </html>
+ 

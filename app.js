@@ -93,7 +93,10 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-
-
+/*
+1 - app.use middleware defaults to '/'
+2 - static is relative to the directory where you launch node. Perhaps you need some path method as well
+*/
+//app.use(express.static(path.join(__dirname, 'src')))
 
 module.exports = app;
