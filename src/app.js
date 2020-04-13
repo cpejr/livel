@@ -13,10 +13,10 @@ const session = require('express-session');
 require('dotenv').config;
 
 //Routes
-const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
-const coachRouter = require('./routes/coach');
-const coacheesRouter = require('./routes/coachees')
+const indexRouter = require('../routes/index');
+const usersRouter = require('../routes/users');
+const coachRouter = require('../trash/coach');
+const coacheesRouter = require('../trash/coachees')
 const app = express();
 
 // View Engine Setup
