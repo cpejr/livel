@@ -1,0 +1,4 @@
+..... troquei index.hbs por inicia.hbs 
+olhar no trash
+
+nao deletei nada coloquei na pasta trash e comentei
