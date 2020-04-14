@@ -1,0 +1,297 @@
+
+#size_coach
+  height: 1543px
+  margin-right: -26px
+
+#barra
+
+
+.barra1
+  position: absolute
+  top: 330px
+  right: 40px
+  border-width: 25px
+  border-style: solid
+  border-color: white
+  margin-right: -60px
+  width: 58vh
+
+.barra2
+  position: absolute
+  top: 458px
+  right: 40px
+  border-width: thick
+  border-style: solid
+  border-radius: 15px
+  border-color: #25ca0e
+
+.barra3
+  position: absolute
+  top: 586px
+  right: 40px
+  border-width: thick
+  border-style: solid
+  border-radius: 15px
+  border-color: #ebee11
+
+.barra4
+  position: absolute
+  top: 714px
+  right: 40px
+  border-width: thick
+  border-style: solid
+  border-radius: 15px
+  border-color: #bdbebd
+
+.barra5
+  position: absolute
+  top: 1064px
+  right: 40px
+  border-width: thick
+  border-style: solid
+  border-radius: 15px
+  border-color: #bdbebd
+
+.barra6
+  position: absolute
+  top: 1192px
+  right: 40px
+  border-width: thick
+  border-style: solid
+  border-radius: 15px
+  border-color: #0012eb
+
+.barra7
+  position: absolute
+  top: 1320px
+  right: 40px
+  border-width: thick
+  border-style: solid
+  border-radius: 15px
+  border-color: #ff8606
+
+.barra8
+  position: absolute
+  top: 1448px
+  right: 40px
+  border-width: thick
+  border-style: solid
+  border-radius: 15px
+  border-color: #bdbebd
+
+
+#boxhorario
+  background-color: #ffffff
+  width: 969px
+  height: 170px
+  margin: -1px -3px -18px
+
+#boxcoach
+  background-color: white
+  width: 1006px
+  height: 229px
+
+
+.coachee1
+   margin: -1273px 0px 0px
+
+  
+
+.fotocoachee img
+  width: auto
+  float: left
+  height: 155px
+  border-radius: 50%
+  border-style: solid
+  border-color: #61A64C
+  border-width: 10px
+  margin-left: 140px
+  margin-top: 26px
+
+#nomecoachee
+  color: black
+  font-size: 35px
+  font-weight: bolder
+  font-family: sans-serif, Univers LT
+  text-transform: uppercase
+  font-stretch: condensed
+
+.nomecoachee1
+ padding: 26px 310px
+
+.tipotreinocoachee
+  color: #61A64C
+  font-size: 35px
+  font-weight: 700
+  font-family: sans-serif, Univers LT
+  font-stretch: condensed
+  padding: 6px 308px
+  margin-top: -15px
+
+.horatreino
+  position: absolute
+  right: 675px
+  top: 12px
+  font-size: 85px
+  color: #800080
+  font-family: Bebas Neue
+  font-weight: bold
+
+.nomecoachee
+  position: absolute
+  right: 300px
+  font-size: 40px
+
+
+.observacoescoachee
+
+.fa-check-circle
+  font-size: 7em
+  background-color:white
+  border: 3px solid white
+  width: auto
+  cursor: pointer
+  padding: 0px
+  margin-left: -824px
+  position: absolute
+  margin-top: -73px
+    
+i.far
+  background-color: white
+  color: #632467
+i.fas
+  background-color: white
+  color: red
+  
+#sidemenu
+  position: fixed
+  width: 200px
+  auto: 100%
+  background: pink
+  left: -200px
+  transition: all 500ms linear
+
+#sidemenu.active
+  left: 0px
+
+#sidemenu ul li
+  color: rgba(230,230,230,0.9)
+  list-style: none
+  padding: 15px 10px
+  border-bottom: 1px solid rgba(100,100,100,0.3)
+
+#sidemenu .toggle-btn
+  position: absolute
+  left: 230px
+  top: 200px
+
+.toggle-switch
+  position: relative
+  width: 75px
+  display: inline-block
+  vertical-align: middle
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  text-align: left
+  margin-top: 48px
+  margin-left: 25px
+
+.toggle-switch-checkbox
+  display: none
+
+.toggle-switch-label
+  display: block
+  overflow: hidden
+  cursor: pointer
+  border: 0 solid #ccc
+  border-radius: 20px
+  margin: 0
+
+.toggle-switch-inner
+  display: block
+  width: 200%
+  margin-left: -100%
+  transition: margin 0.3s ease-in 0s
+
+  &:before, &:after
+    display: block
+    float: left
+    width: 50%
+    height: 34px
+    padding: 0
+    line-height: 34px
+    font-size: 14px
+    color: white
+    font-weight: bold
+    box-sizing: border-box
+
+  &:before
+    content: attr(data-yes)
+    text-transform: uppercase
+    padding-left: 500px 500px
+    background-color: #632467
+    color: #fff
+
+.toggle-switch-disabled
+  background-color: #ccc
+  cursor: not-allowed
+
+  &:before
+    background-color: #ccc
+    cursor: not-allowed
+
+.toggle-switch-inner:after
+  content: attr(data-no)
+  text-transform: uppercase
+  padding-right: 10px
+  background-color: #B9A1BB
+  color: #fff
+  text-align: right
+
+.toggle-switch-switch
+  display: block
+  width: 24px
+  margin: 5px
+  background: #fff
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 40px
+  border: 0 solid #ccc
+  border-radius: 20px
+  transition: all 0.3s ease-in 0s
+
+.toggle-switch-checkbox:checked + .toggle-switch-label
+  .toggle-switch-inner
+    margin-left: 0
+
+  .toggle-switch-switch
+    right: 0px
+
+.toggle-switch.small-switch
+  width: 40px
+
+  .toggle-switch-inner
+    &:after, &:before
+      content: ""
+      height: 20px
+      line-height: 20px
+
+  .toggle-switch-switch
+    width: 16px
+    right: 20px
+    margin: 2px
+
+@media screen and (max-width: 991px)
+  .toggle-switch
+    transform: scale(0.9)
+
+@media screen and (max-width: 767px)
+  .toggle-switch
+    transform: scale(0.825)
+
+@media screen and (max-width: 575px)
+  .toggle-switch
+    transform: scale(0.75)
+

@@ -3,4 +3,4 @@ olhar no trash
 
 nao deletei nada coloquei na pasta trash e comentei
 
-para botao olhar MidTraining.hbs
+para botao olhar MidTraining.hbs ou body
