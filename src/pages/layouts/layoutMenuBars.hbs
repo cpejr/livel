@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    {{{_sections.stylesheets}}}
+  </head>
+  <body>
+    <div class="row nav-menu">
+      </div>
+
+    <div class="row row-menu2">
+      <div class="col-1"></div>
+      <div class="col-3">
+        <img class="userimg-menu2" src={{foto_perfil}}></img>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-5">
+        <img class="growing-bars-menu2" id="img"></img>
+      </div>
+      <script type="text/javascript">
+        if ({{aluno_treinos.Nivel}}=='0')
+          document.getElementById("img").src = "/images/nivel0.png";
+        else if({{aluno_treinos.Nivel}}=='1')
+          document.getElementById("img").src = "/images/nivel1.png";
+        else if({{aluno_treinos.Nivel}}=='2')
+          document.getElementById("img").src = "/images/nivel2.png";
+        else if({{aluno_treinos.Nivel}}=='3')
+          document.getElementById("img").src = "/images/nivel3.png";
+        else if({{aluno_treinos.Nivel}}=='4')
+          document.getElementById("img").src = "/images/nivel4.png";
+        else if({{aluno_treinos.Nivel}}=='5')
+          document.getElementById("img").src = "/images/nivel5.png";
+        else if({{aluno_treinos.Nivel}}=='6')
+          document.getElementById("img").src = "/images/nivel6.png";
+        else if({{aluno_treinos.Nivel}}=='7')
+          document.getElementById("img").src = "/images/nivel7.png";
+      </script>
+      <img id="seta-profile" src="/images/seta.png" height="75" onclick="location.href='/trainingTypes'"></img>
+    </div>
+    {{{ body }}}
+  </body>
+</html>
