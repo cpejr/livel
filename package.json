@@ -5,12 +5,15 @@
   "scripts": {
     "start": "node ./bin/www",
     "test": "nodemon ./bin/www"
+    
+    
   },
   "dependencies": {
     "body-parser": "^1.18.3",
     "bootstrap-modal": "^2.2.4",
     "chart.js": "^2.8.0",
     "chartjs-plugin-datalabels": "^0.6.0",
+    "compass": "^0.1.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "dotenv": "^6.1.0",
