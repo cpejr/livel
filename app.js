@@ -23,7 +23,7 @@ const app = express();
 app.engine('hbs', exphbs({
   defaultLayout: 'layoutClean',
   extname: '.hbs',
-  partialsDir: 'views/pages',
+  partialsDir: 'views',
   helpers: {
     // Here we're declaring the #section that appears in layout/layout.hbs
     section(name, options) {
@@ -65,8 +65,8 @@ app.use(session({
   saveUninitialized: true
 }));
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'public'),
-  dest: path.join(__dirname, 'public'),
+  src: path.join(__dirname, 'views/pages/login'),
+  dest: path.join(__dirname, 'views/pages/login'),
   indentedSyntax: true, // true = .sass and false = .scss
   sourceMap: true
 }));
