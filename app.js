@@ -64,12 +64,7 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }));
-app.use(sassMiddleware({
-  src: path.join(__dirname, 'views/pages/login'),
-  dest: path.join(__dirname, 'views/pages/login'),
-  indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true
-}));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
@@ -92,6 +87,15 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render(`${__dirname}/views/pages/Error/error`);
 });
+
+
+//Transform .sass to .css
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'views/pages/login'),
+  dest: path.join(__dirname, 'views/pages/login'),
+  indentedSyntax: true, // true = .sass and false = .scss
+  sourceMap: true
+}));
 
 /*
 1 - app.use middleware defaults to '/'
