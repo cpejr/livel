@@ -1,5 +1,5 @@
 //auth--------------------------------------------------------------------------
-module.exports = {
+const auth = {
     isAuthenticated: (req, res, next) => {
         if (req.session.usuario) {
           next();
@@ -53,8 +53,8 @@ module.exports = router;
 var express = require('express');
 var router = express.Router();
 var Chart = require('chart.js');
-const Requisition = require('../models/requisitions');
-const auth = require('../trash/auth');
+const Requisition = require('./models/requisitions');
+// const auth = require('../trash/auth');
 
 var foto_perfil;
 var nome_perfil;
