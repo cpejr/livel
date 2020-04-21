@@ -65,6 +65,34 @@ app.use(session({
   saveUninitialized: true
 }));
 
+// const sass = () => {
+//   let rotas = [
+//     'views/pages/login',
+//     'views/pages/inicial'
+//   ]
+//   console.log('Oioioi');
+//   for (let i=0; i<rotas.length; i++){
+//     app.use(sassMiddleware({
+//       src: path.join(__dirname, rotas[i]),
+//       dest: path.join(__dirname, rotas[i]),
+//       indentedSyntax: true, // true = .sass and false = .scss
+//       sourceMap: true,
+//       debug: true
+//     }));
+//   }
+//   return 1;
+// }
+
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'views/pages/Login'),
+  dest: path.join(__dirname, 'views/pages/Login'),
+  indentedSyntax: true, // true = .sass and false = .scss
+  sourceMap: true,
+  debug: true
+}));
+
+
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
@@ -88,14 +116,6 @@ app.use(function(err, req, res, next) {
   res.render(`${__dirname}/views/pages/Error/error`);
 });
 
-
-//Transform .sass to .css
-app.use(sassMiddleware({
-  src: path.join(__dirname, 'views/pages/login'),
-  dest: path.join(__dirname, 'views/pages/login'),
-  indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true
-}));
 
 /*
 1 - app.use middleware defaults to '/'

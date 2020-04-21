@@ -72,7 +72,7 @@ router.get('/requestNumber', function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-  res.render('login/login', { title: 'Login'});
+  res.render('Login/login', { title: 'Login'});
 });
 
 router.post('/login', (req, res, next) => {
@@ -102,7 +102,7 @@ router.get('/loginPassword', function(req, res, next) {
 });
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'LIVEL' });
+  res.render('inicial/inicial', { title: 'LIVEL' });
 });
 
 router.get('/trainingTypes', auth.isAuthenticated, function(req, res, next){
