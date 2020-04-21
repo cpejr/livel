@@ -72,7 +72,7 @@ router.get('/requestNumber', function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'Login' });
+  res.render('login/login', { title: 'Login' });
 });
 
 router.post('/login', (req, res, next) => {

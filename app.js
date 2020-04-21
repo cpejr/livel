@@ -23,7 +23,7 @@ const app = express();
 app.engine('hbs', exphbs({
   defaultLayout: 'layoutClean',
   extname: '.hbs',
-  partialsDir: './views',
+  partialsDir: 'views/pages',
   helpers: {
     // Here we're declaring the #section that appears in layout/layout.hbs
     section(name, options) {
@@ -48,7 +48,7 @@ app.engine('hbs', exphbs({
   }
 }));
 
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views/pages'));
 app.set('view engine', 'hbs');
 
 //Aplicattion Configuration
@@ -90,7 +90,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render(`${__dirname}/views/pages/Error/error`);
 });
 
 /*
