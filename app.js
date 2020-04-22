@@ -23,7 +23,7 @@ const app = express();
 app.engine('hbs', exphbs({
   defaultLayout: 'layoutClean',
   extname: '.hbs',
-  partialsDir: './views',
+  partialsDir: 'views',
   helpers: {
     // Here we're declaring the #section that appears in layout/layout.hbs
     section(name, options) {
@@ -48,7 +48,7 @@ app.engine('hbs', exphbs({
   }
 }));
 
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views/pages'));
 app.set('view engine', 'hbs');
 
 //Aplicattion Configuration
@@ -64,12 +64,35 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }));
+
+// const sass = () => {
+//   let rotas = [
+//     'views/pages/login',
+//     'views/pages/inicial'
+//   ]
+//   console.log('Oioioi');
+//   for (let i=0; i<rotas.length; i++){
+//     app.use(sassMiddleware({
+//       src: path.join(__dirname, rotas[i]),
+//       dest: path.join(__dirname, rotas[i]),
+//       indentedSyntax: true, // true = .sass and false = .scss
+//       sourceMap: true,
+//       debug: true
+//     }));
+//   }
+//   return 1;
+// }
+
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'public'),
-  dest: path.join(__dirname, 'public'),
+  src: path.join(__dirname, 'views/pages/Login'),
+  dest: path.join(__dirname, 'views/pages/Login'),
   indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true
+  sourceMap: true,
+  debug: true
 }));
+
+
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
@@ -90,8 +113,9 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render(`${__dirname}/views/pages/Error/error`);
 });
+
 
 /*
 1 - app.use middleware defaults to '/'
