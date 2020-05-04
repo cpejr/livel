@@ -64,12 +64,82 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }));
+
+/////////////////////////////////////// TURNING THE .SASS TO .CSS /////////////////////////////////////////////////////////
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'public'),
-  dest: path.join(__dirname, 'public'),
+  src: path.join(__dirname, 'public/stylesheets/css/alunos/body'),
+  dest: path.join(__dirname, 'public/stylesheets/css/alunos/body'),
   indentedSyntax: true, // true = .sass and false = .scss
   sourceMap: true
 }));
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'public/stylesheets/css/alunos/countdownTraining'),
+  dest: path.join(__dirname, 'public/stylesheets/css/alunos/countdownTraining'),
+  indentedSyntax: true, // true = .sass and false = .scss
+  sourceMap: true
+}));
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'public/stylesheets/css/alunos/midTraining'),
+  dest: path.join(__dirname, 'public/stylesheets/css/alunos/midTraining'),
+  indentedSyntax: true, // true = .sass and false = .scss
+  sourceMap: true
+}));
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'public/stylesheets/css/alunos/profile'),
+  dest: path.join(__dirname, 'public/stylesheets/css/alunos/profile'),
+  indentedSyntax: true, // true = .sass and false = .scss
+  sourceMap: true
+}));
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'public/stylesheets/css/alunos/rewards'),
+  dest: path.join(__dirname, 'public/stylesheets/css/alunos/rewards'),
+  indentedSyntax: true, // true = .sass and false = .scss
+  sourceMap: true
+}));
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'public/stylesheets/css/alunos/timeSchedule'),
+  dest: path.join(__dirname, 'public/stylesheets/css/alunos/timeSchedule'),
+  indentedSyntax: true, // true = .sass and false = .scss
+  sourceMap: true
+}));
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'public/stylesheets/css/alunos/trainingType'),
+  dest: path.join(__dirname, 'public/stylesheets/css/alunos/trainingType'),
+  indentedSyntax: true, // true = .sass and false = .scss
+  sourceMap: true
+}));
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'public/stylesheets/css/login'),
+  dest: path.join(__dirname, 'public/stylesheets/css/login'),
+  indentedSyntax: true, // true = .sass and false = .scss
+  sourceMap: true
+}));
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'public/stylesheets/css/inicial'),
+  dest: path.join(__dirname, 'public/stylesheets/css/inicial'),
+  indentedSyntax: true, // true = .sass and false = .scss
+  sourceMap: true
+}));
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'public/stylesheets/css/professor/coach'),
+  dest: path.join(__dirname, 'public/stylesheets/css/professor/coach'),
+  indentedSyntax: true, // true = .sass and false = .scss
+  sourceMap: true
+}));
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'public/stylesheets/css/professor/coachAvaliation'),
+  dest: path.join(__dirname, 'public/stylesheets/css/professor/coachAvaliation'),
+  indentedSyntax: true, // true = .sass and false = .scss
+  sourceMap: true
+}));
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'public/stylesheets/css/'),
+  dest: path.join(__dirname, 'public/stylesheets/css/'),
+  indentedSyntax: true, // true = .sass and false = .scss
+  sourceMap: true
+}));
+/////////////////////////////////////// TURNING THE .SASS TO .CSS /////////////////////////////////////////////////////////
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
