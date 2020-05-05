@@ -57,48 +57,48 @@ router.get('/trainingTypes', auth.isAuthenticated, function(req, res, next){
   Requisicao.treinoSemana().then((result)=>{
       console.log(result);
       var treinos = result.TREINO_SEMANA;
-      res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, treinos, aluno_treinos, layout: 'layoutMenu'});
+      res.render('Coachees/trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, treinos, aluno_treinos, layout: 'layoutMenu'});
   }).catch((error)=>{
     console.log(error);
-    res.render('trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, aluno_treinos, layout: 'layoutMenu'});
+    res.render('Coachees/trainingTypes', {title: 'Training Types', foto_perfil, nome_perfil, aluno_treinos, layout: 'layoutMenu'});
   });
 });
 
 router.get('/midTraining', auth.isAuthenticated, function(req, res, next){
-  res.render('midTraining', {title: 'Mid Training', foto_perfil, nome_perfil, layout: 'layoutMenu',...req.session})
+  res.render('Coachees/midTraining', {title: 'Mid Training', foto_perfil, nome_perfil, layout: 'layoutMenu',...req.session})
 });
 
 router.get('/timeScheduleSuperior', auth.isAuthenticated, function(req, res, next){
   req.session.tipoTreino= "Superior";
-  res.render('timeSchedule', {title: 'Time Schedule', foto_perfil, nome_perfil, layout: 'layoutMenu'})
+  res.render('Coachees/timeSchedule', {title: 'Time Schedule', foto_perfil, nome_perfil, layout: 'layoutMenu'})
 });
 
 
 router.get('/timeScheduleInferior', auth.isAuthenticated, function(req, res, next){
   req.session.tipoTreino= "Inferior";
-  res.render('timeSchedule', {title: 'Time Schedule', foto_perfil, nome_perfil, layout: 'layoutMenu'})
+  res.render('Coachees/timeSchedule', {title: 'Time Schedule', foto_perfil, nome_perfil, layout: 'layoutMenu'})
 });
 
 router.get('/countdownTraining', auth.isAuthenticated, function(req, res, next){
-  res.render('countdownTraining', {title: 'Countdown Training', foto_perfil, nome_perfil, ayout: 'layoutMenu'})
+  res.render('Coachees/countdownTraining', {title: 'Countdown Training', foto_perfil, nome_perfil, ayout: 'layoutMenu'})
 });
 
 router.get('/profile', auth.isAuthenticated, function(req,res, next){
-  res.render('profile', {title: 'Profile', foto_perfil,nome_perfil, aluno_treinos, layout: 'layoutMenuBars'})
+  res.render('Coachees/profile', {title: 'Profile', foto_perfil,nome_perfil, aluno_treinos, layout: 'layoutMenuBars'})
 });
 
 router.get('/body', function(req,res, next){
-  res.render('body', {title: 'body', foto_perfil, nome_perfil, aluno_treinos, layout: 'layoutBody'})
+  res.render('Coachees/body', {title: 'body', foto_perfil, nome_perfil, aluno_treinos, layout: 'layoutBody'})
 });
 
 router.get('/rewards', auth.isAuthenticated, function(req, res, next) {
   Requisicao.treinoSemana().then((result)=>{
       console.log(result);
       var treinos = result.TREINO_SEMANA;
-        res.render('rewards', { title: 'Rewards', foto_perfil, nome_perfil, treinos, aluno_treinos, layout: 'layoutMenu2' });
+        res.render('Coachees/rewards', { title: 'Rewards', foto_perfil, nome_perfil, treinos, aluno_treinos, layout: 'layoutMenu2' });
   }).catch((error)=>{
     console.log(error);
-      res.render('rewards', { title: 'Rewards', foto_perfil, nome_perfil, treinos, aluno_treinos, layout: 'layoutMenu2' });
+      res.render('Coachees/rewards', { title: 'Rewards', foto_perfil, nome_perfil, treinos, aluno_treinos, layout: 'layoutMenu2' });
   });
 });
 

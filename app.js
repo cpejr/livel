@@ -65,91 +65,13 @@ app.use(session({
   saveUninitialized: true
 }));
 
-/////////////////////////////////////// TURNING THE .SASS TO .CSS /////////////////////////////////////////////////////////
 app.use(sassMiddleware({
   src: path.join(__dirname),
   dest: path.join(__dirname),
   indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true,
-  debug: true
+  sourceMap: true
 }));
-app.use(sassMiddleware({
-  src: path.join(__dirname),
-  dest: path.join(__dirname),
-  indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true,
-  debug: true
-}));
-app.use(sassMiddleware({
-  src: path.join(__dirname),
-  dest: path.join(__dirname),
-  indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true,
-  debug: true
-}));
-app.use(sassMiddleware({
-  src: path.join(__dirname),
-  dest: path.join(__dirname),
-  indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true,
-  debug: true
-}));
-app.use(sassMiddleware({
-  src: path.join(__dirname),
-  dest: path.join(__dirname),
-  indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true,
-  debug: true
-}));
-app.use(sassMiddleware({
-  src: path.join(__dirname),
-  dest: path.join(__dirname),
-  indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true,
-  debug: true
-}));
-app.use(sassMiddleware({
-  src: path.join(__dirname),
-  dest: path.join(__dirname),
-  indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true,
-  debug: true
-}));
-app.use(sassMiddleware({
-  src: path.join(__dirname),
-  dest: path.join(__dirname),
-  indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true,
-  debug: true
-}));
-app.use(sassMiddleware({
-  src: path.join(__dirname),
-  dest: path.join(__dirname),
-  indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true,
-  debug: true
-}));
-app.use(sassMiddleware({
-  src: path.join(__dirname),
-  dest: path.join(__dirname),
-  indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true,
-  debug: true
-}));
-app.use(sassMiddleware({
-  src: path.join(__dirname),
-  dest: path.join(__dirname),
-  indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true,
-  debug: true
-}));
-app.use(sassMiddleware({
-  src: path.join(__dirname),
-  dest: path.join(__dirname),
-  indentedSyntax: true,
-  debug: true
-}));
-/////////////////////////////////////// TURNING THE .SASS TO .CSS /////////////////////////////////////////////////////////
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 

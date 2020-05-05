@@ -1,0 +1,324 @@
+button.close {
+  margin: 0;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 4vw;
+  background-color: #632467;
+  color: white;
+  font-size: 3vw;
+  opacity: 1;
+  font-weight: 200;
+  z-index: 10; }
+
+.modal-body {
+  height: auto; }
+
+.TitleModal {
+  font-size: 4.5vw;
+  font-weight: 700;
+  color: #717171;
+  top: -40px; }
+
+.btnboxRightUpperRadius1 {
+  font-size: 10vw;
+  text-align: center;
+  width: 15vw;
+  height: 15vw;
+  padding: 0px 15px;
+  font-weight: 700;
+  color: black;
+  background-color: #FFBA2F;
+  border-radius: 0 40% 0 0;
+  outline-color: #FFBA2F !important; }
+
+.boxRightUpperRadius1 {
+  top: 7vw;
+  width: 15vw;
+  height: 19vw;
+  font-size: 13.5vw;
+  text-align: center;
+  padding: 25px 40px 75px 30px;
+  font-weight: 700;
+  background-color: #FFBA2F;
+  border-radius: 0 40% 0 0;
+  color: black; }
+
+.Tensional {
+  font-size: 4vw;
+  font-weight: bold;
+  color: #FFBA2F;
+  right: -180px;
+  top: -10vw; }
+
+.Tensionaltexto {
+  font-size: 3vw;
+  color: #231F20;
+  right: -180px;
+  top: -10vw; }
+
+.boxRightUpperRadius3 {
+  top: 7vw;
+  width: 15vw;
+  height: 19vw;
+  font-size: 13.5vw;
+  text-align: center;
+  padding: 20px;
+  font-weight: 700;
+  background-color: #F5821F;
+  border-radius: 0 40% 0 0;
+  color: black; }
+
+.btnboxRightUpperRadius3 {
+  font-size: 10vw;
+  text-align: center;
+  width: 15vw;
+  height: 15vw;
+  padding: 0px 15px;
+  font-weight: 700;
+  color: black;
+  background-color: #F5821F;
+  border-radius: 0 40% 0 0;
+  outline-color: #F5821F !important; }
+
+.Metabolico {
+  font-size: 4vw;
+  font-weight: bold;
+  color: #F5821F;
+  right: -18vw;
+  top: -10vw; }
+
+.Metabolicotexto {
+  font-size: 3vw;
+  color: #231F20;
+  right: -180px;
+  top: -10vw; }
+
+.TitleModal {
+  font-size: 4.5vw;
+  font-weight: 700;
+  color: #717171;
+  top: -40px; }
+
+#SegundaParte {
+  top: -30px; }
+
+.boxRightUpperRadius2 {
+  font-size: 11.5vw;
+  text-align: center;
+  width: 15vw;
+  height: 15vw;
+  padding: 20px;
+  font-weight: 700;
+  background-color: #632467;
+  color: white;
+  border-radius: 0 40% 0 0; }
+
+.btnboxRightUpperRadius2 {
+  font-size: 10vw;
+  text-align: center;
+  width: 15vw;
+  height: 15vw;
+  padding: 0px 15px;
+  font-weight: 700;
+  background-color: #632467;
+  color: white;
+  border-radius: 0 40% 0 0;
+  border-color: #632467 !important; }
+
+.btnboxRightUpperRadius2:active {
+  background-color: #632467 !important;
+  border-color: #632467 !important; }
+
+#Excentricabox {
+  top: 22vw;
+  right: 54vw; }
+
+.TipodeTreino {
+  font-size: 4vw;
+  color: #632467;
+  font-weight: bold; }
+
+#Excentricatitle {
+  top: 25vw; }
+
+#Excentricatext {
+  top: 25vw;
+  right: -1.5vw; }
+
+.TextoTreino {
+  font-size: 3.3vw;
+  color: #231F20; }
+
+.ModalImage {
+  width: 110px;
+  height: 52px;
+  margin-top: -50vw;
+  margin-left: 28vw; }
+
+#Concentricabox {
+  top: -20vw;
+  right: -5vw; }
+
+#Concentricatitle {
+  top: -17vw;
+  right: -44vw; }
+
+#Concentricatext {
+  top: -17vw;
+  right: -46vw; }
+
+.boxRadiusSpot {
+  background-color: #f4f4f4;
+  padding: 4vh 0; }
+
+.marginTraining {
+  padding: 3vh 0;
+  background-image: linear-gradient(#E6E6E6, #FAFAFA); }
+
+.btntrainingchange:hover {
+  background-color: #d0c616;
+  border-color: #e6e600;
+  color: #632467; }
+
+.btntrainingchangeUP {
+  background-color: #E7DB18;
+  border-color: #E7DB18;
+  color: #632467;
+  padding: 2.5rem 2rem;
+  margin: 1.1vh 0;
+  font-size: 50px;
+  font-weight: 600;
+  border-radius: 20px;
+  width: 60%; }
+
+#texto-trainingTypes-1 {
+  font-size: 35px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  color: #632467;
+  font-weight: bold; }
+
+#textodocirculo {
+  margin-top: 60px;
+  margin-left: 90px;
+  font-weight: 500;
+  font-size: 35px;
+  color: #632467; }
+
+#numerotreino {
+  margin-top: -30px;
+  margin-left: 80px;
+  font-size: 250px;
+  color: #632467;
+  font-weight: 700; }
+
+#numerotreinomaior10 {
+  margin-top: -30px;
+  margin-left: 20px;
+  letter-spacing: -20px;
+  font-size: 225px;
+  color: #632467;
+  font-weight: 700; }
+
+#numerotreinox {
+  margin-top: -150px;
+  margin-left: 240px;
+  font-size: 90px;
+  color: #632467;
+  font-weight: 700; }
+
+#texto-trainingTypes-2 {
+  font-size: 25px;
+  top: -70px;
+  left: 180px;
+  color: #A6A4A5;
+  padding-bottom: 30px; }
+
+#texto-trainingTypes-3 {
+  font-size: 35px;
+  margin-left: 50px;
+  color: #632467; }
+
+.zeroo {
+  margin: none;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url("/images/0-12.png"); }
+
+.um {
+  margin: none;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url("/images/1-12.png"); }
+
+.dois {
+  margin: none;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url("/images/2-12.png"); }
+
+.tres {
+  margin: none;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url("/images/3-12.png"); }
+
+.quatro {
+  margin: none;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url("/images/4-12.png"); }
+
+.cinco {
+  margin: none;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url("/images/5-12.png"); }
+
+.seis {
+  margin: none;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url("/images/6-12.png"); }
+
+.sete {
+  margin: none;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url("/images/7-12.png"); }
+
+.oito {
+  margin: none;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url("/images/8-12.png"); }
+
+.nove {
+  margin: none;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url("/images/9-12.png"); }
+
+.dez {
+  margin: none;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url("/images/10-12.png"); }
+
+.onze {
+  margin: none;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url("/images/11-12.png"); }
+
+.doze {
+  margin: none;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-image: url("/images/12-12.png"); }
+
+/*# sourceMappingURL=styles.css.map */
