@@ -67,76 +67,87 @@ app.use(session({
 
 /////////////////////////////////////// TURNING THE .SASS TO .CSS /////////////////////////////////////////////////////////
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'public/stylesheets/css/alunos/body'),
-  dest: path.join(__dirname, 'public/stylesheets/css/alunos/body'),
+  src: path.join(__dirname),
+  dest: path.join(__dirname),
   indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true
+  sourceMap: true,
+  debug: true
 }));
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'public/stylesheets/css/alunos/countdownTraining'),
-  dest: path.join(__dirname, 'public/stylesheets/css/alunos/countdownTraining'),
+  src: path.join(__dirname),
+  dest: path.join(__dirname),
   indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true
+  sourceMap: true,
+  debug: true
 }));
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'public/stylesheets/css/alunos/midTraining'),
-  dest: path.join(__dirname, 'public/stylesheets/css/alunos/midTraining'),
+  src: path.join(__dirname),
+  dest: path.join(__dirname),
   indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true
+  sourceMap: true,
+  debug: true
 }));
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'public/stylesheets/css/alunos/profile'),
-  dest: path.join(__dirname, 'public/stylesheets/css/alunos/profile'),
+  src: path.join(__dirname),
+  dest: path.join(__dirname),
   indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true
+  sourceMap: true,
+  debug: true
 }));
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'public/stylesheets/css/alunos/rewards'),
-  dest: path.join(__dirname, 'public/stylesheets/css/alunos/rewards'),
+  src: path.join(__dirname),
+  dest: path.join(__dirname),
   indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true
+  sourceMap: true,
+  debug: true
 }));
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'public/stylesheets/css/alunos/timeSchedule'),
-  dest: path.join(__dirname, 'public/stylesheets/css/alunos/timeSchedule'),
+  src: path.join(__dirname),
+  dest: path.join(__dirname),
   indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true
+  sourceMap: true,
+  debug: true
 }));
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'public/stylesheets/css/alunos/trainingType'),
-  dest: path.join(__dirname, 'public/stylesheets/css/alunos/trainingType'),
+  src: path.join(__dirname),
+  dest: path.join(__dirname),
   indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true
+  sourceMap: true,
+  debug: true
 }));
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'public/stylesheets/css/login'),
-  dest: path.join(__dirname, 'public/stylesheets/css/login'),
+  src: path.join(__dirname),
+  dest: path.join(__dirname),
   indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true
+  sourceMap: true,
+  debug: true
 }));
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'public/stylesheets/css/inicial'),
-  dest: path.join(__dirname, 'public/stylesheets/css/inicial'),
+  src: path.join(__dirname),
+  dest: path.join(__dirname),
   indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true
+  sourceMap: true,
+  debug: true
 }));
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'public/stylesheets/css/professor/coach'),
-  dest: path.join(__dirname, 'public/stylesheets/css/professor/coach'),
+  src: path.join(__dirname),
+  dest: path.join(__dirname),
   indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true
+  sourceMap: true,
+  debug: true
 }));
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'public/stylesheets/css/professor/coachAvaliation'),
-  dest: path.join(__dirname, 'public/stylesheets/css/professor/coachAvaliation'),
+  src: path.join(__dirname),
+  dest: path.join(__dirname),
   indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true
+  sourceMap: true,
+  debug: true
 }));
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'public/stylesheets/css/'),
-  dest: path.join(__dirname, 'public/stylesheets/css/'),
-  indentedSyntax: true, // true = .sass and false = .scss
-  sourceMap: true
+  src: path.join(__dirname),
+  dest: path.join(__dirname),
+  indentedSyntax: true,
+  debug: true
 }));
 /////////////////////////////////////// TURNING THE .SASS TO .CSS /////////////////////////////////////////////////////////
 
