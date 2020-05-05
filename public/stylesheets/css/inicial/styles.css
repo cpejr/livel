@@ -1,0 +1,45 @@
+.home {
+  background-color: #632467; }
+
+.txt-over-img {
+  position: relative;
+  text-align: center;
+  color: white; }
+
+.image-index {
+  background-image: url("/images/FundoIndex.png");
+  opacity: 0.3;
+  height: 100%;
+  width: 100%; }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.btnlogin {
+  margin: 0 0; }
+
+.btnchangelogin {
+  margin: 80px 0;
+  background-color: #E7DB18;
+  border-color: #E7DB18;
+  color: #632467;
+  padding: 2rem 1rem;
+  font-size: 50px;
+  font-weight: 600;
+  border-radius: 20px; }
+
+.btnchangelogin:hover {
+  background-color: #d0c616;
+  border-color: #e6e600;
+  color: #632467; }
+
+.Livel-index {
+  color: white;
+  font-size: 200px;
+  font-family: Dancing Script;
+  font-weight: bold; }
+
+/*# sourceMappingURL=styles.css.map */
