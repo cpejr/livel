@@ -104,15 +104,15 @@ router.get('/rewards', auth.isAuthenticated, function(req, res, next) {
 
 
 router.get('/coach', function(req, res, next) {
-  res.render('coach', { title: 'coach', foto_perfil, nome_perfil, layout: 'layoutCoach' });
+  res.render('Coachs/coach', { title: 'coach', foto_perfil, nome_perfil, layout: 'layoutCoach' });
 });
 
 router.get('/coachAvaliation', function(req, res, next) {
-  res.render('coachAvaliation', { title: 'coachAvaliation', foto_perfil, nome_perfil, layout: 'layoutCoach' });
+  res.render('Coachs/coachAvaliation', { title: 'coachAvaliation', foto_perfil, nome_perfil, layout: 'layoutCoach' });
 });
 
 router.get('/coachTransfer', function(req, res, next) {
-  res.render('coachTransfer', { title: 'coachTransfer ', foto_perfil, nome_perfil, layout: 'layoutCoach' });
+  res.render('Coachs/coachTransfer', { title: 'coachTransfer ', foto_perfil, nome_perfil, layout: 'layoutCoach' });
 });
 
 module.exports = router;
