@@ -6331,4 +6331,31 @@ a {
   margin-top: 50px;
   margin-left: 20px; }
 
+#seta-midTraining {
+  margin-top: -2850px;
+  margin-left: 60px; }
+
+.nometreino {
+  position: absolute;
+  right: 440px;
+  top: 45px;
+  font-size: 32px; }
+
+.linha-mes {
+  font-size: 40px; }
+
+#menu-coach {
+  margin-top: 54px;
+  height: 26%;
+  margin-left: 218px; }
+
+.gradback3 {
+  background-image: linear-gradient(#ffffff, #E6E6E6); }
+
+.errologin {
+  right: 20px;
+  top: 50px;
+  width: 50%;
+  height: 60%; }
+
 /*# sourceMappingURL=global.css.map */

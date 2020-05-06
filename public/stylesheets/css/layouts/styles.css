@@ -1,0 +1,98 @@
+.nav-coach {
+  background-color: #632467;
+  padding: 13px 0px;
+  margin-bottom: 25px;
+  margin-right: -26px; }
+
+#seta-rewards {
+  margin-top: 42px;
+  margin-left: 37px; }
+
+#seta-profile {
+  margin-top: 50px;
+  margin-left: 50px; }
+
+.nomePerfil {
+  font-size: 45px;
+  padding-top: 40px;
+  color: #632467;
+  font-family: sans-serif, Univers LT;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-stretch: condensed;
+  margin: 42% 0 0 -35%; }
+
+.coachLayoutcoach {
+  font-size: 35px;
+  padding-top: 40px;
+  color: #632467;
+  font-family: sans-serif, Univers LT;
+  font-style: italic;
+  font-stretch: condensed;
+  margin-top: 48px;
+  margin-left: -311px; }
+
+.nomePerfil2 {
+  font-size: 35px;
+  padding-top: 60px;
+  color: #e69500; }
+
+.growing-bars-menu2 {
+  padding: 0px;
+  width: 100%;
+  height: 75%;
+  margin: 5% 0 0 0; }
+
+.nav-menu {
+  background-color: #EF7D00;
+  padding: 13px 0px;
+  margin-bottom: 20px; }
+
+.userimg {
+  border-radius: 50%;
+  padding: 0px;
+  width: 70%;
+  height: 100%;
+  border-style: solid;
+  border-color: #EF7D00;
+  border-width: 5px; }
+
+.userimg2 {
+  border-radius: 50%;
+  padding: 0px;
+  width: 70%;
+  height: 116%;
+  border-style: solid;
+  border-color: #EF7D00;
+  border-width: 5px; }
+
+.icon-menu {
+  padding: 0px;
+  width: 26%;
+  height: 87%;
+  margin: 0 3% 0 3%; }
+
+.icon-menu2 {
+  padding: 0px;
+  width: 26%;
+  height: 87%;
+  margin: 0 3% 0 3%;
+  right: 30px; }
+
+.background-menuBar {
+  background-color: #ffffff;
+  padding-bottom: 4%; }
+
+.row-menu2 {
+  height: 200px; }
+
+.userimg-menu2 {
+  border-radius: 50%;
+  margin: 5% 0 0 15%;
+  width: 80%;
+  height: 90%;
+  border-style: solid;
+  border-color: #ff8c1a;
+  border-width: 8px; }
+
+/*# sourceMappingURL=styles.css.map */

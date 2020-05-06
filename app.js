@@ -65,6 +65,7 @@ app.use(session({
   saveUninitialized: true
 }));
 
+//to transform to css
 app.use(sassMiddleware({
   src: path.join(__dirname),
   dest: path.join(__dirname),
