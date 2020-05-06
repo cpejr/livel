@@ -96,7 +96,8 @@
     </div>
     {{!-- corpo1 final --}}
     {{!-- corpo2 --}}
-    <div class="tab-pane fade row gradback" id="nav-MesAnterior" role="tabpanel" aria-labelledby="nav-MesAnterior-tab">
+
+    <div class="tab-pane fade" id="nav-MesAnterior" role="tabpanel" aria-labelledby="nav-MesAnterior-tab">
       <div class="container col mx-auto text-center">
         <img class="img-responsive" id="image-corpo" src="/images/corpo1.jpg" height="580">
         <label class="texto">{{aluno_resultados.ResultadoMedidaPescoco}}</label>
@@ -108,6 +109,7 @@
         <div class="row col-12 justify-content-center" id="texto-sair">SAIR</div>
       </div>
     </div>
+
     <div class="tab-pane fade" id="nav-MesAtual" role="tabpanel" aria-labelledby="nav-MesAtual-tab">
       <div class="container col mx-auto text-center">
         <img class="img-responsive" id="image-corpo" src="/images/corpo1.jpg" height="580">
@@ -206,6 +208,7 @@
       }
     }
     function porcentoGordura(data1, data2) {
+      console.log("Entrei na funcao");
       var result, z;
       z = (data2 / data1);
       if ((z > 1) || z == 1) {
