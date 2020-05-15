@@ -26,22 +26,23 @@ router.get('/login', function(req, res, next) {
 router.post('/login', (req, res, next) => {
   const credentials = req.body;
   Requisicao.login(credentials.AlunoID, credentials.AlunoPwd).then((result)=>{
-    if(result.LOGIN.ID_Aluno > 0 && result.LOGIN.Status == 1){ //Quando tivermos usuarios e senha pra testar, mudar p/ if(result.LOGIN.ID_Aluno > 0 && result.LOGIN.Status == 1){
+    //console.log(result);
+    // if(result.LOGIN.ID_Aluno > 0 && result.LOGIN.Status == 1){ //Quando tivermos usuarios e senha pra testar, mudar p/ if(result.LOGIN.ID_Aluno > 0 && result.LOGIN.Status == 1){
       console.log("Usuário está logado");
-      console.log(result);
       req.session.usuario = true;
-      foto_perfil = `http://fitgroup.com.br/livel/fotos/${result.ALUNO_INFO.AlunoFoto}`;
-      nome_perfil = result.ALUNO_INFO.AlunoNome;
-      aluno_treinos = result.ALUNO_TREINOS;
+      //foto_perfil = `http://fitgroup.com.br/livel/fotos/${result.ALUNO_INFO.AlunoFoto}`;
+      // nome_perfil = result.ALUNO_INFO.AlunoNome;
+      // aluno_treinos = result.ALUNO_TREINOS;
 
       res.redirect('/trainingTypes');
-    }
-    else{
-      res.render('login', { title: 'Login', logado: "Usuário ou senha inválidos" });
-    }
-  }).catch((error)=>{
-    console.log(error);
-    res.render('login', { title: 'Login', logado: "Ocorreu um erro inespecífico!" });
+    // }
+    // else{
+      // console.log("Usuario e senha invalidos");
+      // res.render('login', { title: 'Login', logado: "Usuário ou senha inválidos" });
+    // }
+  // }).catch((error)=>{
+    // console.log(error);
+    // res.render('login', { title: 'Login', logado: "Ocorreu um erro inespecífico!" });
   });
 });
 
